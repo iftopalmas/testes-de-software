@@ -1,12 +1,12 @@
 = Summary
 
 //. link:Capitulos/prefacio.adoc[Chapter 1]
-. link:Capitulos/cap1-processos_de_software.adoc[Chapter 2]
-. link:Capitulos/cap3-Niveis_de_teste.adoc[Chapter 3]
+. link:Capitulos/cap1-processos_de_software.adoc[Revisão]
+. link:Capitulos/cap3-Niveis_de_teste.adoc[Chapter 2]
 //... link:chapter-1/ARTICLE-1-2-1.adoc[Article 1.2.1]
-. link:Capitulos/cap4-Tecnicas_de_teste.adoc[Chapter 4]
-. link:Capitulos/cap5-Tipos_de_teste.adoc[Chapter 5]
-. link:Capitulos/bibliografia.adoc[Chapter 6]
+. link:Capitulos/cap4-Tecnicas_de_teste.adoc[Chapter 3]
+. link:Capitulos/cap5-Tipos_de_teste.adoc[Chapter 4]
+. link:Capitulos/bibliografia.adoc[Chapter 5]
 .. Unfinished article
 . Unfinished Chapter
 
