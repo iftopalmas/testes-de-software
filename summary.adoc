@@ -1,5 +1,29 @@
 = Summary
 
+<link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css">
+++++
+
+:appversion: 1.0.0
+:doctype: book
+:lang: pt-BR
+:keywords:    Testes de Software
+:description: Material de apoio da disciplina Testes de Software
+:ascii-ids:
+//:gitrepo: https://github.com/edusantana/introducao-a-programacao-livro
+:chapter-label:
+:sectnums:
+:allow-uri-read:
+:imagesdir: imagens
+:safe: unsafe
+:icons: font
+
+// é possível usar um simblo obtido por um codigo unicode!
+:tip-caption: 💡
+:toc:
+:toc-title: Sumário
+:toclevels: 5
+:figure-caption: Figura
+
 //. link:Capitulos/prefacio.adoc[Chapter 1]
 . link:Capitulos/cap1-processos_de_software.adoc[Revisão]
 . link:Capitulos/cap2-O_que_e_teste_de_software.adoc[O que é teste de software?]
