@@ -25,7 +25,7 @@ desenvolvimento de _software_ diferentes mas todos possuem as seguintes atividad
 - evolução – evolução em resposta a mudanças nas necessidades do cliente.
 
 Na primeira atividade, especificação, é onde conseguimos obter um entendimento geral sobre o problema a ser resolvido. Não temos todos os detalhes ainda, mas é possível obter o mínimo necessário para passar para as próximas etapas. Podemos dizer ainda que essa etapa estabelece quais serviços são necessários e quais são as restrições na operação e desenvolvimento do sistema. A disciplina Análise de Sistemas é a responsável por tratar dos assuntos relacionados a essa etapa.
-
+ porjeto 
 Projeto e implementação é uma atividade que pode ser entendida contendo duas partes que dificilmente são tratadas em separado dentro do mundo da computação e que têm como objetivo a conversão da especificação do sistema em um sistema executável. Em projeto criamos um _Design_ de uma estrutura de _software_ que possa materializar a especificação; e por implementação devemos entender que é o ato de transformar o _Design_ em um programa executável. No curso de sistemas para internet a disciplina Projeto de _software_ é responsável por apresentar as técnicas e ferramentas utilizadas para a elaboração de estrutura do _software_. Já implementação está fracionada em várias disciplinas tais como Programação Orientada ao Objeto, Programação para WEB, dentre outras.
 
 A terceira atividade, Verificação e validação (V&V) tem o objetivo de mostrar que o produto que estamos construindo, um sistema por exemplo,  está em conformidade com sua especificação e ainda que ele está de acordo com os requisitos do cliente. Essa etapa é o objeto de estudo desta disciplina.
