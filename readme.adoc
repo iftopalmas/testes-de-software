@@ -7,7 +7,7 @@
 //outras fontes. Ele é apenas um resumo para auxiliar o estudante.
 
 === Qual o propósito deste material
-Este material de apoio é destinado inicialmente aos estudantes do curso Superior de Tecnologia em Sistemas para Internet (CSTSI) do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins, mas também pode ser usado por discentes de outros cursos tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação e Engenharia de Software. Ele tem o objetivo de apresentar os principais conceitos relacionados a testes de software, seus níveis, seus objetivos, como os testes são projetados e executados. De forma esse material pretensão de cobrir todos os assuntos relacionados à área de testes, que é muito extensa. Ele também não substitui livros de Engenharia de Software ou outros livros técnicos relacionados. A proposta é que ele sirva como um guia inicial para aqueles que estão dando os primeiros passos nessa área que é tão importante para o desenvolvimento de _software_.
+Este material de apoio é destinado inicialmente aos estudantes do curso Superior de Tecnologia em Sistemas para Internet do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins - IFTO, mas também pode ser usado por discentes de outros cursos tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação e Engenharia de Software. Ele tem o objetivo de apresentar os principais conceitos relacionados a testes de software, seus níveis, seus objetivos, como os testes são projetados e executados. De forma esse material pretensão de cobrir todos os assuntos relacionados à área de testes, que é muito extensa. Ele também não substitui livros de Engenharia de Software ou outros livros técnicos relacionados. A proposta é que ele sirva como um guia inicial para aqueles que estão dando os primeiros passos nessa área que é tão importante para o desenvolvimento de _software_.
 
 
 [TIP]
@@ -17,8 +17,7 @@ diversos aspectos da engenharia de _software_.
 
 
 === Como o material está organizado
-É importante lembrar que o presente material foi construído com o intuito prioritário
-de atender ao CSTSI. Assim, as buscas por conteúdo foram feitas para atender a :link:http://www.ifto.edu.br/palmas/campus-palmas/cursos/graduacao/tecnologico/sistemas-para-internet/copy_of_grade-curricular/grade-curricular-bacharelado-em-engenharia-civil.pdf/view/[ementa da disciplina que está em vigor], que é mostrada a seguir:
+É importante lembrar que o presente material foi construído com o intuito prioritário de atender ao curso vigente no Campus Palmas do IFTO. Assim, as buscas por conteúdo foram feitas para atender a :link:http://www.ifto.edu.br/palmas/campus-palmas/cursos/graduacao/tecnologico/sistemas-para-internet/copy_of_grade-curricular/grade-curricular-bacharelado-em-engenharia-civil.pdf/view/[ementa da disciplina que está em vigor], que é mostrada a seguir:
 
 - Conceitos básicos relacionados a teste de software;
 - Processos de testes;

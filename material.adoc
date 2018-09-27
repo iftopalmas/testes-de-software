@@ -30,6 +30,7 @@ Mauro Henrique Lima de Boni - mauro@ifto.edu.br
 :toc-title: Sumário
 :toclevels: 5
 :figure-caption: Figura
+:data-uri:
 //:preface-title: Leia antes de começar a ler o material
 
 //:tip-caption: pass:[&#128161;]
@@ -45,4 +46,3 @@ include::Capitulos/cap3-Niveis_de_teste.adoc[]
 include::Capitulos/cap4-Tecnicas_de_teste.adoc[]
 include::Capitulos/cap5-Tipos_de_teste.adoc[]
 include::Capitulos/bibliografia.adoc[]
-
