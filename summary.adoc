@@ -2,7 +2,7 @@
 
 //. link:Capitulos/prefacio.adoc[Chapter 1]
 . link:Capitulos/cap1-processos_de_software.adoc[Revisão]
-. link:Capitulos/cap2-O_que_e_teste_de_software[O que é teste de software?]
+. link:Capitulos/cap2-O_que_e_teste_de_software.adoc[O que é teste de software?]
 . link:Capitulos/cap3-Niveis_de_teste.adoc[Niveis de teste segundo o SWEBOK]
 //... link:chapter-1/ARTICLE-1-2-1.adoc[Article 1.2.1]
 . link:Capitulos/cap4-Tecnicas_de_teste.adoc[Técnicas de teste]
