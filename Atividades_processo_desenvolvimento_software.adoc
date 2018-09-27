@@ -1,0 +1,91 @@
+== Relembrando as atividades do processo de _software_
+Antes de falarmos sobre os testes é necessário localizá-lo dentre os processos
+da Engenharia de _software_. Existem uma grande quantidade de processos de
+desenvolvimento de _software_ diferentes mas todos possuem as seguintes atividades:
+
+- especificação – definição do quê o sistema deve fazer;
+- projeto e implementação – definição da organização do sistema e implementação do
+sistema;
+- verificação e validação – checagem de que o sistema faz o que o cliente deseja;
+- evolução – evolução em resposta a mudanças nas necessidades do cliente.
+
+Na primeira atividade, especificação, é onde conseguimos obter um entendimento geral
+sobre o problema a ser resolvido. Não temos todos os detalhes ainda, mas é possível
+obter o mínimo necessário para passar para as próximas etapas. Podemos dizer ainda
+que essa etapa estabelece quais serviços são necessários e quais são as restrições
+na operação e desenvolvimento do sistema. A disciplina Análise de Sistemas é a
+responsável por tratar dos assuntos relacionados a essa etapa.
+
+Projeto e implementação é uma atividade que pode ser entendida contendo duas partes
+que dificilmente são tratadas em separado dentro do mundo da computação e que têm
+como objetivo a conversão da especificação do sistema em um sistema executável.
+Em projeto criamos um _Design_ de uma estrutura de _software_ que possa materializar
+a especificação; e por implementação devemos entender que é o ato de transformar o
+_Design_ em um programa executável. No curso de sistemas para internet a disciplina
+Projeto de _software_ é responsável por apresentar as técnicas e ferramentas utilizadas
+para a elaboração de estrutura do _software_. Já implementação está fracionada em
+várias disciplinas tais como Programação Orientada ao Objeto, Programação para WEB,
+dentre outras.
+
+A terceira atividade, Verificação e validação (V&V) tem o objetivo de mostrar que o
+produto que estamos construindo, um sistema por exemplo,  está em conformidade
+com sua especificação e ainda que ele está de acordo com os requisitos do
+cliente. Essa etapa é o objeto de estudo desta disciplina.
+
+Por fim, temos a atividade chamada de evolução de _software_ ocorre quando é
+necessário alterar um sistema que já existe, tornando-o adequado a novas necessidades.
+Devemos lembrar que
+qualquer _software_ precisa evoluir, pois caso isso não aconteça, ele deixará de atender
+às necessidades de seus usuários o que pode torna-lo útil em pouco tempo. Não há
+disciplina que específica no Curso de Sistema para Internet do IFTO e provavelmente
+em nenhum outro curso que lide diretamente com essa questão.
+
+=== Quando a atividade de testes inicia?
+A resposta para essa pergunta depende da maneira como as atividades do processo de
+_software_ estão organizadas. Resumidamente, tudo depende do paradigma que está sendo
+usado. Assim, se estamos trabalhando em um paradigma orientado a planos, como o
+modelo cascata, elas são organizadas em sequência. Isso significa que os testes
+só começarão após as atividade de implementação terem sido concluídas. Já se estivermos
+falando sobre um ambiente que usa um modelo incremental, tal qual os modelos Ágeis,
+as atividades de projeto e implementação e de verificação e validação são intercaladas.
+Para clarificar um pouco mais, a seguir os modelos em cascata e incremental são
+apresentados e as figuras <<#modeloCascata>> e <<desenvolvimentoIncremental>>
+mostram como as atividades são organizadas.
+
+==== Testes no modelo cascata
+[#modeloCascata]
+.Exemplo do modelo em cascata
+//[link=https://cdn-images-1.medium.com/max/1200/1*5vlem2hirY1jr_jXt8-QZA.png]
+image::Modelo-cascata.png[modeloCascata,600,400]
+
+Antes de mais nada é importante lembrar que o esse modelo, que pode ser chamado de
+ciclo de vida clássico, que segue uma abordagem sistemática e sequencial pode ser
+usado em cenários em os requisitos são bem entendidos ou que mudam pouco. Esse é
+o paradigma mais antigo da Engenharia de _software_, tendo provavelmente sido introduzido
+por engenheiros de outras áreas.
+
+No modelo cascata as atividades precisam ser completadas antes de se mover
+para a próxima. É possível a realização de testes durante a etapa de implementação,
+onde é possível que sejam executados de vários testes de desenvolvimento. Depois que
+esses testes tenham sido concluídos com êxito é que podemos passar para a verificação
+e realizar outros tipos de testes, como os testes de sistema e testes de usuário. Mas
+para atingirmos essas etapas devemos ter concluída as outras duas.
+
+==== Testes no modelo incremental
+
+Segundo Pressman, há muitas situações em que os requisitos iniciais são razoavelmente
+definidos e pode haver a necessidade de fornecer rapidamente um conjunto limitado
+de funcionalidades do _software_ aos usuários que será aumentado em versões posteriores.
+Em situações como essa, um modelo incremental pode ser escolhido.
+
+[#desenvolvimentoIncremental]
+.Exemplo do modelo incremental
+//[link=https://cdn-images-1.medium.com/max/1200/1*5vlem2hirY1jr_jXt8-QZA.png]
+image::desenvolvimentoincremental2.png[desenvolvimentoIncremental,600,400]
+
+O modelo incremental é mais flexível que o modelo cascata. Tudo começa com um esboço
+do sistema. Uma vez que esse esboço seja feito é possível passar para a próxima
+atividade que intercala especificação, desenvolvimento e validação. Isso significa
+que a parir do esboço é possível especificar os requisitos, aplicar técnicas de
+projeto e fazer a implementação e realizar a validação. Essas validações permitem
+que sejam entregues versões intermediárias que são na verdade um produto operacional.

@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
+<meta name="author" content="Mauro Henrique Lima de Boni - mauro@ifto.edu.br">
+<title>Testes de software</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<style>
+/* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
+/* Remove comment around @import statement below when using as a custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+script{display:none!important}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.spread{width:100%}
+p.lead,.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{font-size:1.21875em;line-height:1.6}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:none}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #ddddd8;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite:before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media only screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7;font-weight:bold}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
+.clearfix:after,.float-group:after{clear:both}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
+pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button:before,b.button:after{position:relative;top:-1px;font-weight:400}
+b.button:before{content:"[";padding:0 3px 0 2px}
+b.button:after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header:before,#header:after,#content:before,#content:after,#footnotes:before,#footnotes:after,#footer:before,#footer:after{content:" ";display:table}
+#header:after,#content:after,#footnotes:after,#footer:after{clear:both}
+#content{margin-top:1.25em}
+#content:before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #ddddd8}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #ddddd8;padding-bottom:8px}
+#header .details{border-bottom:1px solid #ddddd8;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span:before{content:"\00a0\2013\00a0"}
+#header .details br+span.author:before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark:before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber:after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #ddddd8;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #efefed;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media only screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background-color:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #efefed;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #efefed;left:auto;right:0}}
+@media only screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background-color:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+.sect1{padding-bottom:.625em}
+@media only screen and (min-width:768px){.sect1{padding-bottom:1.25em}}
+.sect1+.sect1{border-top:1px solid #efefed}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor:before,h2>a.anchor:before,h3>a.anchor:before,#toctitle>a.anchor:before,.sidebarblock>.content>.title>a.anchor:before,h4>a.anchor:before,h5>a.anchor:before,h6>a.anchor:before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock>caption.title{white-space:nowrap;overflow:visible;max-width:0}
+.paragraph.lead>p,#preamble>.sectionbody>.paragraph:first-of-type p{color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>.paragraph:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:initial}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #ddddd8;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock pre:not(.highlight),.listingblock pre[class="highlight"],.listingblock pre[class^="highlight "],.listingblock pre.CodeRay,.listingblock pre.prettyprint{background:#f7f7f8}
+.sidebarblock .literalblock pre,.sidebarblock .listingblock pre:not(.highlight),.sidebarblock .listingblock pre[class="highlight"],.sidebarblock .listingblock pre[class^="highlight "],.sidebarblock .listingblock pre.CodeRay,.sidebarblock .listingblock pre.prettyprint{background:#f2f1f1}
+.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;padding:1em;font-size:.8125em}
+.literalblock pre.nowrap,.literalblock pre[class].nowrap,.listingblock pre.nowrap,.listingblock pre[class].nowrap{overflow-x:auto;white-space:pre;word-wrap:normal}
+@media only screen and (min-width:768px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:.90625em}}
+@media only screen and (min-width:1280px){.literalblock pre,.literalblock pre[class],.listingblock pre,.listingblock pre[class]{font-size:1em}}
+.literalblock.output pre{color:#f7f7f8;background-color:rgba(0,0,0,.9)}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]:before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:#999}
+.listingblock:hover code[data-lang]:before{display:block}
+.listingblock.terminal pre .command:before{content:attr(data-prompt);padding-right:.5em;color:#999}
+.listingblock.terminal pre .command:not([data-prompt]):before{content:"$"}
+table.pyhltable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.pyhltable td{vertical-align:top;padding-top:0;padding-bottom:0;line-height:1.45}
+table.pyhltable td.code{padding-left:.75em;padding-right:0}
+pre.pygments .lineno,table.pyhltable td:not(.code){color:#999;padding-left:0;padding-right:.5em;border-right:1px solid #ddddd8}
+pre.pygments .lineno{display:inline-block;margin-right:.25em}
+table.pyhltable .linenodiv{background:none!important;padding-right:0!important}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock blockquote p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote:before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.5em;margin-right:.5ex;text-align:right}
+.quoteblock .quoteblock{margin-left:0;margin-right:0;padding:.5em 0;border-left:3px solid rgba(0,0,0,.6)}
+.quoteblock .quoteblock blockquote{padding:0 0 0 .75em}
+.quoteblock .quoteblock blockquote:before{display:none}
+.verseblock{margin:0 1em 1.25em 1em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract{margin:0 0 1.25em 0;display:block}
+.quoteblock.abstract blockquote,.quoteblock.abstract blockquote p{text-align:left;word-spacing:0}
+.quoteblock.abstract blockquote:before,.quoteblock.abstract blockquote p:first-of-type:before{display:none}
+table.tableblock{max-width:100%;border-collapse:separate}
+table.tableblock td>.paragraph:last-child p>p:last-child,table.tableblock th>p:last-child,table.tableblock td>p:last-child{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px 0}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot{border-width:1px 0}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+td>div.verse{white-space:pre}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{margin:0 auto .625em auto;margin-left:-1.375em;margin-right:0;padding:0;list-style:none;overflow:hidden}
+ul.inline>li{list-style:none;float:left;margin-left:1.375em;display:block}
+ul.inline>li>*{display:block}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist>table tr>td:first-of-type{padding:.4em .75em 0 .75em;line-height:1;vertical-align:top}
+.colist>table tr>td:first-of-type img{max-width:initial}
+.colist>table tr>td:last-of-type{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left,.imageblock[style*="float: left"]{margin:.25em .625em 1.25em 0}
+.imageblock.right,.imageblock[style*="float: right"]{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em 0;border-width:1px 0 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;text-indent:-1.05em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background-color:#00fafa}
+.black{color:#000}
+.black-background{background-color:#000}
+.blue{color:#0000bf}
+.blue-background{background-color:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background-color:#fa00fa}
+.gray{color:#606060}
+.gray-background{background-color:#7d7d7d}
+.green{color:#006000}
+.green-background{background-color:#007d00}
+.lime{color:#00bf00}
+.lime-background{background-color:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background-color:#7d0000}
+.navy{color:#000060}
+.navy-background{background-color:#00007d}
+.olive{color:#606000}
+.olive-background{background-color:#7d7d00}
+.purple{color:#600060}
+.purple-background{background-color:#7d007d}
+.red{color:#bf0000}
+.red-background{background-color:#fa0000}
+.silver{color:#909090}
+.silver-background{background-color:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background-color:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background-color:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background-color:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note:before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip:before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning:before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution:before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important:before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background-color:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]:after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@media print{@page{margin:1.25cm .75cm}
+*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare):after,a[href^="https:"]:not(.bare):after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]:after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #ddddd8!important;padding-bottom:0!important}
+.sect1{padding-bottom:0!important}
+.sect1+.sect1{border:0!important}
+#header>h1:first-child{margin-top:1.25rem}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em 0}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span:before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]:before{display:block}
+#footer{background:none!important;padding:0 .9375em}
+#footer-text{color:rgba(0,0,0,.6)!important;font-size:.9em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+</style>
+</head>
+<body class="book">
+<div id="header">
+<h1>Testes de <em>software</em></h1>
+<div class="details">
+<span id="author" class="author">Mauro Henrique Lima de Boni - mauro@ifto.edu.br</span><br>
+<span id="revdate">2018-08-20</span>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_antes_de_começar_é_importante_ler_essa_parte">Antes de começar é importante ler essa parte&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_qual_o_propósito_deste_material">Qual o propósito deste material</h3>
+<div class="paragraph">
+<p>Este material de apoio é destinado inicialmente aos estudantes do curso Superior de Tecnologia em Sistemas para Internet (CSTSI) do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins, mas também pode ser usado por discentes de outros cursos tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação e Engenharia de Software. Ele tem o objetivo de apresentar os principais conceitos relacionados a testes de software, seus níveis, seus objetivos, como os testes são projetados e executados. De forma esse material pretensão de cobrir todos os assuntos relacionados à área de testes, que é muito extensa. Ele também não substitui livros de Engenharia de Software ou outros livros técnicos relacionados. A proposta é que ele sirva como um guia inicial para aqueles que estão dando os primeiros passos nessa área que é tão importante para o desenvolvimento de <em>software</em>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="💡"></i>
+</td>
+<td class="content">
+Procure por outras fontes para complementar esse material. Um bom lugar para começar
+é o site <a href="https://www.infoq.com/br/">INFOQ</a> que traz palestras e artigos atualizados relacionados a
+diversos aspectos da engenharia de <em>software</em>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_como_o_material_está_organizado">Como o material está organizado</h3>
+<div class="paragraph">
+<p>É importante lembrar que o presente material foi construído com o intuito prioritário
+de atender ao CSTSI. Assim, as buscas por conteúdo foram feitas para atender a :<a href="http://www.ifto.edu.br/palmas/campus-palmas/cursos/graduacao/tecnologico/sistemas-para-internet/copy_of_grade-curricular/grade-curricular-bacharelado-em-engenharia-civil.pdf/view/">ementa da disciplina que está em vigor</a>, que é mostrada a seguir:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Conceitos básicos relacionados a teste de software;</p>
+</li>
+<li>
+<p>Processos de testes;</p>
+</li>
+<li>
+<p>Ferramentas para planejamento, elaboração e automatização testes de software;</p>
+</li>
+<li>
+<p>Manipular ferramentas para execução de planos de testes de software;</p>
+</li>
+<li>
+<p>Classes de automação: QAI x ISTQB;</p>
+</li>
+<li>
+<p>Gerenciamento do planejamento de testes;</p>
+</li>
+<li>
+<p>Projeto de Casos de Teste;</p>
+</li>
+<li>
+<p>Tipos de Testes;</p>
+</li>
+<li>
+<p>Ferramentas;</p>
+</li>
+<li>
+<p>Gerenciamento dos defeitos;</p>
+</li>
+<li>
+<p>Elaboração de laudo e parecer técnico.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Com base nisso, o conteúdo disponível nesse material está assim dividido:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>O capitulo <a href="#Revisão">As atividades do processo de <em>software</em> e os testes</a> tem o objetivo de posicionar as atividades de teste de software dentre as demais atividades básicas do ciclo de desenvolvimento de software.
+As interações entre o teste e análise, projeto e implementação são apresentadas com o objetivo de auxiliar o estudante em um primeiro contato e entender em que momento elas ocorrem. Trata-se de capitulo informativo que não está relacionado diretamente com a ementa do curso.</p>
+</li>
+<li>
+<p>O capitulo <a href="#queeteste">Uma visão geral sobre o que é teste de <em>software</em></a> apresenta o conceito sobre teste e reforça sua importância na obtenção de um software que atenda melhor aos requisitos do cliente e que seja construído da melhor forma possível. Aqui é onde o estudo relativo aos testes começa de fato.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_público_alvo">Público alvo</h3>
+<div class="paragraph">
+<p>O público alvo desse livro, conforme mencionado anteriormente, são os estudantes do Curso Superior de Técnologia em Sistemas para Internet do Instituto Federal de Eucação, Ciência e Tecnologia do Tocantins, na modalidade presencial. Ele pode ser usado por outros cursos em que os estudantes tenham tido contato com disciplinas de Análise e Projeto de sistemas, introdução a programação ou programação para WEB.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="como_estudar">Como você deve estudar cada capítulo</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Leia a visão geral do capítulo</p>
+</li>
+<li>
+<p>Estude os conteúdos das seções</p>
+</li>
+<li>
+<p>Realize as atividades no final do capítulo</p>
+</li>
+<li>
+<p>Verifique se você atingiu os objetivos do capítulo</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Na sala de aula do curso</div>
+<ul>
+<li>
+<p>Tire dúvidas e discuta sobre as atividades do livro com outros integrantes do curso</p>
+</li>
+<li>
+<p>Leia materiais complementares eventualmente disponibilizados</p>
+</li>
+<li>
+<p>Realize as atividades propostas pelo professor da disciplina</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Revisão">1. As atividades do processo de <em>software</em> e os testes</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_introdução">1.1. Introdução</h3>
+<div class="paragraph">
+<p>Esse capitulo tem como objetivos: fazer uma breve revisão sobre as atividades do processo de software, fornecer ao estudante uma ideia geral de onde os testes de software estão inseridos dentro do processo de desenvolvimento e realizar  algumas conexões entre essa disciplina e outras do curso, sobretudo Analise de Sistemas, Projeto de Sistemas, Programação para WEB II.</p>
+</div>
+<div class="sect3">
+<h4 id="_como_esse_capitulo_está_estruturado">1.1.1. Como esse capitulo está estruturado</h4>
+<div class="paragraph">
+<p>O presente capitulo possui três seções principais. Cada uma delas trata de um assunto específico, conforme a lista a seguir:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A seção <a href="#atividadesprocesso">Atividades do processo de software</a> é um breve resumo sobre as atividades que são executadas durante o processo de software de maneira que possamos encontrar onde os testes estão inseridos.</p>
+</li>
+<li>
+<p>A seção <a href="#Quando">Quando a atividade de testes inicia?</a> faz uma revisão sobre dois modelos de desenvolvimento bastante conhecidos o cascata e o incremental e discute brevemente sobre quando os testes devem começar.</p>
+</li>
+<li>
+<p>A seção <a href="#relacao">Relação entre essa disciplina e outras disciplinas no curso</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="atividadesprocesso">1.2. Atividades do processo de software</h3>
+<div class="paragraph">
+<p>Antes de falarmos sobre os testes é necessário localizá-lo dentre os processos
+da Engenharia de <em>software</em>. Existem uma grande quantidade de processos de
+desenvolvimento de <em>software</em> diferentes mas todos possuem as seguintes atividades:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>especificação – definição do quê o sistema deve fazer;</p>
+</li>
+<li>
+<p>projeto e implementação – definição da organização do sistema e implementação do sistema;</p>
+</li>
+<li>
+<p>verificação e validação – checagem de que o sistema faz o que o cliente deseja;</p>
+</li>
+<li>
+<p>evolução – evolução em resposta a mudanças nas necessidades do cliente.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Na primeira atividade, especificação, é onde conseguimos obter um entendimento geral sobre o problema a ser resolvido. Não temos todos os detalhes ainda, mas é possível obter o mínimo necessário para passar para as próximas etapas. Podemos dizer ainda que essa etapa estabelece quais serviços são necessários e quais são as restrições na operação e desenvolvimento do sistema. A disciplina Análise de Sistemas é a responsável por tratar dos assuntos relacionados a essa etapa.</p>
+</div>
+<div class="paragraph">
+<p>Projeto e implementação é uma atividade que pode ser entendida contendo duas partes que dificilmente são tratadas em separado dentro do mundo da computação e que têm como objetivo a conversão da especificação do sistema em um sistema executável. Em projeto criamos um <em>Design</em> de uma estrutura de <em>software</em> que possa materializar a especificação; e por implementação devemos entender que é o ato de transformar o <em>Design</em> em um programa executável. No curso de sistemas para internet a disciplina Projeto de <em>software</em> é responsável por apresentar as técnicas e ferramentas utilizadas para a elaboração de estrutura do <em>software</em>. Já implementação está fracionada em várias disciplinas tais como Programação Orientada ao Objeto, Programação para WEB, dentre outras.</p>
+</div>
+<div class="paragraph">
+<p>A terceira atividade, Verificação e validação (V&amp;V) tem o objetivo de mostrar que o produto que estamos construindo, um sistema por exemplo,  está em conformidade com sua especificação e ainda que ele está de acordo com os requisitos do cliente. Essa etapa é o objeto de estudo desta disciplina.</p>
+</div>
+<div class="paragraph">
+<p>Por fim, temos a atividade chamada de evolução de <em>software</em> ocorre quando é necessário alterar um sistema que já existe, tornando-o adequado a novas necessidades.
+Devemos lembrar que qualquer <em>software</em> precisa evoluir, pois caso isso não aconteça, ele deixará de atender às necessidades de seus usuários o que pode torna-lo útil em pouco tempo. Não há disciplina que específica no Curso de Sistema para Internet do IFTO e provavelmente em nenhum outro curso que lide diretamente com essa questão.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Quando">1.3. Quando a atividade de testes inicia?</h3>
+<div class="paragraph">
+<p>A resposta para a pergunta depende da maneira como as atividades do processo de
+<em>software</em> estão organizadas. Resumidamente, tudo depende do paradigma que está sendo usado. Assim, se estamos trabalhando em um paradigma orientado a planos, como o modelo cascata, elas são organizadas em sequência. Isso significa que os testes só começarão após as atividade de implementação terem sido concluídas. Já se estivermos falando sobre um ambiente que usa um modelo incremental, tal qual os modelos Ágeis, as atividades de projeto e implementação e de verificação e validação são intercaladas.  Para clarificar um pouco mais, a seguir os modelos em cascata e incremental são apresentados e as figuras <a href="#modeloCascata">Exemplo do modelo em cascata</a> e <a href="#desenvolvimentoIncremental">Exemplo do modelo incremental</a> mostram como as atividades são organizadas.</p>
+</div>
+<div class="sect3">
+<h4 id="_testes_no_modelo_cascata">1.3.1. Testes no modelo cascata</h4>
+<div id="modeloCascata" class="imageblock">
+<div class="content">
+<img src="imagens/Capitulo%201/Modelo-cascata.png" alt="modeloCascata" width="600" height="400">
+</div>
+<div class="title">Figura 1. Exemplo do modelo em cascata</div>
+</div>
+<div class="paragraph">
+<p>Antes de mais nada é importante lembrar que o esse modelo, que pode ser chamado de ciclo de vida clássico, que segue uma abordagem sistemática e sequencial pode ser usado em cenários em os requisitos são bem entendidos ou que mudam pouco. Esse é o paradigma mais antigo da Engenharia de <em>software</em>, tendo provavelmente sido introduzido por engenheiros de outras áreas.</p>
+</div>
+<div class="paragraph">
+<p>No modelo cascata as atividades precisam ser completadas antes de se mover
+para a próxima. É possível a realização de testes durante a etapa de implementação, onde é possível que sejam executados de vários testes de desenvolvimento. Depois que esses testes tenham sido concluídos com êxito é que podemos passar para a verificação e realizar outros tipos de testes, como os testes de sistema e testes de usuário. Mas para atingirmos essas etapas devemos ter concluída as outras duas.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testes_no_modelo_incremental">1.3.2. Testes no modelo incremental</h4>
+<div class="paragraph">
+<p>Segundo Pressman<a href="#PRESSMAN">[PRESSMAN]</a>, há muitas situações em que os requisitos iniciais são razoavelmente definidos e pode haver a necessidade de fornecer rapidamente um conjunto limitado de funcionalidades do <em>software</em> aos usuários que será aumentado em versões posteriores. Em situações como essa, um modelo incremental pode ser escolhido.</p>
+</div>
+<div id="desenvolvimentoIncremental" class="imageblock">
+<div class="content">
+<img src="imagens/Capitulo%201/desenvolvimentoincremental2.png" alt="desenvolvimentoIncremental" width="600" height="400">
+</div>
+<div class="title">Figura 2. Exemplo do modelo incremental</div>
+</div>
+<div class="paragraph">
+<p>O modelo incremental é mais flexível que o modelo cascata. Tudo começa com um esboço do sistema. Uma vez que esse esboço seja feito é possível passar para a próxima atividade que intercala especificação, desenvolvimento e validação. Isso significa que a parir do esboço é possível especificar os requisitos, aplicar técnicas de projeto e fazer a implementação e realizar a validação. Essas validações permitem que sejam entregues versões intermediárias que são na verdade um produto operacional.</p>
+</div>
+<div class="paragraph">
+<p>Cumpre ainda dizer que nos últimos anos, a visão sobre os testes vem mudando.
+Dessa maneira, o teste já não é mais visto como uma atividade que começa somente
+após a conclusão da fase de implementação, com o objetivo limitado de detectar falhas. Teste de software é, ou deveria ser, executado durante todo o ciclo de vida de desenvolvimento e manutenção. De fato, o planejamento para testes de software deve começar com os estágios iniciais do processo de requisitos de software, e os planos e procedimentos de teste devem ser sistematicamente e continuamente desenvolvidos - e possivelmente refinados - à medida que o desenvolvimento de software prossiga. Essas atividades de planejamento de teste e projeto de teste fornecem informações úteis para os projetistas de software e ajudam a destacar possíveis fraquezas, como omissões / contradições de design ou omissões / ambiguidades na documentação.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="relacao">1.4. Relação entre essa disciplina e outras disciplinas no curso</h3>
+<div class="sect3">
+<h4 id="_relação_existente_entre_análise_de_sistema_e_os_testes">1.4.1. Relação existente entre análise de sistema e os testes</h4>
+<div class="paragraph">
+<p>Do ponto de vista do cliente, os maiores erros são aqueles que deixam de
+satisfazer aos seus requisitos. Assim, é importante que uma relação contendo os requisitos funcionais do produto que está sendo desenvolvido e que posteriormente será testado, tenha sido construída. Em geral é durante a fase de análise é que essa relação é feita. Conforme dito anteriormente, o planejamento testes pode ter inicio durante o processo de especificação de requisitos, onde os chamados critérios de aceitação podem ser criados.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_relação_existente_entre_disciplinas_de_programação_e_os_testes">1.4.2. Relação existente entre disciplinas de programação e os testes</h4>
+<div class="paragraph">
+<p>In particular, unit and integration testing are intimately related to software construction, if not part of it.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="queeteste">2. Uma visão geral sobre o que é teste de <em>software</em></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_introdução_2">2.1. Introdução</h3>
+<div class="paragraph">
+<p>Esse capitulo tem o objetivo de passar uma ideia geral sobre os conceitos relacionados ao teste de software.</p>
+</div>
+<div class="sect3">
+<h4 id="_como_esse_capitulo_está_estruturado_2">2.1.1. Como esse capitulo está estruturado</h4>
+<div class="paragraph">
+<p>O presente capitulo possui quatro seções. Cada uma delas trata de um assunto específico,
+conforme a lista a seguir:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A seção <a href="#conceitos">Conceitos iniciais</a> traz os conceitos iniciais sobre testes. Esses conceitos são informações fundamentais se vocês está tendo seu primeiro contato com testes.</p>
+</li>
+<li>
+<p>A seção <a href="#objetivos">Quais são os objetivos do teste de <em>software</em>?</a> é a responsável por apresentar qual é o propósito do teste de software.</p>
+</li>
+<li>
+<p>A seção <a href="#porquetestar">Por que executar testes de <em>software</em>?</a> tem como objetivo justificar porque os testes devem ser feitos.</p>
+</li>
+<li>
+<p>A seção <a href="#atividades">[atividades]</a> tem alguns exercícios que o ajudaram a fixar melhor o conteúdo que foi apresentado.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="conceitos">2.2. Conceitos iniciais</h3>
+<div class="paragraph">
+<p>O teste de <em>software</em> é uma atividade que tem o objetivo de verificar se os resultados obtidos através do uso do produto correspondem aos resultados esperados. Além disso, ela é responsável também por tentar fazer como que sistema que está sendo testado esteja livre de Defeitos.</p>
+</div>
+<div class="paragraph">
+<p>Roger Pressmann, diz que o <strong>teste de <em>software</em> faz parte de um processo amplo ao qual podemos chamar de  Verificação e Validação (V&amp;V)</strong>, sendo que por verificação estamos nos referindo a um conjunto de atividade que estão relacionadas com a garantia de que o <em>software</em> "implementa corretamente uma função específica". Já a Validação tem como preocupação o atendimento os requisitos do cliente.</p>
+</div>
+<div class="paragraph">
+<p>Segundo Ian Sommerville <a href="#SOMMERVILLE">[SOMMERVILLE]</a>, o teste de <em>software</em> é uma etapa dentro do ciclo de vida que <strong>tem como objetivo descobrir os defeitos que um programa possui antes que ele entre em produção</strong>, isto é antes de ser entregue para que os usuários comecem a utilizá-lo.</p>
+</div>
+<div class="paragraph">
+<p>Edsger Dijkstra, argumenta que <strong>os testes apenas são capazes de mostrar a presença de erros e não a sua ausência</strong>, pois é possível de usar uma entrada de dados de testes que não seja boa ou até mesmo esquecermos de testar alguma parte do sistema. Assim, os testes não conseguem demonstrar que não há defeitos ou que ele sempre se comportará da maneira prevista em qualquer situação.</p>
+</div>
+<div class="paragraph">
+<p>Podemos entender o teste é um processo independente, pois nem sempre quem desenvolve testará o <em>software</em>. Além disso, cumpre lembrar que número de tipos diferentes de teste varia tanto quanto as técnicas de desenvolvimento.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Envolve processos de inspeção e revisão, e testes do sistema.</p>
+</li>
+<li>
+<p>Testes do sistema envolvem executar o sistema com casos de teste. São
+provenientes de especificações dos dados reais que deverão ser processados
+pelo sistema.</p>
+</li>
+<li>
+<p>O teste é a atividade de V &amp; V mais usada.</p>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="_defeito_x_erro_x_falha">2.2.1. Defeito x Erro x Falha</h4>
+<div class="paragraph">
+<p>É importante, antes de definirmos melhor o que é teste, diferenciar três termos . Há autores como <a href="#PRESSMAN">[PRESSMAN]</a> que afirmam que dentro da comunidade de Engenharia de Software, esse termos são tratados como sinônimos. Ele, no entanto, faz uma diferenciação entre erro e defeito usando o critério temporal. Assim, temos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Erro: é qualquer problema encontrado antes que o software tenha sido entregue aos usuários finais.</p>
+</li>
+<li>
+<p>Falha: é um problema que é encontrado somente após a entrega para os usuários finais.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Por outro lado, a <em>International Software Testing Qualification Board</em> <a href="https://www.istqb.org/">ISTQB</a>, entidade que certifica os profissionais da área de teste, faz uma distinção maior, adicionando o termo defeito, alterando um pouco o significado de erro e falha e criando uma espécie de graduação:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://josebarbosa.com.br/?p=463" class="bare">http://josebarbosa.com.br/?p=463</a>
+<a href="https://glossary.istqb.org/search/defect" class="bare">https://glossary.istqb.org/search/defect</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Defeito: é uma deficiência mecânica ou algorítmica que, se ativada, pode levar a uma falha. É uma inconsistência no software, algo que foi implementado de maneira incorreta. Ele ocorre em uma linha de código, como uma instrução errada ou um comando incorreto. O defeito é a causa de um erro, porém se uma linha de código que contém o defeito nunca executar, o defeito não vai provocar um erro.</p>
+</li>
+<li>
+<p>Erro: Erro humano produzindo resultado incorreto. O erro evidencia o defeito, ou seja, quando há diferença entre o valor obtido e o valor esperado constitui um erro.</p>
+</li>
+<li>
+<p>Falha: evento notável em que o sistema viola suas especificações. Ele é o resultado ou manifestação de um defeito ou erro.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Neste material sempre usaremos erro e falha como sinônimos, mas o autor considera importe que você saiba que existem outras maneiras de interpretar esses termos.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="objetivos">2.3. Quais são os objetivos do teste de <em>software</em>?</h3>
+<div class="paragraph">
+<p>Em seu livro de Engenharia de Software, Roger Pressman elenca três objetivos
+principais, a saber:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Teste é um processo de execução de um programa com a finalidade de encontrar
+um erro</p>
+</li>
+<li>
+<p>Um teste bem-sucedido é aquele que descobre um erro ainda não descoberto</p>
+</li>
+<li>
+<p>Um bom caso de teste é aquele que tem alta probabilidade de encontrar um erro
+ainda não descoberto</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Isso posto, nos faz pensar que <strong>estamos indo contra a visão inicial que alguns de nós poderíamos ter de que um teste bem-sucedido é aquele no qual não são encontrados erros.</strong></p>
+</div>
+<div class="paragraph">
+<p>Os profissionais que se dedicam a testar softwares são responsáveis por projetar
+testes que descubram diferentes tipos de erros. Isso deve ser feito de uma forma
+sistemática dentro de um ambiente em que há sempre uma pressão muito grande em
+relação ao produto que está sendo testado. Os testes devem ser os completos possíveis, mas eles contam com uma quantidade mínima de tempo e deve consumir o mínimo de esforço possível.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="porquetestar">2.4. Por que executar testes de <em>software</em>?</h3>
+<div class="paragraph">
+<p>O teste é importante porque os erros de <em>software</em> podem ser caros ou até tornarem-se perigosos. Erros de <em>software</em> podem causar perdas monetárias e humanas e a nossa história recente está cheia de exemplos.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>O Voo 501 da Agência Espacial Européia Ariane 5 foi destruído 40 segundos após a decolagem (4 de junho de 1996). O protótipo de foguete de US $ 1 bilhão foi destruído devido a um bug no <em>software</em> de orientação a bordo. Clique no link abaixo para ver como foi o lançamento e a destruição do foguete.</p>
+</li>
+</ul>
+</div>
+<div class="videoblock">
+<div class="content">
+<iframe src="https://www.youtube.com/embed/gp_D8r-2hwk?rel=0&amp;hl=pt-BR" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph">
+<p>Podemos então dizer a grosso modo, que o teste de <em>software</em> é necessário para detectar os bugs no <em>software</em> e para testar se o <em>software</em> atende aos requisitos do cliente. Isso ajuda a equipe de desenvolvimento a corrigir os erros e entregar um produto de boa qualidade.</p>
+</div>
+<div class="paragraph">
+<p>Há vários pontos no processo de desenvolvimento de <em>software</em> em que o erro humano pode levar a um <em>software</em> que não atende aos requisitos dos clientes. Alguns deles estão listados abaixo.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>O cliente / pessoa que fornecer os requisitos em nome da organização do cliente pode não saber exatamente o que é necessário ou pode esquecer de fornecer alguns detalhes, o que pode levar à falta de recursos.</p>
+</li>
+<li>
+<p>A pessoa que está coletando os requisitos pode interpretar erroneamente ou perder completamente um requisito quando documentá-los.</p>
+</li>
+<li>
+<p>Durante a fase de design, se houver problemas no design, isso pode levar a erros no futuro</p>
+</li>
+<li>
+<p><em>Bugs</em> podem ser introduzidos durante a fase de desenvolvimento durante o erro humano, falta de experiência, etc.</p>
+</li>
+<li>
+<p>Os testadores podem perder erros durante a fase de testes devido a erro humano, falta de tempo, experiência insuficiente, etc.</p>
+</li>
+<li>
+<p>Os clientes podem não ter a largura de banda para testar todos os recursos do produto e podem liberar o produto para seus usuários finais, o que pode levar os usuários finais a encontrar erros no aplicativo</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Um negócio e reputação de organizações depende da qualidade de seus produtos e,
+em alguns casos, até a receita pode depender das vendas de produtos de <em>software</em>.</p>
+</div>
+<div class="paragraph">
+<p>Os usuários podem preferir comprar um produto concorrente em um produto que tenha qualidade ruim e isso pode resultar em perda de receita para a organização.
+No mundo de hoje, a qualidade é uma das principais prioridades de qualquer
+organização.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Atividades">2.5. Atividade</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Organizar grupos com até 5 estudantes.</p>
+</li>
+<li>
+<p>Cada um dos grupos deverá responder às seguintes perguntas:</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Explique por que um programa não precisa, necessáriamente, ser completamente livre de livre de defeitos antes de ser entregue aos seus cliente.</strong></p>
+</li>
+<li>
+<p><strong>Explique melhor a afirmação que diz que os testes podem detectar apenas a presença de erros e não a sua ausência.</strong></p>
+</li>
+<li>
+<p><strong>Acesse os links a seguir e escolha qual desses erros foi em sua opinião o mais preocupante</strong>
+<a href="https://www.guru99.com/software-testing-introduction-importance.html" class="bare">https://www.guru99.com/software-testing-introduction-importance.html</a>
+<a href="https://www.scientificamerican.com/article/pogue-5-most-embarrassing-software-bugs-in-history/" class="bare">https://www.scientificamerican.com/article/pogue-5-most-embarrassing-software-bugs-in-history/</a></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Os grupos terão 30 minutos para a discussão e elaboração das repostas.</p>
+</li>
+<li>
+<p>No fim, todos os grupos deverão compartilhar suas respostas. Essa atividade vale 0,25 pontos na nota final.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_quais_os_estágios_de_teste">3. Quais os estágios de teste?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>O <em>Guide to the Software Engineering Body of Knowledge</em> (SWEBOK) <a href="#SWEBOK">[SWEBOK]</a> é um guia criado pelo IEEE e que trata de vários aspectos sobre a Engenharia de Software. Ele possui um capitulo dedicado ao testes que nos informa que o teste de software é geralmente realizado em diferentes níveis ao longo dos processos de desenvolvimento e manutenção. Os níveis podem ser distinguidos tomando como base o objeto que será testado, que é chamado de alvo, ou na finalidade, que é chamado de objetivo.</p>
+</div>
+<div class="paragraph">
+<p>O alvo do teste pode variar: um único módulo, um grupo desses módulos
+(relacionados por finalidade, uso, comportamento ou estrutura) ou um sistema inteiro.
+Podemos criar três estágios ou níveis de teste. Esses três estágios de teste não
+implicam em nenhum modelo de processo, e nenhum  deles é considerado mais importante que os outros dois.</p>
+</div>
+<div class="paragraph">
+<p>Segundo Ian Sommerville<a href="#SOMMERVILLE">[SOMMERVILLE]</a>, todo software deve passar por três estágios de teste.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Testes de desenvolvimento</p>
+</li>
+<li>
+<p>Testes de integração</p>
+</li>
+<li>
+<p>Testes de usuário</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Apesar dessa divisão ser simples, podemos criar outras categorias de estágio. Para cada nível de teste, os seguintes aspectos podem ser identificados: seus objetivos genéricos, os produtos de trabalho utilizados como referência para derivar os casos de testes (ex.: base do teste), o objeto do teste (o que está sendo testado), defeitos e falhas típicas a se encontrar, testes (“harness”) e ferramentas de suporte e abordagens e responsabilidades específicas. A seguir cada um dos estágios é tratado com mais detalhes e as suas subdivisões são apresentadas.</p>
+</div>
+<div class="sect2">
+<h3 id="_testes_de_desenvolvimento">3.1. Testes de desenvolvimento</h3>
+<div class="paragraph">
+<p>Os testes de desenvolvimento representam todos os testes que são realizados pelos desenvolvedores de um sistema. Nesse caso, o testador é o próprio desenvolvedor ou um membro da equipe.</p>
+</div>
+<div class="sect3">
+<h4 id="_testes_de_unidade_unitário">3.1.1. Testes de unidade / unitário</h4>
+<div class="paragraph">
+<p>Os testes de unidade, muitas vezes chamados de testes unitários, são responsáveis por verificar o funcionamento de elementos de software de maneira isolada, ou seja eles são testados de forma individual ​​separadamente. O teste de unidade focaliza o esforço de verificação na menor unidade do projeto de <em>software</em>&#8201;&#8212;&#8201;o componente ou módulo de <em>software</em>. Se estivermos escrevendo um código usando uma linguagem como o JAVA por exemplo, serão testados os métodos das classes, uma vez que eles normalmente são as menores unidades do projeto. O teste de unidade, na maioria das vezes, ocorre com acesso ao código fonte que está sendo testado e com o suporte de ferramentas de depuração. Os programadores que escreveram o código frequentemente, mas nem sempre, realizam testes unitários. O TDD (do inglês <em>Test Driven Development</em>) ou Desenvolvimento Guiado por Testes, que é um exemplo de teste unitário, é apresentado na seção a seguir.</p>
+</div>
+<div class="paragraph">
+<p>Esse material pode ajudar. Dar uma olhada !!
+<a href="https://edisciplinas.usp.br/pluginfile.php/384739/mod_resource/content/1/Aula%205_2014_Tipos-de-teste-software-v2.pdf" class="bare">https://edisciplinas.usp.br/pluginfile.php/384739/mod_resource/content/1/Aula%205_2014_Tipos-de-teste-software-v2.pdf</a>
+<a href="http://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/testes-software_v01.pdf" class="bare">http://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/testes-software_v01.pdf</a></p>
+</div>
+<div class="sect4">
+<h5 id="_desenvolvimento_guiado_por_testes_tdd_do_inglês_em_test_driven_development_em">Desenvolvimento Guiado por Testes (TDD, do inglês <em>Test Driven Development</em>)</h5>
+<div class="paragraph">
+<p>O TDD é uma abordagem para o desenvolvimento de programas em que se intercalam testes e a escrita de código-fonte. O código evolui de maneira incremental, juntamente com um teste para esse incremento. Importante: <strong>Nada é feito, ou seja, nenhum novo código é escrito sem que aquilo que está sendo testado passe no teste.</strong> A figura <a href="#tdd">O ciclo do TDD</a>, mostrada a seguir, que foi copiada do livro de Engenharia de Software de Ian Sommerville<a href="#SOMMERVILLE">[SOMMERVILLE]</a>, fornece uma visão geral sobre o processo do TDD.</p>
+</div>
+<div id="tdd" class="imageblock">
+<div class="content">
+<img src="imagens/Capitulo%203/tdd.png" alt="testeAB" width="600" height="400">
+</div>
+<div class="title">Figura 3. O ciclo do TDD</div>
+</div>
+<div class="paragraph">
+<p>O ciclo de desenvolvimento usando o TDD envolve antes de tudo uma mudança no paradigma ao qual o programador está acostumando. Ao invés de começar a escrever a funcionalidade a ser incrementada, ele escreve um teste. A sequencia de passos do TDD pode ser explicada assim:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Identificar o incremento necessário. Ele deve ser pequeno e implementável em
+poucas linhas de código. Ele não será escrito ainda;</p>
+</li>
+<li>
+<p>Escrever um teste para esse incremento. Esse teste será feito por uma ferramenta própria de testes, como o <em>JUnit</em>. Esse ferramenta é quem fará o teste e relatará se houve sucesso ou não.</p>
+</li>
+<li>
+<p>Executar o teste. A ferramenta poderá também refazer todos os testes que já
+foram feitos anteriormente. Nesse caso, o resultado obtido é uma falha do teste.
+Mas por que? Lembre-se que você ainda não implementou a nova funcionalidade. Essa falha o ajudará a não esquecer de fazer a codificação.</p>
+</li>
+<li>
+<p>Implementar a nova funcionalidade e executar o teste novamente. O código pode ser refatorado e melhorado completamente.</p>
+</li>
+<li>
+<p>Depois que os testes forem executados com sucesso, voltamos ao passo 1.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Beneficios do TDD</strong></p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Cobertura de código</dt>
+<dd>
+<p>Cada segmento de código que você escreve deve ter pelo menos um teste associado, para todo o código escrito tem pelo menos um teste.</p>
+</dd>
+<dt class="hdlist1">Testes de regressão</dt>
+<dd>
+<p>Um conjunto de testes de regressão é desenvolvido de forma incremental enquanto um programa é desenvolvido.</p>
+</dd>
+<dt class="hdlist1">Depuração simplificada</dt>
+<dd>
+<p>Quando um teste falhar, deve ser óbvio onde está o problema. O código recém-escrito tem de ser verificado e modificado.</p>
+</dd>
+<dt class="hdlist1">Documentação de sistema</dt>
+<dd>
+<p>Os próprios testes são uma forma de documentação que descreve o que o código deve estar fazendo.</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testes_de_integração">3.1.2. Testes de integração</h4>
+<div class="imageblock">
+<div class="content">
+<img src="imagens/Capitulo%203/testing-integration.png" alt="Teste de integração" width="300" height="300">
+</div>
+</div>
+<div class="paragraph">
+<p>O teste de integração, também conhecido como teste de componente, é o processo de verificar as interações entre os componentes de software. Ele fará com que duas ou mais classes, por exemplo, sejam postas em funcionamento juntas. Devemos pensar que se individualmente elas funcionaram, quando colocadas juntas, elas devem continuar funcionando. Estratégias clássicas de teste de integração, como <em>top-down</em> e <em>bottom-up</em>, são frequentemente usadas com software estruturado hierarquicamente. Estratégias de integração modernas e sistemáticas são tipicamente direcionadas à arquitetura, o que envolve a integração gradual dos componentes ou subsistemas de software com base em segmentos funcionais identificados. O teste de integração geralmente é uma atividade contínua em cada estágio do desenvolvimento, durante o qual os engenheiros de software abstraem as perspectivas de nível inferior e concentram-se nas perspectivas do nível em que estão integrando. Para outros, além do software pequeno e simples, as estratégias de teste de integração incremental geralmente são preferidas para reunir todos os componentes de uma só vez - o que geralmente é chamado de teste <em>“big bang”</em>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teste_de_regressão_reteste">3.1.3. Teste de regressão (reteste)</h4>
+<div class="paragraph">
+<p>Cada vez que um novo módulo é adicionado como parte do teste de integração, o <em>software</em> se modifica. Novos caminhos de fluxo de dados são estabelecidos, nova E/S pode ocorrer e nova lógica de controle é acionada. Assim sendo, tudo o que havia sido previamente testado corre o risco de apresentarem problemas. Esse tipo de teste ajuda a garantir que modificações não introduzam algum comportamento indesejável ou erros adicionais.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_teste_de_sistema">3.2. Teste de sistema</h3>
+<div class="paragraph">
+<p>O teste do sistema está preocupado em testar o comportamento de um sistema inteiro definido pelo escopo de um projeto ou programa de desenvolvimento. De acordo com o ISTQB, no teste de sistema, o ambiente de teste deve corresponder o máximo possível ao objetivo final, ou o ambiente de produção, para minimizar que os riscos de falhas específicas de ambiente não serem encontradas durante o teste. Ele pode ser baseado em descrições de alto nível do comportamento do sistema, tais como especificação de riscos e/ou de requisitos, processos de negócios ou casos de uso. O teste do sistema é geralmente considerado apropriado para avaliar os requisitos não funcionais do sistema, ou seja a segurança, a velocidade, precisão e também a confiabilidade. Interfaces externas para outros aplicativos, utilitários, dispositivos de <em>hardware</em> ou os ambientes operacionais também são geralmente avaliados nesse nível. Uma equipe de teste independente é frequentemente responsável pelo teste de sistema.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_teste_de_aceitação">3.3. Teste de aceitação</h3>
+<div class="paragraph">
+<p>O teste de aceitação ou de aceite frequentemente é realizado pelo cliente ou por usuário do sistema; os interessados (<em>stakeholders</em>) também podem ser envolvidos.
+O objetivo desse teste é estabelecer a confiança no sistema, parte do sistema ou uma característica não específica do sistema. Procurar defeitos não é o principal foco. Ele pode avaliar a disponibilidade do sistema para entrar em produção, apesar de não ser necessariamente o último nível de teste, uma vez que, por exemplo, um teste de integração em larga escala pode ser feito após.
+As formas de teste de aceite incluem tipicamente os seguintes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Teste de aceitação pelo usuário</p>
+</li>
+<li>
+<p>Teste Operacional de Aceite</p>
+</li>
+<li>
+<p>Teste de aceite de contrato e regulamento</p>
+</li>
+<li>
+<p>Alfa e Beta Teste (ou teste no campo)</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Teste Alfa</dt>
+<dd>
+<p>Realizados pelos usuários - testes manuais. São testes realizados em um ambiente controlado pelo desenvolvedor que registra os problemas de uso e os erros que aconteceram.</p>
+</dd>
+<dt class="hdlist1">Teste Beta</dt>
+<dd>
+<p>Realizados pelos usuários mais usuários - testes manuais. Os testes são feitos no ambiente do usuário. Mais mais difícil para o desenvolvedor acompanhar uma vez que podem haver uma quantidade muito grande de usuários.</p>
+</dd>
+</dl>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Tecnicas">4. Técnicas de Teste</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_introdução_3">4.1. Introdução</h3>
+<div class="paragraph">
+<p>Esse capitulo vai &#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_o_que_são_técnicas_de_teste">4.2. O que são técnicas de teste</h3>
+<div class="paragraph">
+<p>As técnicas de teste fornecem as diretrizes sistemáticas para que sejam projetados
+testes eficientes. Testes eficientes são aqueles que conseguem:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>exercitar a lógica interna e as interfaces de cada componente de <em>software</em></p>
+</li>
+<li>
+<p>verificam as entradas e saídas dos programas usando dados um conjunto de dados
+de teste, de maneira que possam ser encontrados erros em funções ou métodos,
+comportamento indesejado ou desempenho inadequado.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Caixa Branca ( caixa aberta  - visualiza o código fonte - Teste de unidade, testes estáticos ( análise do código, sem executar-lo ) )</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Teste de métodos e Classes, Testes de comando de repetição, teste de condições</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Teste de cobertura</p>
+</li>
+<li>
+<p>Teste de Caminhos</p>
+</li>
+<li>
+<p>Teste de comandos</p>
+</li>
+<li>
+<p>Teste de condições</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Caixa Preta ( não vejo o interior - é baseado em entradas e saídas - Teste de integração, Teste de sistema, Teste de Aceitação, Teste Alfa, Teste Beta )
+Teste baseado em entradas e saídas de Cenários Macro</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Teste baseado em cenários</p>
+</li>
+<li>
+<p>Teste baseado em Casos de uso</p>
+</li>
+<li>
+<p>Análise de Valores limites</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Testes A/B</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Tipos">5. Quais são os tipos de teste</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tipos de Teste: o alvo do teste</p>
+</div>
+<div class="paragraph">
+<p>Um grupo de atividades de teste pode ser direcionado para verificar o sistema (ou uma parte do sistema) com base em um motivo ou alvo específico.
+Cada tipo de teste tem foco em um objetivo particular, que pode ser o teste de uma funcionalidade, a ser realizada pelo software; uma característica da qualidade não funcional, tal como a confiabilidade ou usabilidade, a estrutura ou arquitetura do software ou sistema; ou mudanças relacionadas, ex.: confirmar que os defeitos foram solucionados (teste de confirmação) e procurar por mudanças inesperadas (teste de regressão).
+Modelos do software podem ser elaborados e/ou usados no teste estrutural ou funcional. Por exemplo, para o teste funcional, um diagrama de fluxo de processo, um diagrama de transição de estados ou uma especificação do programa, e para teste estrutural um diagrama de controle de fluxo ou modelo de estrutura do menu.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Teste de funcionalidade</p>
+</li>
+<li>
+<p>Teste de interface</p>
+</li>
+<li>
+<p>Teste de desempenho</p>
+</li>
+<li>
+<p>Teste de usabilidade</p>
+</li>
+<li>
+<p>Teste de segurança</p>
+</li>
+<li>
+<p>Teste usuário</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_testes_de_usabilidade">5.1. Testes de usabilidade</h3>
+<div class="paragraph">
+<p>Os testes devem ser realizados independentemente do tamanho do projeto e da estrutura
+disponível, pois sempre revelam aspectos que influenciarão com mais ou menos profundidade
+o produto final. Os principais objetivos dos testes são:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Permitir que cada usuário realize a tarefa a que se propõe ao usar a interface,
+em um tempo razoável. Se a utilização é fácil, precisa, auto-explicativa,
+relativamente rápida, mas não atende a uma necessidades clara, não tem muita
+utilidade. Ou valor.</p>
+</li>
+<li>
+<p>Tornar o uso da interface o mais intuitivo possível. Quanto menos tempo o
+usuário leva para realizar seu objetivo no website, maior e seu grau de satisfação
+ com a interface.</p>
+</li>
+<li>
+<p>Verificar a atitude positiva ou negativa do usuário durante a experiência de uso.
+Neste caso, “atitude” se refere a percepções, sentimentos, opiniões do usuário,
+que podem ser verificadas por meio de entrevistas orais ou escritas.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>As pessoas tendem a realizar melhor as suas tarefas e objetivos ao usar uma interface quando esta os agrada de maneira geral e lhes é familiar. Estabelecer consenso na equipe de projeto ou manutenção evolutiva sobre os resultados esperados. Os testes podem diminuir as dúvidas e discordâncias sobre as soluções e decisões adotadas. Os objetivos de testes como os citados acima podem ser baseados em aspectos quantitativos, mas não se resumir a estatísticas sobre o uso e a satisfação do uso. É importante também considerar aspectos qualitativos, mais subjetivos, que compõem quadros mais completos do contexto de uso.</p>
+</div>
+<div class="paragraph">
+<p>Os testes de usabilidade fazem com que o desenvolvedor/testador fique junto ao usuário.
+O objetivo é aprender como ele realmente usa seu produto. O desenvolvedor escolhe
+algumas tarefas que ele precisa realizar e assiste e registra ele os locais em
+surgiram algum tipo de dificuldades. Este teste ajuda a criar hipóteses de melhoria
+do produto.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testes_de_usuário">5.2. Testes de usuário</h3>
+<div class="paragraph">
+<p>São testes onde os usuários ou clientes usam o <em>software</em> a fim de fornecer um <em>feedback</em>.
+Assim, eles experimentam o <em>software</em> para ver se gostam desse produto e verificam também se
+ele está em conformidade com a suas necessidades.</p>
+</div>
+<div class="paragraph">
+<p>De modo geral, os testes de usuário ajudam a verificar se a interface permite o uso fácil
+e intuitivo, se provê funcionalidades que os usuários valorizam e se
+proporciona, de modo geral, uma experiência de uso satisfatória.</p>
+</div>
+<div class="paragraph">
+<p>O teste de usuário é essencial, mesmo em sistemas abrangentes ou quando testes de
+ release tenham sido feitos. O motivo é que a influencia realizada pelo ambiente
+ de trabalho do usuário interfere muito sobre a confiabilidade, o desempenho, a
+ usabilidade e a robustez de um sistema, tendo em vista que para o desenvolvedor é
+ praticamente impossível replicar o ambiente de trabalho em que todos os possíveis
+ usuários estarão.</p>
+</div>
+<div class="paragraph">
+<p>Sobre o teste de aceitação é importante lembrar que os clientes querem usar o
+<em>software</em> assim que possível por causa dos benefícios que podem ser obtidos. Os
+testes de aceitação podem não terem obtido um bom resultado mas devido a uma séria
+de outros fatores, a adoção do produto pode começar mesmo assim.</p>
+</div>
+<div class="paragraph">
+<p>Podemos separar os testes de usuário em três categorias:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Teste Alfa</p>
+</li>
+<li>
+<p>Teste Beta</p>
+</li>
+<li>
+<p>Teste de aceitação</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Os testes de aceitação possuem seis estágios a saber:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Definir critérios de aceitação</p>
+</li>
+<li>
+<p>Planejar os testes de aceitação</p>
+</li>
+<li>
+<p>Derivar testes</p>
+</li>
+<li>
+<p>Executar testes</p>
+</li>
+<li>
+<p>Negociar resultados dos testes</p>
+</li>
+<li>
+<p>Rejeitar / aceitar o sistema</p>
+</li>
+</ol>
+</div>
+<div id="testeAB" class="imageblock">
+<div class="content">
+<img src="imagens/testesAB.png" alt="testeAB" width="300" height="200">
+</div>
+<div class="title">Figura 4. A mountain sunset</div>
+</div>
+<div class="paragraph">
+<p>As pesquisas atitudinais são focadas no que as pessoas falam que acreditam
+(por exemplo, ao responderem um formulário online ou em uma conversa dentro de
+um grupo focal (<em>focus group</em>)), enquanto as pesquisas comportamentais analisam
+o que as pessoas fazem (por exemplo, em um teste de usabilidade, ou em testes A/B).</p>
+</div>
+<div class="paragraph">
+<p><a href="https://brasil.uxdesign.cc/muito-além-do-teste-de-usabilidade-os-vários-tipos-de-pesquisas-com-usuários-em-ux-b91a6e15bc61" class="bare">https://brasil.uxdesign.cc/muito-além-do-teste-de-usabilidade-os-vários-tipos-de-pesquisas-com-usuários-em-ux-b91a6e15bc61</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_referencias">Referencias</h2>
+<div class="sectionbody">
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="PRESSMAN"></a>[PRESSMAN] PRESSMAN, Roger S. <strong>Engenharia de Software-8ª Edição (2006)</strong>. Ed. Mc Graw Hill, 2006.</p>
+</li>
+<li>
+<p><a id="SOMMERVILLE"></a>[SOMMERVILLE] SOMMERVILLE, Ian. <strong>Engenharia de Software-9ª Edição (2011)</strong>. Ed Person Education.</p>
+</li>
+<li>
+<p><a id="SWEBOK"></a>[SWEBOK] BOURQUE, Pierre et al. <strong><em>Guide to the software engineering body of knowledge (SWEBOK &#174;): Version 3.0</em></strong>. IEEE Computer Society Press, 2014.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2018-08-29 17:29:15 -03
+</div>
+</div>
+</body>
+</html>

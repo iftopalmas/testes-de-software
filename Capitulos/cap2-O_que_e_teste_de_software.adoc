@@ -1,0 +1,123 @@
+[#queeteste]
+== Uma visão geral sobre o que é teste de _software_
+:cap: Capitulo 2
+
+=== Introdução
+Esse capitulo tem o objetivo de passar uma ideia geral sobre os conceitos relacionados ao teste de software.
+
+==== Como esse capitulo está estruturado
+O presente capitulo possui quatro seções. Cada uma delas trata de um assunto específico,
+conforme a lista a seguir:
+
+- A seção <<conceitos>> traz os conceitos iniciais sobre testes. Esses conceitos são informações fundamentais se vocês está tendo seu primeiro contato com testes.
+- A seção <<objetivos>> é a responsável por apresentar qual é o propósito do teste de software.
+- A seção <<porquetestar>> tem como objetivo justificar porque os testes devem ser feitos.
+- A seção <<atividades>> tem alguns exercícios que o ajudaram a fixar melhor o conteúdo que foi apresentado.
+
+[#conceitos]
+=== Conceitos iniciais
+O teste de _software_ é uma atividade que tem o objetivo de verificar se os resultados obtidos através do uso do produto correspondem aos resultados esperados. Além disso, ela é responsável também por tentar fazer como que sistema que está sendo testado esteja livre de Defeitos.
+
+Roger Pressmann, diz que o *teste de _software_ faz parte de um processo amplo ao qual podemos chamar de  Verificação e Validação (V&V)*, sendo que por verificação estamos nos referindo a um conjunto de atividade que estão relacionadas com a garantia de que o _software_ "implementa corretamente uma função específica". Já a Validação tem como preocupação o atendimento os requisitos do cliente.
+
+Segundo Ian Sommerville <<SOMMERVILLE>>, o teste de _software_ é uma etapa dentro do ciclo de vida que *tem como objetivo descobrir os defeitos que um programa possui antes que ele entre em produção*, isto é antes de ser entregue para que os usuários comecem a utilizá-lo.
+
+Edsger Dijkstra, argumenta que *os testes apenas são capazes de mostrar a presença de erros e não a sua ausência*, pois é possível de usar uma entrada de dados de testes que não seja boa ou até mesmo esquecermos de testar alguma parte do sistema. Assim, os testes não conseguem demonstrar que não há defeitos ou que ele sempre se comportará da maneira prevista em qualquer situação.
+
+Podemos entender o teste é um processo independente, pois nem sempre quem desenvolve testará o _software_. Além disso, cumpre lembrar que número de tipos diferentes de teste varia tanto quanto as técnicas de desenvolvimento.
+
+. Envolve processos de inspeção e revisão, e testes do sistema.
+. Testes do sistema envolvem executar o sistema com casos de teste. São
+provenientes de especificações dos dados reais que deverão ser processados
+pelo sistema.
+. O teste é a atividade de V & V mais usada.
+
+==== Defeito x Erro x Falha
+É importante, antes de definirmos melhor o que é teste, diferenciar três termos . Há autores como <<PRESSMAN>> que afirmam que dentro da comunidade de Engenharia de Software, esse termos são tratados como sinônimos. Ele, no entanto, faz uma diferenciação entre erro e defeito usando o critério temporal. Assim, temos:
+
+- Erro: é qualquer problema encontrado antes que o software tenha sido entregue aos usuários finais.
+- Falha: é um problema que é encontrado somente após a entrega para os usuários finais.
+
+Por outro lado, a _International Software Testing Qualification Board_ link:https://www.istqb.org/[ISTQB], entidade que certifica os profissionais da área de teste, faz uma distinção maior, adicionando o termo defeito, alterando um pouco o significado de erro e falha e criando uma espécie de graduação:
+
+http://josebarbosa.com.br/?p=463
+https://glossary.istqb.org/search/defect
+
+- Defeito: é uma deficiência mecânica ou algorítmica que, se ativada, pode levar a uma falha. É uma inconsistência no software, algo que foi implementado de maneira incorreta. Ele ocorre em uma linha de código, como uma instrução errada ou um comando incorreto. O defeito é a causa de um erro, porém se uma linha de código que contém o defeito nunca executar, o defeito não vai provocar um erro.
+
+- Erro: Erro humano produzindo resultado incorreto. O erro evidencia o defeito, ou seja, quando há diferença entre o valor obtido e o valor esperado constitui um erro.
+
+- Falha: evento notável em que o sistema viola suas especificações. Ele é o resultado ou manifestação de um defeito ou erro.
+
+[NOTE]
+Neste material sempre usaremos erro e falha como sinônimos, mas o autor considera importe que você saiba que existem outras maneiras de interpretar esses termos.
+
+[#objetivos]
+=== Quais são os objetivos do teste de _software_?
+Em seu livro de Engenharia de Software, Roger Pressman elenca três objetivos
+principais, a saber:
+
+- Teste é um processo de execução de um programa com a finalidade de encontrar
+um erro
+- Um teste bem-sucedido é aquele que descobre um erro ainda não descoberto
+- Um bom caso de teste é aquele que tem alta probabilidade de encontrar um erro
+ainda não descoberto
+
+Isso posto, nos faz pensar que *estamos indo contra a visão inicial que alguns de nós poderíamos ter de que um teste bem-sucedido é aquele no qual não são encontrados erros.*
+
+Os profissionais que se dedicam a testar softwares são responsáveis por projetar
+testes que descubram diferentes tipos de erros. Isso deve ser feito de uma forma
+sistemática dentro de um ambiente em que há sempre uma pressão muito grande em
+relação ao produto que está sendo testado. Os testes devem ser os completos possíveis, mas eles contam com uma quantidade mínima de tempo e deve consumir o mínimo de esforço possível.
+
+[#porquetestar]
+=== Por que executar testes de _software_?
+
+O teste é importante porque os erros de _software_ podem ser caros ou até tornarem-se perigosos. Erros de _software_ podem causar perdas monetárias e humanas e a nossa história recente está cheia de exemplos.
+
+- O Voo 501 da Agência Espacial Européia Ariane 5 foi destruído 40 segundos após a decolagem (4 de junho de 1996). O protótipo de foguete de US $ 1 bilhão foi destruído devido a um bug no _software_ de orientação a bordo. Clique no link abaixo para ver como foi o lançamento e a destruição do foguete.
+
+video::gp_D8r-2hwk[youtube]
+
+// http://tryqa.com/what-is-software-testing/
+
+Podemos então dizer a grosso modo, que o teste de _software_ é necessário para detectar os bugs no _software_ e para testar se o _software_ atende aos requisitos do cliente. Isso ajuda a equipe de desenvolvimento a corrigir os erros e entregar um produto de boa qualidade.
+
+Há vários pontos no processo de desenvolvimento de _software_ em que o erro humano pode levar a um _software_ que não atende aos requisitos dos clientes. Alguns deles estão listados abaixo.
+
+- O cliente / pessoa que fornecer os requisitos em nome da organização do cliente pode não saber exatamente o que é necessário ou pode esquecer de fornecer alguns detalhes, o que pode levar à falta de recursos.
+
+- A pessoa que está coletando os requisitos pode interpretar erroneamente ou perder completamente um requisito quando documentá-los.
+
+- Durante a fase de design, se houver problemas no design, isso pode levar a erros no futuro
+
+- _Bugs_ podem ser introduzidos durante a fase de desenvolvimento durante o erro humano, falta de experiência, etc.
+
+- Os testadores podem perder erros durante a fase de testes devido a erro humano, falta de tempo, experiência insuficiente, etc.
+
+- Os clientes podem não ter a largura de banda para testar todos os recursos do produto e podem liberar o produto para seus usuários finais, o que pode levar os usuários finais a encontrar erros no aplicativo
+
+
+Um negócio e reputação de organizações depende da qualidade de seus produtos e, em alguns casos, até a receita pode depender das vendas de produtos de _software_.
+
+Os usuários podem preferir comprar um produto concorrente em um produto que tenha qualidade ruim e isso pode resultar em perda de receita para a organização.
+No mundo de hoje, a qualidade é uma das principais prioridades de qualquer organização.
+
+[#Atividades]
+=== Atividade
+
+- Organizar grupos com até 5 estudantes.
+- Cada um dos grupos deverá responder às seguintes perguntas:
+
+. *Explique por que um programa não precisa, necessariamente, ser completamente livre de livre de defeitos antes de ser entregue aos seus cliente.*
+. *Explique melhor a afirmação que diz que os testes podem detectar apenas a presença de erros e não a sua ausência.*
+. *Acesse os links a seguir e escolha qual desses erros foi em sua opinião o mais preocupante*
+https://www.guru99.com/software-testing-introduction-importance.html
+https://www.scientificamerican.com/article/pogue-5-most-embarrassing-software-bugs-in-history/
+
+- Os grupos terão 30 minutos para a discussão e elaboração das repostas.
+- No fim, todos os grupos deverão compartilhar suas respostas. Essa atividade vale 0,25 pontos na nota final.
+
+
+
+//

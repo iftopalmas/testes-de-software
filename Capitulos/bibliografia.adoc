@@ -1,0 +1,8 @@
+[bibliography]
+== Referencias
+
+- [[[PRESSMAN]]] PRESSMAN, Roger S. *Engenharia de Software-8ª Edição (2006)*. Ed. Mc Graw Hill, 2006.
+
+- [[[SOMMERVILLE]]] SOMMERVILLE, Ian. *Engenharia de Software-9ª Edição (2011)*. Ed Person Education.
+
+- [[[SWEBOK]]] BOURQUE, Pierre et al. *_Guide to the software engineering body of knowledge (SWEBOK (R)): Version 3.0_*. IEEE Computer Society Press, 2014.
