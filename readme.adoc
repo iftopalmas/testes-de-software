@@ -1,4 +1,4 @@
-[preface]
+//[preface]
 == Antes de começar é importante ler essa parte...
 
 //[NOTE]
