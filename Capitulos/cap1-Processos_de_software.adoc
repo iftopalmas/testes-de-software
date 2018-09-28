@@ -75,3 +75,5 @@ Do ponto de vista do cliente, os maiores erros são aqueles que deixam de satisf
 
 ==== Relação existente entre disciplinas de programação e os testes
 Os testes de integração de de unidade estão fortemente relacionados com ações de implementação quando queremos garantir um nível maior de qualidade ao produto que está sendo produzido. Pode-se testar desde métodos ou funções isoladamente até sistemas inteiros.
+
+// m

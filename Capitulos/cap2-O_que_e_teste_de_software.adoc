@@ -97,7 +97,6 @@ Há vários pontos no processo de desenvolvimento de _software_ em que o erro hu
 
 - Os clientes podem não ter a largura de banda para testar todos os recursos do produto e podem liberar o produto para seus usuários finais, o que pode levar os usuários finais a encontrar erros no aplicativo
 
-
 Um negócio e reputação de organizações depende da qualidade de seus produtos e, em alguns casos, até a receita pode depender das vendas de produtos de _software_.
 
 Os usuários podem preferir comprar um produto concorrente em um produto que tenha qualidade ruim e isso pode resultar em perda de receita para a organização.

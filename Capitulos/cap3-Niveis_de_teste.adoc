@@ -25,8 +25,8 @@ Medidas de teste de Software
 
 //Parei aqui
 
-[#Estagios]
-=== Niveis do teste
+//[#Estagios]
+//=== Niveis do teste
 
 
 [#Alvo]
