@@ -1,5 +1,18 @@
-== Antes de começar é importante ler essa parte...
+:lang: pt-BR
+:source-highlighter: highlightjs
+:imagesdir: imagens
+:allow-uri-read:
+:safe: unsafe
+:numbered:
+:listing-caption: Listagem
+:experimental:
+:toc-title: Sumário
+//:toclevels: 5
+:figure-caption: Figura
+:data-uri:
 
+= Testes de Software
+== Antes de começar é importante ler essa parte...
 //[NOTE]
 //Esse material é usado como apoio às aulas da disciplina de Testes de _software_
 //do Curso Superior de Tecnologia em Sistemas para WEB do Instituto Federal de Educação,

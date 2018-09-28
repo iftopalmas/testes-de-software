@@ -1,48 +1,11 @@
-++++
-<link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css">
-++++
-
-:appversion: 1.0.0
-:doctype: book
-:lang: pt-BR
-:keywords: Testes de Software
-:description: Material de apoio da disciplina Testes de Software
-:data-uri:
-:ascii-ids:
-//:gitrepo: https://github.com/edusantana/introducao-a-programacao-livro
-:chapter-label:
-:sectnums:
-:allow-uri-read:
-:imagesdir: imagens
-:safe: unsafe
-:icons: font
-
-// é possível usar um simblo obtido por um codigo unicode!
-:tip-caption: 💡
-:toc:
-:toc-title: Sumário
-:toclevels: 5
-:figure-caption: Figura
-
 = Summary
 
-//. link:Capitulos/prefacio.adoc[Chapter 1]
-. link:Capitulos/cap1-processos_de_software.adoc[Revisão]
-. link:Capitulos/cap2-O_que_e_teste_de_software.adoc[O que é teste de software?]
-. link:Capitulos/cap3-Niveis_de_teste.adoc[Niveis de teste segundo o SWEBOK]
-//... link:chapter-1/ARTICLE-1-2-1.adoc[Article 1.2.1]
-. link:Capitulos/cap4-Tecnicas_de_teste.adoc[Técnicas de teste]
-. link:Capitulos/cap5-Tipos_de_teste.adoc[Tipos de teste]
-. link:Capitulos/bibliografia.adoc[Bibliografia]
-.. Unfinished article
+. :link:readme.adoc[Introdução]
+. :link:Capitulos/cap1-processos_de_software.adoc[Breve revisão sobre processos de Software]
+. :link:Capitulos/cap2-O_que_e_teste_de_software.adoc[O que é teste de software?]
+. :link:Capitulos/cap3-Niveis_de_teste.adoc[Niveis de teste segundo o SWEBOK]
+. :link:Capitulos/cap4-Tecnicas_de_teste.adoc[Técnicas de Teste]
+. :link:Capitulos/cap5-Tipos_de_Teste.adoc[Tipos de teste]
+. :link:Capitulos/bibliografia.adoc[Bibliografia] 
+    . Unfinished article
 . Unfinished Chapter
-
-
-//include::Capitulos/prefacio.adoc[]
-//A:sectnums:
-//include::Capitulos/cap1-processos_de_software.adoc[]
-//include::Capitulos/cap2-O que_e_teste_de_software.adoc[]
-//include::Capitulos/cap3-Niveis_de_teste.adoc[]
-//include::Capitulos/cap4-Tecnicas_de_teste.adoc[]
-//include::Capitulos/cap5-Tipos_de_teste.adoc[]
-//include::Capitulos/bibliografia.adoc[]
