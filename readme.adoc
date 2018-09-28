@@ -7,13 +7,13 @@
 :listing-caption: Listagem
 :experimental:
 :toc-title: Sumário
-//:toclevels: 5
+:toclevels: 5
 :figure-caption: Figura
 :data-uri:
 
 = Testes de Software
 == Antes de começar é importante ler essa parte...
-Em primeiro lugar seja muito bem-vindo e muito obrigado por fazer a leitura desse material de apoio. 
+Em primeiro lugar seja muito bem-vindo e muito obrigado por fazer a leitura desse material de apoio.
 //[NOTE]
 //Esse material é usado como apoio às aulas da disciplina de Testes de _software_
 //do Curso Superior de Tecnologia em Sistemas para WEB do Instituto Federal de Educação,
