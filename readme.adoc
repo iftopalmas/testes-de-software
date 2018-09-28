@@ -47,10 +47,10 @@ diversos aspectos da engenharia de _software_.
 
 Com base nisso, o conteúdo disponível nesse material está assim dividido:
 
-- O capitulo <<Revisão>> tem o objetivo de posicionar as atividades de teste de software dentre as demais atividades básicas do ciclo de desenvolvimento de software.
+- O capitulo :link:Capitulos/cap1-processos_de_software.adoc[Breve revisão sobre processos de Software] tem o objetivo de posicionar as atividades de teste de software dentre as demais atividades básicas do ciclo de desenvolvimento de software.
 As interações entre o teste e análise, projeto e implementação são apresentadas com o objetivo de auxiliar o estudante em um primeiro contato e entender em que momento elas ocorrem. Trata-se de capitulo informativo que não está relacionado diretamente com a ementa do curso.
 
-- O capitulo <<queeteste>> apresenta o conceito sobre teste e reforça sua importância na obtenção de um software que atenda melhor aos requisitos do cliente e que seja construído da melhor forma possível. Aqui é onde o estudo relativo aos testes começa de fato.
+- O segundo capitulo, chamado  :link:Capitulos/cap2-O_que_e_teste_de_software.adoc[O que é teste de software?], apresenta o conceito sobre teste e reforça sua importância na obtenção de um software que atenda melhor aos requisitos do cliente e que seja construído da melhor forma possível. Aqui é onde o estudo relativo aos testes começa de fato.
 
 //A disciplina de testes de software tem o objetivo de
 
