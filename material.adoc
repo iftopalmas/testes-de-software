@@ -13,7 +13,7 @@ Mauro Henrique Lima de Boni - mauro@ifto.edu.br
 :appversion: 1.0.0
 :doctype: book
 :lang: pt-BR
-:keywords:    Testes de Software
+:keywords: Testes de Software
 :description: Material de apoio da disciplina Testes de Software
 :ascii-ids:
 //:gitrepo: https://github.com/edusantana/introducao-a-programacao-livro

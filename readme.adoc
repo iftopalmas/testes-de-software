@@ -1,4 +1,10 @@
+:keywords: Testes de Software
+:description: Material de apoio da disciplina Testes de Software
+:ascii-ids:
+:doctype: book
 :lang: pt-BR
+:chapter-label:
+:sectnums:
 :source-highlighter: highlightjs
 :imagesdir: imagens
 :allow-uri-read:
