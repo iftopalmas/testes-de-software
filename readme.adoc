@@ -13,6 +13,7 @@
 
 = Testes de Software
 == Antes de começar é importante ler essa parte...
+Em primeiro lugar seja muito bem-vindo e muito obrigado por fazer a leitura desse material de apoio. 
 //[NOTE]
 //Esse material é usado como apoio às aulas da disciplina de Testes de _software_
 //do Curso Superior de Tecnologia em Sistemas para WEB do Instituto Federal de Educação,
@@ -20,7 +21,7 @@
 //outras fontes. Ele é apenas um resumo para auxiliar o estudante.
 
 === Qual o propósito deste material
-Este material de apoio é destinado inicialmente aos estudantes do curso Superior de Tecnologia em Sistemas para Internet do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins - IFTO, mas também pode ser usado por discentes de outros cursos tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação e Engenharia de Software. Ele tem o objetivo de apresentar os principais conceitos relacionados a testes de software, seus níveis, seus objetivos, como os testes são projetados e executados. De forma esse material pretensão de cobrir todos os assuntos relacionados à área de testes, que é muito extensa. Ele também não substitui livros de Engenharia de Software ou outros livros técnicos relacionados. A proposta é que ele sirva como um guia inicial para aqueles que estão dando os primeiros passos nessa área que é tão importante para o desenvolvimento de _software_.
+Em primeiro lugar seja muito bem-vindo e muito obrigado por fazer a leitura desse material de apoio. Ele é destinado inicialmente aos estudantes do curso Superior de Tecnologia em Sistemas para Internet do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins - IFTO, mas também pode ser usado por discentes de outros cursos tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação e Engenharia de Software. Ele tem o objetivo de apresentar os principais conceitos relacionados a testes de software, seus níveis, seus objetivos, como os testes são projetados e executados. De forma esse material pretensão de cobrir todos os assuntos relacionados à área de testes, que é muito extensa. Ele também não substitui livros de Engenharia de Software ou outros livros técnicos relacionados. A proposta é que ele sirva como um guia inicial para aqueles que estão dando os primeiros passos nessa área que é tão importante para o desenvolvimento de _software_.
 
 
 [TIP]
