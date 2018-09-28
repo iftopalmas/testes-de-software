@@ -18,8 +18,9 @@
 :data-uri:
 
 = Testes de Software
+
 == Antes de começar é importante ler essa parte...
-Em primeiro lugar seja muito bem-vindo e muito obrigado por fazer a leitura desse material de apoio.
+Em primeiro lugar seja muito bem-vindo e muito obrigado por sua confiança por iniciar a leitura desse material. Meu nome é Mauro Henrique Lima de Boni, sou professor do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins - IFTO, Campus Palmas. Sou Tecnólogo em Processamento de Dados, curso que concluí em 1995 ( pois é, faz algum tempo...  ). Depois disso fiz uma Especialização em Desenvolvimento de Software Orientado ao Objeto e Mestrado em Engenharia Biomédica. Por tudo isso, me considero uma pessoa que gosta de aprender!
 //[NOTE]
 //Esse material é usado como apoio às aulas da disciplina de Testes de _software_
 //do Curso Superior de Tecnologia em Sistemas para WEB do Instituto Federal de Educação,
