@@ -1,6 +1,6 @@
 [#Tecnicas]
 == Técnicas de Teste
-:cap: Capitulo 4
+:cap: Capitulo4
 
 === Introdução
 Esse capitulo vai ...

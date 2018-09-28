@@ -1,6 +1,6 @@
 [#queeteste]
 == Uma visão geral sobre o que é teste de _software_
-:cap: Capitulo 2
+:cap: Capitulo2
 
 === Introdução
 Esse capitulo tem o objetivo de passar uma ideia geral sobre os conceitos relacionados ao teste de software.

@@ -1,6 +1,6 @@
 [#Niveis]
 == Níveis de teste de acordo com o SWEBOK
-:cap: Capitulo 3
+:cap: Capitulo3
 
 === Introdução
 Esse capitulo tem o objetivo de apresentar os níveis de teste de acordo com o _Guide to the Software Engineering Body of Knowledge_ (SWEBOK) <<SWEBOK>>, fornecendo assim uma ideia geral sobre os conceitos relacionados ao teste de software.
