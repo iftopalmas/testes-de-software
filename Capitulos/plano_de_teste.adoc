@@ -1,0 +1,217 @@
+== Como criar um plano de teste
+
+=== O que é um plano de teste?
+
+Um plano de teste é um documento detalhado que descreve a estratégia de teste, os objetivos do teste, os recursos (mão de obra, software, hardware) necessários para testes, cronograma de testes, estimativa de testes e resultados finais do teste.
+
+O plano de teste serve como um plano para conduzir atividades de teste de software como um processo definido que é minuciosamente monitorado e controlado pelo gerente de teste.
+
+Vamos começar com o seguinte cenário
+
+Em uma reunião, você deseja discutir o Plano de Teste com os membros da equipe, mas eles não estão interessados ​​-.
+
+Nesse caso, o que você fará? Selecione sua resposta como figura a seguir
+
+A) Sou Gerente faço tudo como falei
+
+ B) OK, vamos explicar por que precisamos de um plano de teste
+
+Importância do Plano de Teste
+
+Fazer o plano de teste tem vários benefícios
+
+O Plano de Teste nos ajuda a determinar o esforço necessário para validar a qualidade do aplicativo em teste. Ajude as pessoas de fora da equipe de teste, como desenvolvedores, gerentes de negócios e clientes, a entender os detalhes do teste.
+
+Plano de teste orienta nosso pensamento. É como um livro de regras, que precisa ser seguido.
+
+Aspectos importantes como estimativa de teste, escopo de teste, Estratégia de Teste são documentados no Plano de Teste, para que possam ser revisados ​​pela Equipe de Gerenciamento e reutilizados para outros projetos.
+
+=== Como escrever um plano de teste
+
+Você já sabe que criar um Plano de Teste é a tarefa mais importante do Processo de Gerenciamento de Teste. Siga os sete passos abaixo para criar um plano de teste de acordo com o IEEE 829
+
+. Analise o produto
+. Projetar a estratégia de teste
+. Definir os objetivos do teste
+. Definir critérios de teste
+. Planejamento de recursos
+. Planejar ambiente de teste
+. Agenda e Estimativa
+. Determinar os resultados do teste
+
+Etapa 1) Analise o produto
+
+Como você pode testar um produto sem qualquer informação sobre ele? A resposta é impossível. Você deve aprender um produto completamente antes de testá-lo.
+
+O produto em teste é o site bancário Guru99. Você deve pesquisar os clientes e os usuários finais para conhecer suas necessidades e expectativas a partir do aplicativo
+
+Quem vai usar o site?
+Para que isso é usado?
+Como vai funcionar?
+O que são software / hardware que o produto usa?
+Você pode usar a seguinte abordagem para analisar o site
+
+Agora, vamos aplicar o conhecimento acima a um produto real: analise o site bancário http://demo.guru99.com/V4.
+
+Você deve dar uma olhada neste site e também revisar a documentação do produto. A revisão da documentação do produto ajuda você a entender todos os recursos do site, bem como a usá-lo. Se você não está claro sobre nenhum item, você pode entrevistar o cliente, desenvolvedor, designer para obter mais informações.
+
+Etapa 2) Desenvolver a estratégia de teste
+
+A estratégia de teste é um passo crítico na criação de um plano de teste. Um documento de estratégia de teste, é um documento de alto nível, geralmente desenvolvido pelo Test Manager. Este documento define:
+
+Os objetivos de teste do projeto e os meios para alcançá-los Determina o esforço e os custos do teste
+De volta ao seu projeto, você precisa desenvolver uma estratégia de teste para testar esse site bancário. Você deve seguir os passos abaixo
+
+Etapa 2.1) Definir o escopo do teste
+
+Antes do início de qualquer atividade de teste, o escopo do teste deve ser conhecido. Você deve pensar muito sobre isso.
+
+Os componentes do sistema a serem testados (hardware, software, middleware, etc.) são definidos como "no escopo".
+
+Os componentes do sistema que não serão testados também precisam ser claramente definidos como "fora do escopo".
+Definir o escopo do seu projeto de teste é muito importante para todas as partes interessadas. Um escopo preciso ajuda você
+
+Dê a todos uma confiança e informações precisas dos testes que você está fazendo
+
+Todos os membros do projeto terão uma compreensão clara sobre o que é testado e o que não é
+
+Como você determina o escopo do seu projeto?
+
+Para determinar o escopo, você precisa -
+
+- Exigência do cliente precisa
+- Orçamento do projeto
+- Especificação do produto
+- Habilidades e talento da sua equipe de teste
+- Agora deve definir claramente o "escopo" e "fora do escopo" do teste.
+
+Como as especificações de requisitos de software, o projeto Guru99 Bank apenas se concentra em testar todas as funções e interface externa do site Guru99 Bank (em teste de escopo)
+Testes não funcionais como estresse, desempenho ou banco de dados lógico atualmente não serão testados. (fora do escopo)
+Cenário do Problema
+
+O cliente quer que você teste sua API. Mas o orçamento do projeto não permite fazê-lo. Nesse caso, o que você fará?
+
+Bem, nesse caso, você precisa convencer o cliente de que o teste do Api é um trabalho extra e consumirá recursos significativos. Dê a ele dados que apóiem ​​seus fatos. Diga-lhe se o teste de Api está incluído no escopo, o orçamento aumentará em XYZ.
+
+O cliente concorda e, consequentemente, os novos escopos, itens fora do escopo são
+
+Itens no escopo: Teste funcional, teste de API
+Itens fora do escopo: teste de banco de dados, hardware e quaisquer outras interfaces externas
+
+Etapa 2.2) Identifique o tipo de teste
+
+Um tipo de teste é um procedimento de teste padrão que fornece um resultado de teste esperado.
+
+Cada tipo de teste é formulado para identificar um tipo específico de bugs do produto. Porém, todos os tipos de testes visam atingir um objetivo comum: "Detecção antecipada de todos os defeitos antes de liberar o produto para o cliente"
+
+Os tipos de teste comumente usados ​​são descritos como figura a seguir
+
+Há toneladas de tipos de teste para testar produtos de software. Sua equipe não pode ter esforços suficientes para lidar com todos os tipos de testes. Como Test Manager, você deve definir a prioridade dos tipos de teste
+
+Quais tipos de teste devem ser focados para testes de aplicativos da Web?
+Quais tipos de teste devem ser ignorados para economizar custos?
+Agora vamos praticar com seu projeto. O produto que você quer testar é um site bancário.
+
+Quais tipos de teste você deve focar neste caso?
+
+Selecione tudo que se aplica
+ A) Testes Unitários
+
+ B) Teste de API
+
+ C) Teste de Integração
+
+ D) Teste do sistema
+
+ E) Instalar / Desinstalar Testes
+
+ F) Teste Agile
+
+Etapa 2.3) Risco e questões do documento
+
+O risco é um evento incerto do futuro com uma probabilidade de ocorrência e um potencial de perda. Quando o risco realmente acontece, torna-se o "problema".
+
+No artigo Risk Analysis and Solution, você já aprendeu sobre a análise "Risco" em detalhes e identificou riscos potenciais no projeto.
+
+No Plano de Teste, você documentará esses riscos
+
+[%autowidth]
+[cols=2*,options="header"]
+|===
+|Risco
+|Como mitigar
+
+|O membro da equipe não possui as habilidades necessárias para o teste do website.
+|Planeje um curso de treinamento para capacitar seus membros
+
+|O cronograma do projeto é muito apertado; é difícil concluir esse projeto no prazo
+|Definir prioridade de teste para cada uma das atividades de teste.
+
+|Gerente de teste tem pouca habilidade de gerenciamento
+|Treinamento de liderança de planejamento para gerente
+
+|A falta de cooperação afeta negativamente a produtividade de seus funcionários
+|Incentive cada membro da equipe em sua tarefa e inspire-os a maiores esforços.
+
+|Estimativa incorreta do orçamento e excesso de custos
+|Estabeleça o escopo antes de começar o trabalho, preste muita atenção ao planejamento do projeto e acompanhe e avalie constantemente o progresso
+
+|===
+
+Mitigação de Risco
+
+O membro da equipe não possui as habilidades necessárias para o teste do website. Planeje um curso de treinamento para capacitar seus membros
+
+
+
+
+A falta de cooperação afeta negativamente a produtividade de seus funcionários
+
+
+
+
+
+
+
+
+
+
+Etapa 2.4) Criar Logística de Teste
+
+ Em Test Logistics, o Test Manager deve responder às seguintes perguntas:
+
+Quem vai testar?
+Quando o teste ocorrerá?
+Quem vai testar?
+
+Você pode não saber os nomes exatos do testador que testará, mas o tipo de testador pode ser definido.
+
+Para selecionar o membro certo para a tarefa especificada, você deve considerar se sua habilidade está qualificada para a tarefa ou não, também estimar o orçamento do projeto. Selecionar um membro errado para a tarefa pode causar falha ou atraso no projeto.
+
+A pessoa com as seguintes habilidades é a mais ideal para realizar testes de software:
+
+Capacidade de entender o ponto de vista dos clientes
+Forte desejo de qualidade
+Atenção aos detalhes
+Boa cooperação
+Em seu projeto, o membro que assumirá a execução do teste será o testador. Com base no orçamento do projeto, você pode escolher membro de origem ou terceirizar como testador.
+
+Quando o teste ocorrerá?
+
+As atividades de teste devem ser combinadas com atividades de desenvolvimento associadas.
+
+Você começará a testar quando tiver todos os itens necessários mostrados na figura a seguir
+
+Etapa 3) Definir o objetivo do teste
+
+Objetivo do Teste é o objetivo geral e a realização da execução do teste. O objetivo do teste é encontrar tantos defeitos de software quanto possível; Certifique-se de que o software em teste esteja livre de bugs antes do lançamento.
+
+Para definir os objetivos do teste, você deve executar 2 etapas a seguir
+
+Liste todos os recursos do software (funcionalidade, desempenho, GUI ...) que podem precisar ser testados.
+Defina o alvo ou o objetivo do teste com base nos recursos acima
+Vamos aplicar estas etapas para encontrar o objetivo de teste do seu projeto de teste do Guru99 Bank
+
+Você pode escolher o método "TOP-DOWN" para encontrar os recursos do website que precisam ser testados. Neste método, você divide o aplicativo em teste para componente e subcomponente.
+
+No tópico anterior, você já analisou as especificações de requisitos e percorreu o site, para poder criar um mapa mental para encontrar os recursos do site da seguinte forma

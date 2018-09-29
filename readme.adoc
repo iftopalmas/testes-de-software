@@ -59,6 +59,7 @@ As interações entre o teste e análise, projeto e implementação são apresen
 
 - O segundo capitulo, chamado  :link:Capitulos/cap2-O_que_e_teste_de_software.adoc[O que é teste de software?], apresenta o conceito sobre teste e reforça sua importância na obtenção de um software que atenda melhor aos requisitos do cliente e que seja construído da melhor forma possível. Aqui é onde o estudo relativo aos testes começa de fato.
 
+- No terceiro capitulo, :link:Capitulos/cap3-Niveis_de_teste.adoc[Niveis de teste segundo o SWEBOK], a divisão dos níveis de teste em alvo e objetivo é apresentada. Essa divisão ... O capitulo fala ainda sobre uma estratégia de teste genérica que pode ser usada.
 //A disciplina de testes de software tem o objetivo de
 
 //É recomendado que o estudante, que não se limite à leitura e ao conteúdo deste material. Pesquise na internet outros materiais e leia outros livros e faça todos os exercícios propostos. Programação, assim como matemática, requer muito exercício, muita prática. Como mencionado anteriormente, a programação de computadores é uma das subáreas mais importantes da carreira que você escolheu seguir. Boa parte das disciplinas do seu curso depende do conhecimento adquirido em Introdução à Programação. Portanto, dedique o máximo que puder ao aprendizado de uma área que vai permiti-lo transformar sonhos em realidade.

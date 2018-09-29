@@ -6,6 +6,7 @@
 . :link:Capitulos/cap3-Niveis_de_teste.adoc[Niveis de teste segundo o SWEBOK]
 . :link:Capitulos/cap4-Tecnicas_de_teste.adoc[Técnicas de Teste]
 . :link:Capitulos/cap5-Tipos_de_Teste.adoc[Tipos de teste]
+. :link:Capitulos/plano_de_teste.adoc[Plano de teste]
 . :link:Capitulos/bibliografia.adoc[Bibliografia]
     . Unfinished article
 . Unfinished Chapter
