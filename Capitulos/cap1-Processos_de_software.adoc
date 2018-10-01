@@ -1,6 +1,9 @@
+:cap: Capitulo1
+:imagesdir: ../imagens/{cap}/
+
 [#Revisão]
 == As atividades do processo de _software_ e os testes
-:cap: Capitulo 1
+
 
 === Introdução
 Esse capitulo tem como objetivos: fazer uma breve revisão sobre as atividades do processo de software, fornecer ao estudante uma ideia geral de onde os testes de software estão inseridos dentro do processo de desenvolvimento e realizar  algumas conexões entre essa disciplina e outras do curso, sobretudo Analise de Sistemas, Projeto de Sistemas, Programação para WEB II.
@@ -45,7 +48,7 @@ _software_ estão organizadas. Resumidamente, tudo depende do paradigma que est�
 //[link=https://cdn-images-1.medium.com/max/1200/1*5vlem2hirY1jr_jXt8-QZA.png]
 
 //image::images/{cap}/
-image::{cap}/Modelo-cascata.png[modeloCascata,600,400]
+image::Modelo-cascata.png[modeloCascata,600,400]
 //image::Modelo-cascata.png[modeloCascata,600,400]
 
 Antes de mais nada é importante lembrar que o esse modelo, que pode ser chamado de ciclo de vida clássico, que segue uma abordagem sistemática e sequencial pode ser usado em cenários em os requisitos são bem entendidos ou que mudam pouco. Esse é o paradigma mais antigo da Engenharia de _software_, tendo provavelmente sido introduzido por engenheiros de outras áreas.
@@ -60,7 +63,7 @@ Segundo Pressman<<PRESSMAN>>, há muitas situações em que os requisitos inicia
 [#desenvolvimentoIncremental]
 .Exemplo do modelo incremental
 //[link=https://cdn-images-1.medium.com/max/1200/1*5vlem2hirY1jr_jXt8-QZA.png]
-image::{cap}/desenvolvimentoincremental2.png[desenvolvimentoIncremental,600,400]
+image::desenvolvimentoincremental2.png[desenvolvimentoIncremental,600,400]
 
 O modelo incremental é mais flexível que o modelo cascata. Tudo começa com um esboço do sistema. Uma vez que esse esboço seja feito é possível passar para a próxima atividade que intercala especificação, desenvolvimento e validação. Isso significa que a parir do esboço é possível especificar os requisitos, aplicar técnicas de projeto e fazer a implementação e realizar a validação. Essas validações permitem que sejam entregues versões intermediárias que são na verdade um produto operacional.
 

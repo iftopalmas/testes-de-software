@@ -1,6 +1,9 @@
+:cap: Capitulo3
+:imagesdir: ../imagens/{cap}/
+
 [#Niveis]
 == Níveis de teste de acordo com o SWEBOK
-:cap: Capitulo3
+
 
 === Introdução
 Esse capitulo tem o objetivo de apresentar os níveis de teste de acordo com o _Guide to the Software Engineering Body of Knowledge_ (SWEBOK) <<SWEBOK>>, fornecendo assim uma ideia geral sobre os conceitos relacionados ao teste de software.
@@ -46,7 +49,7 @@ O TDD é uma abordagem para o desenvolvimento de programas em que se intercalam 
 [#tdd]
 .O ciclo do TDD
 //[link=https://cdn-images-1.medium.com/max/1200/1*5vlem2hirY1jr_jXt8-QZA.png]
-image::{cap}/tdd.png[testeAB,600,400]
+image::tdd.png[testeAB,600,400]
 
 O ciclo de desenvolvimento usando o TDD envolve antes de tudo uma mudança no paradigma ao qual o programador está acostumando. Ao invés de começar a escrever a funcionalidade a ser incrementada, ele escreve um teste. A sequencia de passos do TDD pode ser explicada assim:
 
@@ -70,7 +73,7 @@ Depuração simplificada::: Quando um teste falhar, deve ser óbvio onde está o
 Documentação de sistema::: Os próprios testes são uma forma de documentação que descreve o que o código deve estar fazendo.
 
 ==== Testes de integração
-image::{cap}/testing-integration.png[Teste de integração,300,300]
+image::testing-integration.png[Teste de integração,300,300]
 
 O teste de integração, também conhecido como teste de componente, é o processo de verificar as interações entre os componentes de software. Ele fará com que duas ou mais classes, por exemplo, sejam postas em funcionamento juntas. Devemos pensar que se individualmente elas funcionaram, quando colocadas juntas, elas devem continuar funcionando. Estratégias clássicas de teste de integração, como _top-down_ e _bottom-up_, são frequentemente usadas com software estruturado hierarquicamente. Estratégias de integração modernas e sistemáticas são tipicamente direcionadas à arquitetura, o que envolve a integração gradual dos componentes ou subsistemas de software com base em segmentos funcionais identificados. O teste de integração geralmente é uma atividade contínua em cada estágio do desenvolvimento, durante o qual os engenheiros de software abstraem as perspectivas de nível inferior e concentram-se nas perspectivas do nível em que estão integrando. Para outros, além do software pequeno e simples, as estratégias de teste de integração incremental geralmente são preferidas para reunir todos os componentes de uma só vez - o que geralmente é chamado de teste _“big bang”_.
 

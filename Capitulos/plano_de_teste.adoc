@@ -204,7 +204,7 @@ Você começará a testar quando tiver todos os itens necessários mostrados na 
 
 Etapa 3) Definir o objetivo do teste
 
-Objetivo do Teste é o objetivo geral e a realização da execução do teste. O objetivo do teste é encontrar tantos defeitos de software quanto possível; Certifique-se de que o software em teste esteja livre de bugs antes do lançamento.
+Objetivo do Teste é o objetivo geral e a representa a sua execução. O objetivo do teste é encontrar tantos defeitos de software quanto possível; Certifique-se de que o software em teste esteja livre de bugs antes do lançamento.
 
 Para definir os objetivos do teste, você deve executar 2 etapas a seguir
 
@@ -215,3 +215,17 @@ Vamos aplicar estas etapas para encontrar o objetivo de teste do seu projeto de 
 Você pode escolher o método "TOP-DOWN" para encontrar os recursos do website que precisam ser testados. Neste método, você divide o aplicativo em teste para componente e subcomponente.
 
 No tópico anterior, você já analisou as especificações de requisitos e percorreu o site, para poder criar um mapa mental para encontrar os recursos do site da seguinte forma
+
+
+Esta figura mostra todos os recursos que o site do Guru99 pode ter.
+
+Com base nos recursos acima, você pode definir o Objetivo de Teste do projeto Guru99 da seguinte forma
+
+. Verifique se a funcionalidade do site Guru99 (Conta, Depósito ...) está funcionando como esperado sem nenhum erro ou bugs no ambiente de negócios real
+
+. Verifique se a interface externa do site, como a interface do usuário, está funcionando como esperado e atende a necessidade do cliente
+
+. Verifique a usabilidade do site. Essas funcionalidades são convenientes para o usuário ou não?
+
+//Link para o original
+//https://www.guru99.com/what-everybody-ought-to-know-about-test-planing.html
