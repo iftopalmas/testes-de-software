@@ -1,6 +1,6 @@
 = Summary
 
-. :link:readme.adoc[Introdução]
+//. :link:readme.adoc[Introdução]
 . :link:Capitulos/cap1-processos_de_software.adoc[Breve revisão sobre processos de Software]
 . :link:Capitulos/cap2-O_que_e_teste_de_software.adoc[O que é teste de software?]
 . :link:Capitulos/cap3-Niveis_de_teste.adoc[Niveis de teste segundo o SWEBOK]
