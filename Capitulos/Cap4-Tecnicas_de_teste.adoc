@@ -9,15 +9,13 @@ Esse capitulo vai ...
 Um dos objetivos do teste é detectar tantas falhas quanto possível. As técnicas de teste fornecem as diretrizes sistemáticas para que sejam projetados testes eficientes. Testes eficientes são aqueles que conseguem:
 
 - exercitar a lógica interna e as interfaces de cada componente de _software_
-- verificam as entradas e saídas dos programas usando dados um conjunto de dados
-de teste, de maneira que possam ser encontrados erros em funções ou métodos,
-comportamento indesejado ou desempenho inadequado.
+- verificam as entradas e saídas dos programas usando dados um conjunto de dados de teste, de maneira que possam ser encontrados erros em funções ou métodos, comportamento indesejado ou desempenho inadequado.
 
 Essas técnicas tentam “quebrar” um programa sendo o mais sistemático possível na identificação de entradas que produzirão comportamentos representativos de programas; por exemplo, considerando subclasses do domínio de entrada, cenários, estados e fluxos de dados.
 
 A classificação das técnicas de teste apresentadas pelo SWEBOK é baseada em como os testes são gerados: da intuição e experiência do engenheiro de software, as especificações, a estrutura do código, as falhas reais ou imaginadas a serem descobertas, uso previsto, modelos ou a natureza do aplicativo. Uma categoria lida com o uso combinado de duas ou mais técnicas.
 
-Às vezes, essas técnicas são classificadas como caixa branca (também chamada de caixa de vidro), se os testes forem baseados em informações sobre como o software foi projetado ou codificado ou como caixa preta se os casos de teste dependerem apenas da entrada / saída comportamento do software.
+Às vezes, essas técnicas são classificadas como caixa branca (também chamada de caixa de vidro), se os testes forem baseados em informações sobre como o software foi projetado ou codificado ou como caixa preta se os casos de teste dependerem apenas da entrada / saída do software. Essas técnicas também pode ser referenciadas como testes estruturais e testes funcionais respectivamente.
 
 
 As técnicas de teste fornecem as diretrizes sistemáticas para que sejam projetados testes eficientes. Testes eficientes são aqueles que conseguem:
@@ -29,7 +27,21 @@ comportamento indesejado ou desempenho inadequado.
 
 A lista a seguir inclui as técnicas de teste que são comumente usadas, mas alguns profissionais dependem de algumas técnicas mais do que outras.
 
-* Caixa Branca ( caixa aberta  - visualiza o código fonte - Teste de unidade, testes estáticos ( análise do código, sem executar-lo ) ) Dentro dessa categoria de teste de software, o testador tem acesso ao código fonte da aplicação e pode construir códigos para efetuar linker(?) de componentes. Essa técnica adota critérios para a geração dos casos de teste com a finalidade de encontrar defeitos nas estruturas internas no software, através de situação que exercitem adequadamente todas as estruturas utilizadas na codificação.
+* Caixa Branca - Este teste também é chamado de teste de caixa vidro. Segundo <<PRESSMAN>>, ele é uma filosofia de projeto de casos de teste que usa a estrutura de controle descrita como parte do projeto ao nível de componentes para derivar casos de teste. Usando métodos de teste caixa-branca, o engenheiro de software pode derivar casos de testes que
+
+- garantem que todos os caminhos independentes de um módulo tenham sido exercitados pelo menos uma vez
+
+- exercitem todas as decisões lógicas em seus lados verdadeiro e falso
+
+- executam todos os ciclos nos seus limites e dentro de seus intervalos operacionais
+
+- exercitem as estruturas de dados internas para garantir a sua validade.
+
+
+
+
+
+( caixa aberta  - visualiza o código fonte - Teste de unidade, testes estáticos ( análise do código, sem executar-lo ) ) Dentro dessa categoria de teste de software, o testador tem acesso ao código fonte da aplicação e pode construir códigos para efetuar linker(?) de componentes. Essa técnica adota critérios para a geração dos casos de teste com a finalidade de encontrar defeitos nas estruturas internas no software, através de situação que exercitem adequadamente todas as estruturas utilizadas na codificação.
 
 Esse tipo de teste é desenvolvido analisando-se o código-fonte e elaborando os casos de teste que possam cobrir todas as possibilidades do programa.
 
