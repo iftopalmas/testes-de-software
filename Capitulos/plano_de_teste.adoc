@@ -2,7 +2,7 @@
 
 === O que é um plano de teste?
 
-Um plano de teste é um documento que descreve a estratégia de teste, os objetivos do teste, os recursos (mão de obra, software, hardware) necessários para testes, cronograma de aplicação dos testes e ainda os resultados finais do teste.
+Segundo o ISTQB, o plano de teste é um documento que descreve  o escopo, a abordagem, os recursos e o cronograma das atividades de teste. Ele identifica, os itens de teste, as características que serão testadas, as tarefas de teste, quem fará cada tarefa, o grau de independência do testador, o ambiente de teste, as técnicas de design de teste e os critérios de entrada e saída a serem usados e a justificativa das escolhas além de identificar riscos que exijam planejamento de contingência.
 
 O plano de teste serve como um plano para conduzir atividades de teste de software como um processo definido que é minuciosamente monitorado e controlado pelo gerente de teste.
 
@@ -233,6 +233,18 @@ Exemplo: Sua equipe já realizou as execuções de teste. Eles relatam o resulta
 
 No caso acima, a taxa de execução é obrigatória é de 100%, mas a equipe de teste concluiu apenas 90% dos casos de teste. Isso significa que a taxa de execução não está satisfeita, portanto, NÃO confirme os critérios de saída
 
+=== Diretrizes do plano de teste
+// link para o original
+//http://softwaretestingfundamentals.com/test-plan/
+. Faça o plano conciso. Evite redundância e supérfluo. Se você acha que não precisa de uma seção mencionada no modelo acima, vá em frente e exclua essa seção no seu plano de teste.
+
+. Seja específico. Por exemplo, quando você especifica um sistema operacional como uma propriedade de um ambiente de teste, mencione também o OS Edition / Version, não apenas o nome do sistema operacional.
+
+. Faça uso de listas e tabelas sempre que possível. Evite parágrafos longos.
+
+. Faça com que o plano de teste seja revisado várias vezes antes de fazer o baselining ou enviá-lo para aprovação. A qualidade do seu plano de teste fala muito sobre a qualidade dos testes que você ou sua equipe irão realizar.
+
+. Atualize o plano como e quando necessário. Um documento desatualizado e não utilizado fede e é pior do que não ter o documento em primeiro lugar.
 
 
 //Link para o original
