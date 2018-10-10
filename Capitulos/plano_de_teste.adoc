@@ -182,7 +182,7 @@ As atividades de teste devem ser combinadas com atividades de desenvolvimento as
 
 Você começará a testar quando tiver todos os itens necessários mostrados na figura a seguir
 
-Etapa 3) Definir o objetivo do teste
+==== Definir o objetivo do teste
 
 Objetivo do Teste é o objetivo geral e a representa a sua execução. O objetivo do teste é encontrar tantos defeitos de software quanto possível; Certifique-se de que o software em teste esteja livre de bugs antes do lançamento.
 
@@ -207,7 +207,7 @@ Com base nos recursos acima, você pode definir o Objetivo de Teste do projeto G
 
 . Verifique a usabilidade do site. Essas funcionalidades são convenientes para o usuário ou não?
 
-Etapa 4) Definir critérios de teste
+==== Definir critérios de teste
 
 Critérios de teste é um padrão ou regra na qual um procedimento de teste ou julgamento de teste pode ser baseado. Existem 2 tipos de critérios de teste da seguinte forma
 
@@ -233,6 +233,14 @@ Exemplo: Sua equipe já realizou as execuções de teste. Eles relatam o resulta
 
 No caso acima, a taxa de execução é obrigatória é de 100%, mas a equipe de teste concluiu apenas 90% dos casos de teste. Isso significa que a taxa de execução não está satisfeita, portanto, NÃO confirme os critérios de saída
 
+=== Planejamento de recursos
+
+=== Planejar ambiente de teste
+
+=== Agenda e Estimativa
+
+=== Determinar os resultados do teste
+
 === Diretrizes do plano de teste
 // link para o original
 //http://softwaretestingfundamentals.com/test-plan/
@@ -249,6 +257,11 @@ No caso acima, a taxa de execução é obrigatória é de 100%, mas a equipe de 
 
 //Link para o original
 //https://www.guru99.com/what-everybody-ought-to-know-about-test-planing.html
-
+//unordered
+// Outro link que foi usado
+//https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html
 //
 //http://www.bstqb.org.br/node/11622
+
+//Exemplo de plano de teste
+//http://mds.cultura.gov.br/extend.formal_resources/guidances/examples/resources/test_plan_v2.htm#_Toc447185691
