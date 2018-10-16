@@ -67,9 +67,9 @@ Todos os membros do projeto terão uma compreensão clara sobre o que é testado
 
 Como você determina o escopo do seu projeto?
 
-Para determinar o escopo, você precisa -
+Para determinar o escopo, você precisa:
 
-- Exigência do cliente precisa
+- Exigência precisa do cliente
 - Orçamento do projeto
 - Especificação do produto
 - Habilidades e talento da sua equipe de teste
@@ -92,9 +92,12 @@ Etapa 2.2) Identifique o tipo de teste
 
 Um tipo de teste é um procedimento de teste padrão que fornece um resultado de teste esperado.
 
-Cada tipo de teste é formulado para identificar um tipo específico de bugs do produto. Porém, todos os tipos de testes visam atingir um objetivo comum: "Detecção antecipada de todos os defeitos antes de liberar o produto para o cliente"
+Cada tipo de teste é formulado para identificar um tipo específico de problemas em um produto. Porém, todos os tipos de testes visam atingir um objetivo comum: "Detecção antecipada de todos os defeitos antes de liberar o produto para o cliente"
 
-Os tipos de teste comumente usados ​​são descritos como figura a seguir
+Os tipos de teste comumente usados ​​são descritos como figura a seguir:
+
+
+???? Figura dos testes ????
 
 Há toneladas de tipos de teste para testar produtos de software. Sua equipe não pode ter esforços suficientes para lidar com todos os tipos de testes. Como Test Manager, você deve definir a prioridade dos tipos de teste
 
@@ -107,18 +110,13 @@ Quais tipos de teste você deve focar neste caso?
 Selecione tudo que se aplica
 
 A) Testes Unitários
-
 B) Teste de API
-
 C) Teste de Integração
-
 D) Teste do sistema
-
 E) Instalar / Desinstalar Testes
-
 F) Teste Agile
 
-Etapa 2.3) Documentar os Risco e possíveis problemas
+Etapa 2.3) Documentar os Riscos e possíveis problemas
 
 O risco é um evento incerto do futuro com uma probabilidade de ocorrência e um potencial de perda. Quando o risco realmente acontece, torna-se o "problema".
 
@@ -235,11 +233,63 @@ No caso acima, a taxa de execução é obrigatória é de 100%, mas a equipe de 
 
 === Planejamento de recursos
 
+O plano de recursos é um resumo detalhado de todos os tipos de recursos necessários para concluir a tarefa do projeto. Recursos podem ser humanos, equipamentos e materiais necessários para concluir um projeto
+
+O planejamento de recursos é um fator importante do planejamento do teste, pois ajuda a determinar o número de recursos (funcionários, equipamentos, etc.) a serem usados ​​no projeto. Portanto, o Test Manager pode fazer o cronograma e a estimativa corretos para o projeto.
+
+Esta seção representa os recursos recomendados para o seu projeto
+
+
 === Planejar ambiente de teste
+
+Um ambiente de teste é uma configuração de software e hardware na qual a equipe de testes executará os casos de teste. O ambiente de teste consiste em ambiente real de negócios e de usuário, bem como ambientes físicos, como servidor, ambiente de execução front-end.
+
+Como configurar o ambiente de teste
+
+De volta ao seu projeto, como você configura o ambiente de teste para este site bancário?
+
+Para concluir esta tarefa, você precisa de uma forte cooperação entre a equipe de teste e a equipe de desenvolvimento
+
+Você deve fazer algumas perguntas ao desenvolvedor para entender claramente o aplicativo da Web sob teste. Aqui estão algumas perguntas recomendadas. Claro, você pode fazer as outras perguntas se precisar.
+
+* Qual é a conexão máxima do usuário que esse site pode manipular ao mesmo tempo?
+* Quais são os requisitos de hardware / software para instalar este site?
+* O computador do usuário precisa de alguma configuração específica para navegar no site?
+
 
 === Agenda e Estimativa
 
+
+
 === Determinar os resultados do teste
+
+
+=== Entregaveis do Teste
+
+É uma lista com todos os documentos, ferramentas e outros componentes que devem ser desenvolvidos e mantidos para apoiar o esforço de teste.
+
+Existem diferentes entregas de teste em todas as fases do ciclo de vida de desenvolvimento de software.
+
+Entregaveis fornecidos antes da fase de teste.
+
+* Documento de planos de teste.
+* Documentos de casos de teste
+* Especificações de design de teste.
+
+Entregaveis fornecidos durante o teste
+
+* Scripts de teste
+* Simuladores
+* Dados de teste
+* Matriz de rastreabilidade de teste
+* Logs de erro e logs de execução.
+
+Os resultados finais do teste são fornecidos após o término dos ciclos de testes.
+
+* Resultados de testes / relatórios
+* Relatório de Defeitos
+* Diretrizes para procedimentos de instalação / teste
+* Notas de lançamento
 
 === Diretrizes do plano de teste
 // link para o original
