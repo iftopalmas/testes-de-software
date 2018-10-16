@@ -4,7 +4,7 @@
 :doctype: book
 :lang: pt-BR
 :chapter-label:
-:sectnums:
+:sectnums: all
 :source-highlighter: highlightjs
 :imagesdir: imagens
 :allow-uri-read:
