@@ -1,0 +1,10 @@
+*.html
+*.pdf
+build/
+
+#Java Projects
+*.class
+target/
+test/
+.idea
+*.iml
