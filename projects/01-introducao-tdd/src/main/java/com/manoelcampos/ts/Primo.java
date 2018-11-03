@@ -1,4 +1,4 @@
-package com.manoelcampos.primos;
+package com.manoelcampos.ts;
 
 import java.util.List;
 import java.util.Random;

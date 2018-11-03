@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.manoelcampos</groupId>
-    <artifactId>primos</artifactId>
+    <artifactId>introducao-tdd</artifactId>
     <version>1.0</version>
 
     <build>
@@ -30,4 +30,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    <name>introducao-tdd</name>
 </project>
