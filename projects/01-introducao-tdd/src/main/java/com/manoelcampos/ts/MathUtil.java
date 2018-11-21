@@ -28,23 +28,32 @@ public class MathUtil {
      * @param a
      * @param b
      * @return 
-     * @see https://pt.wikipedia.org/wiki/Máximo_divisor_comum#Propriedades
+     * @see <a href="https://pt.wikipedia.org/wiki/Máximo_divisor_comum#Propriedades">Propriedades MDC</a>
      */
     public static double mdc(double a, double b){
-        //Propriedade 7
+        /*
+        Propriedade 7
+        ------------------------------------------------------------------------------------------------
+        */
         a = Math.abs(a);
         b = Math.abs(b);
         
-        /*Ordena os valores para atender à propriedade 6,
+        /*
+        Propriedade 6
+        ------------------------------------------------------------------------------------------------
+        Ordena os valores de forma descrescente,
         o que causa efeito colateral em outras propriedades,
-        como indicado abaixo.*/
-        double min = Math.min(a, b);
+        como indicado abaixo.
+        */
+        final double min = Math.min(a, b);
         a = Math.max(a, b);        
         b = min;
 
-        /*Propriedade 1
+        /*
+        Propriedade 1
+        ------------------------------------------------------------------------------------------------
         A lógica para atender à situação da Propriedade 3 (antes de atender à 7),
-        quando a é negativo seria
+        quando a é negativo, seria
             if(a % b == 0)
                 return Math.abs(b);
                 
@@ -52,24 +61,27 @@ public class MathUtil {
         Ao chegar neste if 0 % -6 == 0, o que retornaria -6 e não 6,
         como indica a Propriedade 3.
         
-        
         No entanto, depois de resolvida a Propriedade 7, a lógica fica exatamente
         como definida na Propriedade 1.
         
         Esta condição também vale como caso base para quando a função
         for chamada recursivamente (ela chamando ela mesma, como 
         ocorre com o caso geral mostrado no final da função).
-        O caso base, que indica que a função deve parar de ser chamada recursivamente,
+        O caso base (que indica que a função deve parar de ser chamada recursivamente)
         é quando a == b. No entanto, quando os dois valores forem iguais,
         isto também indica que a é divisível por b (que é a condição abaixo).
+        Sem identificar inicialmente qual o caso base de uma função recursiva,
+        a mesma ficará em loop infinito.
         */
         if(a % b == 0){
             return b;
         }
                 
-        /*Propriedade 3 
+        /*
+        Propriedade 3
+        ------------------------------------------------------------------------------------------------
         Lógica modificada para atender à situação
-        quando a é negativo, depois da ordenação dos dados para atender Propriedade 6.
+        quando a é negativo, depois da ordenação dos dados para atender à Propriedade 6.
         Pela lógica da Propriedade 3, este código bastaria ser
             if(b == 0) 
                 return Math.abs(a);
@@ -79,8 +91,7 @@ public class MathUtil {
         if(b == 0 || a == 0){
             return Math.max(Math.abs(a), Math.abs(b));
         }
-                
-        
+
         /*Este é o Caso Geral para cálculo do MDC.
         Resolvendo-se o caso geral, é mais fácil resolver 
         casos específicos que sejam uma variação do caso geral.*/
@@ -93,13 +104,37 @@ public class MathUtil {
             throw new IllegalArgumentException("Informe ao menos um valor para calcular o MDC");
         }
                 
-        List<Double> list = Arrays.stream(valor).boxed().collect(Collectors.toList());
+        final List<Double> list = Arrays.stream(valor).boxed().collect(Collectors.toList());
         double a = list.get(0);
         for (Double b : list) {
             a = mdc(a, b);
         }
         
         return a;
-    }   
-    
+    }
+
+    /**
+     * Verifica se um número é primo.
+     * Um primo é um número natual maior que 1, que não pode ser formado pela multiplicação
+     * de dois números naturais menores.
+     *
+     * @param numero número a ser testado.
+     * @return true se o número for primo, false caso contrário
+     *
+     * @see <a href="https://pt.wikipedia.org/wiki/Número_primo">Número Primo</a>
+     * @see <a href="https://en.wikipedia.org/wiki/Prime_number">Prime Number</a>
+     */
+    public static boolean isPrimo(final long numero){
+        if(numero <= 1){
+            return false;
+        }
+
+        for(long i = 2; i < numero; i++){
+            if(numero%i==0){
+                return false;
+            }
+        }
+
+        return true;
+    }
 }

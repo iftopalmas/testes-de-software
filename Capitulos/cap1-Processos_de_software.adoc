@@ -1,46 +1,50 @@
 :cap: Capitulo1
-:imagesdir: ../imagens/{cap}/
+:imagesdir: imagens/{cap}/
 
 [#Revisão]
 == As atividades do processo de _software_ e os testes
 
 
 === Introdução
-Esse capitulo tem como objetivos: fazer uma breve revisão sobre as atividades do processo de software, fornecer ao estudante uma ideia geral de onde os testes de software estão inseridos dentro do processo de desenvolvimento e realizar  algumas conexões entre essa disciplina e outras do curso, sobretudo Analise de Sistemas, Projeto de Sistemas, Programação para WEB II.
+Esse capítulo tem como objetivos: 
 
-==== Como esse capitulo está estruturado
-O presente capitulo possui três seções principais. Cada uma delas trata de um assunto específico, conforme a lista a seguir:
+- fazer uma breve revisão sobre as atividades do processo de _software_;
+- fornecer ao estudante uma ideia geral de onde os testes de _software_ estão inseridos dentro do processo de desenvolvimento;
+- realizar algumas conexões entre essa disciplina e outras do curso, sobretudo Análise de Sistemas, Projeto de Sistemas, Programação para Web II.
 
-- A seção <<atividadesprocesso>> é um breve resumo sobre as atividades que são executadas durante o processo de software de maneira que possamos encontrar onde os testes estão inseridos.
-- A seção <<Quando>> faz uma revisão sobre dois modelos de desenvolvimento bastante conhecidos o cascata e o incremental e discute brevemente sobre quando os testes devem começar.
-- A seção <<relacao>>
+==== Como esse capítulo está estruturado
+O presente capítulo possui três seções principais. Cada uma delas trata de um assunto específico, conforme a lista a seguir:
+
+- A seção <<atividadesprocesso>> é um breve resumo sobre as atividades que são executadas durante o processo de _software_, de maneira que possamos encontrar onde os testes estão inseridos.
+- A seção <<Quando>> faz uma revisão sobre dois modelos de desenvolvimento bastante conhecidos: o cascata e o incremental. Ainda discute brevemente sobre quando os testes devem começar.
+- A última seção apresenta <<relacao>>.
 
 
 [#atividadesprocesso]
-=== Atividades do processo de software
-Antes de falarmos sobre os testes é necessário localizá-lo dentre os processos
+=== Atividades do processo de _software_
+
+Antes de falarmos sobre os testes é necessário localizá-los dentre os processos
 da Engenharia de _software_. Existem uma grande quantidade de processos de
 desenvolvimento de _software_ diferentes mas todos possuem as seguintes atividades:
 
 - especificação – definição do quê o sistema deve fazer;
-- projeto e implementação – definição da organização do sistema e implementação do sistema;
-- verificação e validação – checagem de que o sistema faz o que o cliente deseja;
-- evolução – evolução em resposta a mudanças nas necessidades do cliente.
+- projeto e implementação – definição da organização e implementação do sistema;
+- verificação e validação – checagem se o sistema faz o que o cliente deseja e se satisfaz os requisitos não funcionais;
+- evolução – evolução em resposta à mudanças nas necessidades do cliente.
 
 Na primeira atividade, especificação, é onde conseguimos obter um entendimento geral sobre o problema a ser resolvido. Não temos todos os detalhes ainda, mas é possível obter o mínimo necessário para passar para as próximas etapas. Podemos dizer ainda que essa etapa estabelece quais serviços são necessários e quais são as restrições na operação e desenvolvimento do sistema. A disciplina Análise de Sistemas é a responsável por tratar dos assuntos relacionados a essa etapa.
- porjeto
-Projeto e implementação é uma atividade que pode ser entendida contendo duas partes que dificilmente são tratadas em separado dentro do mundo da computação e que têm como objetivo a conversão da especificação do sistema em um sistema executável. Em projeto criamos um _Design_ de uma estrutura de _software_ que possa materializar a especificação; e por implementação devemos entender que é o ato de transformar o _Design_ em um programa executável. No curso de sistemas para internet a disciplina Projeto de _software_ é responsável por apresentar as técnicas e ferramentas utilizadas para a elaboração de estrutura do _software_. Já implementação está fracionada em várias disciplinas tais como Programação Orientada ao Objeto, Programação para WEB, dentre outras.
+Projeto e Implementação é uma atividade que pode ser entendida contendo duas partes. Elas dificilmente são tratadas em separado dentro do mundo da computação. Essas partes têm como objetivo a conversão da especificação do sistema em um sistema executável. Em projeto criamos uma estrutura de _software_ que possa materializar a especificação; e por implementação devemos entender que é o ato de transformar o projeto em um programa executável. No curso de sistemas para internet a disciplina Projeto de _software_ é responsável por apresentar as técnicas e ferramentas utilizadas para a elaboração de estrutura do _software_. Já implementação está fracionada em várias disciplinas tais como Programação Orientada ao Objeto, Programação para Web, dentre outras.
 
-A terceira atividade, Verificação e validação (V&V) tem o objetivo de mostrar que o produto que estamos construindo, um sistema por exemplo,  está em conformidade com sua especificação e ainda que ele está de acordo com os requisitos do cliente. Essa etapa é o objeto de estudo desta disciplina.
+A terceira atividade, Verificação e Validação (V&V) tem o objetivo de mostrar que o produto que estamos construindo, um sistema por exemplo,  está em conformidade com sua especificação e que ainda está de acordo com os requisitos do cliente. Essa etapa é o objeto de estudo desta disciplina.
 
-Por fim, temos a atividade chamada de evolução de _software_ ocorre quando é necessário alterar um sistema que já existe, tornando-o adequado a novas necessidades.
-Devemos lembrar que qualquer _software_ precisa evoluir, pois caso isso não aconteça, ele deixará de atender às necessidades de seus usuários o que pode torna-lo útil em pouco tempo. Não há disciplina que específica no Curso de Sistema para Internet do IFTO e provavelmente em nenhum outro curso que lide diretamente com essa questão.
+Por fim, temos a atividade chamada de evolução de _software_, que ocorre quando é necessário alterar um sistema que já existe, tornando-o adequado à novas necessidades.
+Devemos lembrar que qualquer _software_ precisa evoluir, pois caso isso não aconteça, ele deixará de atender às necessidades de seus usuários, o que pode torná-lo inútil em pouco tempo. Não há disciplina específica no Curso de Sistema para Internet do IFTO e provavelmente em nenhum outro curso que lide diretamente com essa questão. No entanto, existe literatura específica que trata dos chamados _softwares_ legados.
 
 [#Quando]
 === Quando a atividade de testes inicia?
 
 A resposta para a pergunta depende da maneira como as atividades do processo de
-_software_ estão organizadas. Resumidamente, tudo depende do paradigma que está sendo usado. Assim, se estamos trabalhando em um paradigma orientado a planos, como o modelo cascata, elas são organizadas em sequência. Isso significa que os testes só começarão após as atividade de implementação terem sido concluídas. Já se estivermos falando sobre um ambiente que usa um modelo incremental, tal qual os modelos Ágeis, as atividades de projeto e implementação e de verificação e validação são intercaladas.  Para clarificar um pouco mais, a seguir os modelos em cascata e incremental são apresentados e as figuras <<#modeloCascata>> e <<desenvolvimentoIncremental>> mostram como as atividades são organizadas.
+_software_ estão organizadas. Resumidamente, tudo depende do paradigma que está sendo usado. Assim, se estamos trabalhando em um paradigma orientado a planos, como o modelo cascata, elas são organizadas em sequência. Isso significa que os testes só começarão após as atividade de implementação terem sido concluídas. Já se estivermos falando sobre um ambiente que usa um modelo incremental, tal qual os modelos Ágeis, as atividades de (i) projeto e implementação e (ii) verificação e validação são intercaladas. Para clarificar um pouco mais, a seguir os modelos em cascata e incremental são apresentados e as figuras <<#modeloCascata>> e <<desenvolvimentoIncremental>> mostram como as atividades são organizadas.
 
 ==== Testes no modelo cascata
 [#modeloCascata]
@@ -51,32 +55,30 @@ _software_ estão organizadas. Resumidamente, tudo depende do paradigma que est�
 image::Modelo-cascata.png[modeloCascata,600,400]
 //image::Modelo-cascata.png[modeloCascata,600,400]
 
-Antes de mais nada é importante lembrar que o esse modelo, que pode ser chamado de ciclo de vida clássico, que segue uma abordagem sistemática e sequencial pode ser usado em cenários em os requisitos são bem entendidos ou que mudam pouco. Esse é o paradigma mais antigo da Engenharia de _software_, tendo provavelmente sido introduzido por engenheiros de outras áreas.
+Antes de mais nada é importante lembrar que o esse modelo, que pode ser chamado de ciclo de vida clássico, que segue uma abordagem sistemática e sequencial. Ele pode ser usado em cenários em os requisitos são bem entendidos ou que mudam pouco. Esse é o paradigma mais antigo da Engenharia de _software_, tendo provavelmente sido introduzido por engenheiros de outras áreas.
 
 No modelo cascata as atividades precisam ser completadas antes de se mover
-para a próxima. É possível a realização de testes durante a etapa de implementação, onde é possível que sejam executados de vários testes de desenvolvimento. Depois que esses testes tenham sido concluídos com êxito é que podemos passar para a verificação e realizar outros tipos de testes, como os testes de sistema e testes de usuário. Mas para atingirmos essas etapas devemos ter concluída as outras duas.
+para a próxima. É possível a realização de testes durante a etapa de implementação, onde podem ser executados vários testes de desenvolvimento. Depois que esses testes tenham sido concluídos com êxito é que podemos passar para a verificação e realizar outros tipos de testes, como os testes de sistema e testes de usuário. Mas para atingirmos essas etapas devemos ter concluída as outras duas.
 
 ==== Testes no modelo incremental
 
-Segundo Pressman<<PRESSMAN>>, há muitas situações em que os requisitos iniciais são razoavelmente definidos e pode haver a necessidade de fornecer rapidamente um conjunto limitado de funcionalidades do _software_ aos usuários que será aumentado em versões posteriores. Em situações como essa, um modelo incremental pode ser escolhido.
+Segundo Pressman<<PRESSMAN>>, há muitas situações em que os requisitos iniciais são razoavelmente definidos e pode haver a necessidade de fornecer rapidamente um conjunto limitado de funcionalidades do _software_ aos usuários. Tais requisitos serão então aumentados em versões posteriores. Em situações como essa, um modelo incremental pode ser escolhido.
 
 [#desenvolvimentoIncremental]
 .Exemplo do modelo incremental
 //[link=https://cdn-images-1.medium.com/max/1200/1*5vlem2hirY1jr_jXt8-QZA.png]
 image::desenvolvimentoincremental2.png[desenvolvimentoIncremental,600,400]
 
-O modelo incremental é mais flexível que o modelo cascata. Tudo começa com um esboço do sistema. Uma vez que esse esboço seja feito é possível passar para a próxima atividade que intercala especificação, desenvolvimento e validação. Isso significa que a parir do esboço é possível especificar os requisitos, aplicar técnicas de projeto e fazer a implementação e realizar a validação. Essas validações permitem que sejam entregues versões intermediárias que são na verdade um produto operacional.
+O modelo incremental é mais flexível que o modelo cascata. Tudo começa com um esboço do sistema. Uma vez que esse esboço seja feito é possível passar para a próxima atividade que intercala especificação, desenvolvimento e validação. Isso significa que a partir do esboço é possível especificar os requisitos, aplicar técnicas de projeto, fazer a implementação e realizar a validação. Essas validações permitem que sejam entregues versões intermediárias que são na verdade um produto operacional.
 
-Cumpre ainda dizer que nos últimos anos, a visão sobre os testes vem mudando. Dessa maneira, o teste já não é mais visto como uma atividade que começa somente após a conclusão da fase de implementação, com o objetivo limitado de detectar falhas. Teste de software é, ou deveria ser, executado durante todo o ciclo de vida de desenvolvimento e manutenção. De fato, o planejamento para testes de software deve começar com os estágios iniciais do processo de requisitos de software, e os planos e procedimentos de teste devem ser sistematicamente e continuamente desenvolvidos - e possivelmente refinados - à medida que o desenvolvimento de software prossiga. Essas atividades de planejamento de teste e projeto de teste fornecem informações úteis para os projetistas de software e ajudam a destacar possíveis fraquezas, como omissões / contradições de design ou omissões / ambiguidades na documentação.
+Cumpre ainda dizer que nos últimos anos, a visão sobre os testes vem mudando. Dessa maneira, o teste já não é mais visto como uma atividade que começa somente após a conclusão da fase de implementação, com o objetivo limitado de detectar falhas. Testes de _software_ é, ou deveria ser, executado durante todo o ciclo de vida de desenvolvimento e manutenção. De fato, o planejamento para testes de _software_ deve começar com os estágios iniciais do processo de requisitos de _software_. Os planos e procedimentos de testes devem ser sistematicamente e continuamente desenvolvidos - e possivelmente refinados - à medida que o desenvolvimento de _software_ prossiga. Essas atividades de planejamento de testes e projeto de testes fornecem informações úteis para os projetistas de _software_ e ajudam a destacar possíveis fraquezas, como omissões / contradições de design ou omissões / ambiguidades na documentação.
 
 [[relacao]]
 === Relação entre essa disciplina e outras disciplinas no curso
 
-==== Relação existente entre análise de sistema e os testes
-Do ponto de vista do cliente, os maiores erros são aqueles que deixam de satisfazer aos seus requisitos. Assim, é importante que uma relação contendo os requisitos funcionais do produto que está sendo desenvolvido e que posteriormente será testado, tenha sido construída. Em geral é durante a fase de análise é que essa relação é feita. Conforme dito anteriormente, o planejamento testes pode ter inicio durante o processo de especificação de requisitos, onde os chamados critérios de aceitação podem ser criados.
+==== Relação existente entre Análise de Sistema e Testes
+Do ponto de vista do cliente, os maiores erros são aqueles que deixam de satisfazer aos seus requisitos. Assim, é importante que uma relação contendo os requisitos funcionais do produto que está sendo desenvolvido, e que posteriormente será testado, tenha sido construída. Em geral durante a fase de análise é que essa relação é feita. Conforme dito anteriormente, o planejamento de testes pode ter início durante o processo de especificação de requisitos, onde os chamados critérios de aceitação podem ser criados.
 
 
-==== Relação existente entre disciplinas de programação e os testes
-Os testes de integração de de unidade estão fortemente relacionados com ações de implementação quando queremos garantir um nível maior de qualidade ao produto que está sendo produzido. Pode-se testar desde métodos ou funções isoladamente até sistemas inteiros.
-
-// m
+==== Relação existente entre disciplinas de Programação e Testes
+Os testes de integração e de unidade estão fortemente relacionados com ações de implementação quando queremos garantir um nível maior de qualidade ao produto que está sendo produzido. Pode-se testar desde métodos ou funções isoladamente, até sistemas inteiros.

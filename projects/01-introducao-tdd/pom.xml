@@ -7,6 +7,7 @@
     <groupId>com.manoelcampos</groupId>
     <artifactId>introducao-tdd</artifactId>
     <version>1.0</version>
+    <name>introducao-tdd</name>
 
     <build>
         <plugins>
@@ -30,5 +31,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-    <name>introducao-tdd</name>
 </project>

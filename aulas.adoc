@@ -1,0 +1,35 @@
+= Teste de Software
+
+== 10. Introdução a TDD
+
+- Qual a segurança para inserir recursos em um God method? 
+    * You break it you own it!
+    * Software rot
+- Como testar god methods?
+- Testes unitários (caixa branca)
+- Porque usar TDD? 
+    - TDD é improdutivo
+    - Não temos tempo para escrever testes
+    - O tempo gasto resolvendo bugs pode ser maior que escrevendo testes
+
+
+Números Primos e Criptografia: https://www.youtube.com/watch?v=M7kEpw1tn50
+
+== 11. Iniciando no TDD
+
+- Verificar Números Primos
+- Calcular MDC
+- Sistema Bancário
+
+== 12. a
+== 13. a
+== 14. a
+== 15. a
+== 16. a
+== 17. a
+== 18. a
+
+- JUnit 5: totalmente rescrito do zero (Book: Unit Testing with JUnit 5: Test Driven Development with JUnit 5)
+
+== 19. Projeto
+== 20. Recuperação

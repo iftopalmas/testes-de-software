@@ -1,5 +1,5 @@
 :cap: Capitulo5
-:imagesdir: ../imagens/{cap}/
+:imagesdir: imagens/{cap}/
 
 [#Tipos]
 == Quais são os tipos de teste
