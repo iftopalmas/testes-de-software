@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  * <p>A implementação do cálculo do MDC seguiu as 
  * <a href="https://pt.wikipedia.org/wiki/Máximo_divisor_comum#Propriedades">propriedades matemáticas</a> 
  * de tal método e o processo de Test Driven Development (TDD).
- * Veja a classe MathUtilTest.</p>
+ * Veja a classe MathUtilMdcTest.</p>
  * 
  * @author Manoel Campos da Silva Filho <http://github.com/manoelcampos>
  */

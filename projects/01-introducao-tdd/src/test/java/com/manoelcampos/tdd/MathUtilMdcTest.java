@@ -1,5 +1,3 @@
-/*
- */
 package com.manoelcampos.tdd;
 
 import org.junit.Test;
