@@ -1,4 +1,4 @@
-package com.manoelcampos.ts;
+package com.manoelcampos.tdd;
 
 import java.util.Arrays;
 import java.util.List;
@@ -25,8 +25,8 @@ public class MathUtil {
     
     /**
      * Calcula o MDC de dois números
-     * @param a
-     * @param b
+     * @param a 1º valor pra calcular o MDC
+     * @param b 2º valor pra calcular o MDC
      * @return 
      * @see <a href="https://pt.wikipedia.org/wiki/Máximo_divisor_comum#Propriedades">Propriedades MDC</a>
      */
@@ -44,6 +44,7 @@ public class MathUtil {
         Ordena os valores de forma descrescente,
         o que causa efeito colateral em outras propriedades,
         como indicado abaixo.
+        Ordenando decrescentemente,
         */
         final double min = Math.min(a, b);
         a = Math.max(a, b);        
@@ -73,7 +74,7 @@ public class MathUtil {
         Sem identificar inicialmente qual o caso base de uma função recursiva,
         a mesma ficará em loop infinito.
         */
-        if(a % b == 0){
+        if(b > 0 && a % b == 0){
             return b;
         }
                 
