@@ -8,23 +8,23 @@
 //outras fontes. Ele é apenas um resumo para auxiliar o estudante.
 
 === Qual o propósito deste material
-Este material de apoio é destinado inicialmente aos estudantes do curso Superior de Tecnologia em Sistemas para Internet (CSTSI) do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins, mas também pode ser usado por discentes de outros cursos tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação e Engenharia de Software. Ele tem o objetivo de apresentar os principais conceitos relacionados a testes de software, seus níveis, seus objetivos, como os testes são projetados e executados. De forma esse material pretensão de cobrir todos os assuntos relacionados à área de testes, que é muito extensa. Ele também não substitui livros de Engenharia de Software ou outros livros técnicos relacionados. A proposta é que ele sirva como um guia inicial para aqueles que estão dando os primeiros passos nessa área que é tão importante para o desenvolvimento de _software_.
+Este material de apoio é destinado inicialmente aos estudantes do curso Superior de Tecnologia em Sistemas para Internet (CSTSI) do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins, mas também pode ser usado por discentes de outros cursos tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação e Engenharia de Software. Ele tem o objetivo de apresentar os principais conceitos relacionados a testes de _sofware_, seus níveis, seus objetivos, como os testes são projetados e executados. De nenhuma forma esse material tem pretensão de cobrir todos os assuntos relacionados à área de testes, que é muito extensa. Ele também não substitui livros de Engenharia de Software ou outros livros técnicos relacionados. A proposta é que ele sirva como um guia inicial para aqueles que estão dando os primeiros passos nessa área tão importante para o desenvolvimento de _software_.
 
 
 [TIP]
 Procure por outras fontes para complementar esse material. Um bom lugar para começar
-é o site link:https://www.infoq.com/br/[INFOQ] que traz palestras e artigos atualizados relacionados a
+é o site link:https://www.infoq.com/br/[INFOQ] que traz palestras e artigos atualizados, relacionados a
 diversos aspectos da engenharia de _software_.
 
 
 === Como o material está organizado
 É importante lembrar que o presente material foi construído com o intuito prioritário
-de atender ao CSTSI. Assim, as buscas por conteúdo foram feitas para atender a :link:http://www.ifto.edu.br/palmas/campus-palmas/cursos/graduacao/tecnologico/sistemas-para-internet/copy_of_grade-curricular/grade-curricular-bacharelado-em-engenharia-civil.pdf/view/[ementa da disciplina que está em vigor], que é mostrada a seguir:
+de atender ao CSTSI. Assim, as buscas por conteúdo foram feitas para atender à link:http://www.ifto.edu.br/palmas/campus-palmas/cursos/graduacao/tecnologico/sistemas-para-internet/copy_of_grade-curricular/grade-curricular-bacharelado-em-engenharia-civil.pdf/view/[ementa da disciplina que está em vigor], como mostrada a seguir:
 
-- Conceitos básicos relacionados a teste de software;
+- Conceitos básicos relacionados a testes de _software_;
 - Processos de testes;
-- Ferramentas para planejamento, elaboração e automatização testes de software;
-- Manipular ferramentas para execução de planos de testes de software;
+- Ferramentas para planejamento, elaboração e automatização de testes de _software_;
+- Manipular ferramentas para execução de planos de testes de _software_;
 - Classes de automação: QAI x ISTQB;
 - Gerenciamento do planejamento de testes;
 - Projeto de Casos de Teste;
@@ -35,19 +35,19 @@ de atender ao CSTSI. Assim, as buscas por conteúdo foram feitas para atender a 
 
 Com base nisso, o conteúdo disponível nesse material está assim dividido:
 
-- O capitulo <<Revisão>> tem o objetivo de posicionar as atividades de teste de software dentre as demais atividades básicas do ciclo de desenvolvimento de software.
+- O capítulo "<<Revisão>>" tem o objetivo de posicionar as atividades de teste de _sofware_ dentre as demais atividades básicas do ciclo de desenvolvimento de _sofware_.
 As interações entre o teste e análise, projeto e implementação são apresentadas com o objetivo de auxiliar o estudante em um primeiro contato e entender em que momento elas ocorrem. Trata-se de capitulo informativo que não está relacionado diretamente com a ementa do curso.
 
-- O capitulo <<queeteste>> apresenta o conceito sobre teste e reforça sua importância na obtenção de um software que atenda melhor aos requisitos do cliente e que seja construído da melhor forma possível. Aqui é onde o estudo relativo aos testes começa de fato.
+- O capítulo <<queeteste>> apresenta o conceito sobre teste e reforça sua importância na obtenção de um _sofware_ que atenda melhor aos requisitos do cliente e que seja construído da melhor forma possível. Aqui é onde o estudo relativo aos testes começa de fato.
 
-//A disciplina de testes de software tem o objetivo de
+//A disciplina de testes de _sofware_ tem o objetivo de
 
 //É recomendado que o estudante, que não se limite à leitura e ao conteúdo deste material. Pesquise na internet outros materiais e leia outros livros e faça todos os exercícios propostos. Programação, assim como matemática, requer muito exercício, muita prática. Como mencionado anteriormente, a programação de computadores é uma das subáreas mais importantes da carreira que você escolheu seguir. Boa parte das disciplinas do seu curso depende do conhecimento adquirido em Introdução à Programação. Portanto, dedique o máximo que puder ao aprendizado de uma área que vai permiti-lo transformar sonhos em realidade.
 
 
 === Público alvo
 
-O público alvo desse livro, conforme mencionado anteriormente, são os estudantes do Curso Superior de Técnologia em Sistemas para Internet do Instituto Federal de Eucação, Ciência e Tecnologia do Tocantins, na modalidade presencial. Ele pode ser usado por outros cursos em que os estudantes tenham tido contato com disciplinas de Análise e Projeto de sistemas, introdução a programação ou programação para WEB.
+O público alvo desse livro, conforme mencionado anteriormente, são os estudantes do Curso Superior de Técnologia em Sistemas para Internet do Instituto Federal de Eucação, Ciência e Tecnologia do Tocantins, na modalidade presencial. Ele pode ser usado por outros cursos em que os estudantes tenham tido contato com disciplinas de Análise e Projeto de Sistemas, Introdução a Programação ou Programação para Web.
 
 [[como_estudar]]
 === Como você deve estudar cada capítulo

@@ -1,0 +1,27 @@
+= Teste de Software
+
+== 10. Introdução a TDD
+
+- Como testar god methods????? :(
+- Testes unitários (caixa branca)
+
+== 11. Iniciando no TDD
+
+Números Primos e Criptografia: https://www.youtube.com/watch?v=M7kEpw1tn50
+
+- Verificar Números Primos
+- Calcular MDC
+- Sistema Bancário
+
+== 12. a
+== 13. a
+== 14. a
+== 15. a
+== 16. a
+== 17. a
+== 18. a
+
+- JUnit 5: totalmente rescrito do zero (Book: Unit Testing with JUnit 5: Test Driven Development with JUnit 5)
+
+== 19. Projeto
+== 20. Recuperação

@@ -5,16 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.manoelcampos</groupId>
-    <artifactId>primos</artifactId>
+    <artifactId>introducao-tdd</artifactId>
     <version>1.0</version>
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <name>introducao-tdd</name>
 
     <build>
         <plugins>
@@ -29,4 +22,13 @@
             </plugin>
         </plugins>
     </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 </project>

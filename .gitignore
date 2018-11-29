@@ -5,6 +5,7 @@ build/
 #Java Projects
 *.class
 target/
-test/
 .idea
 *.iml
+~$*
+/projects/01-introducao-tdd/nbproject/

@@ -41,7 +41,7 @@ Mauro Henrique Lima de Boni - mauro@ifto.edu.br
 include::Capitulos/prefacio.adoc[]
 //A:sectnums:
 include::Capitulos/cap1-processos_de_software.adoc[]
-include::Capitulos/cap2-O que_e_teste_de_software.adoc[]
+include::Capitulos/cap2-O_que_e_teste_de_software.adoc[]
 include::Capitulos/cap3-Niveis_de_teste.adoc[]
 include::Capitulos/cap4-Tecnicas_de_teste.adoc[]
 include::Capitulos/cap5-Tipos_de_teste.adoc[]

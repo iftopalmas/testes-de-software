@@ -435,13 +435,18 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css">
+</div>
+</div>
 <div class="sect1">
 <h2 id="_antes_de_começar_é_importante_ler_essa_parte">Antes de começar é importante ler essa parte&#8230;&#8203;</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_qual_o_propósito_deste_material">Qual o propósito deste material</h3>
 <div class="paragraph">
-<p>Este material de apoio é destinado inicialmente aos estudantes do curso Superior de Tecnologia em Sistemas para Internet (CSTSI) do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins, mas também pode ser usado por discentes de outros cursos tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação e Engenharia de Software. Ele tem o objetivo de apresentar os principais conceitos relacionados a testes de software, seus níveis, seus objetivos, como os testes são projetados e executados. De forma esse material pretensão de cobrir todos os assuntos relacionados à área de testes, que é muito extensa. Ele também não substitui livros de Engenharia de Software ou outros livros técnicos relacionados. A proposta é que ele sirva como um guia inicial para aqueles que estão dando os primeiros passos nessa área que é tão importante para o desenvolvimento de <em>software</em>.</p>
+<p>Este material de apoio é destinado inicialmente aos estudantes do curso Superior de Tecnologia em Sistemas para Internet (CSTSI) do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins, mas também pode ser usado por discentes de outros cursos tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação e Engenharia de Software. Ele tem o objetivo de apresentar os principais conceitos relacionados a testes de <em>sofware</em>, seus níveis, seus objetivos, como os testes são projetados e executados. De nenhuma forma esse material tem pretensão de cobrir todos os assuntos relacionados à área de testes, que é muito extensa. Ele também não substitui livros de Engenharia de Software ou outros livros técnicos relacionados. A proposta é que ele sirva como um guia inicial para aqueles que estão dando os primeiros passos nessa área tão importante para o desenvolvimento de <em>software</em>.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -451,7 +456,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </td>
 <td class="content">
 Procure por outras fontes para complementar esse material. Um bom lugar para começar
-é o site <a href="https://www.infoq.com/br/">INFOQ</a> que traz palestras e artigos atualizados relacionados a
+é o site <a href="https://www.infoq.com/br/">INFOQ</a> que traz palestras e artigos atualizados, relacionados a
 diversos aspectos da engenharia de <em>software</em>.
 </td>
 </tr>
@@ -462,21 +467,21 @@ diversos aspectos da engenharia de <em>software</em>.
 <h3 id="_como_o_material_está_organizado">Como o material está organizado</h3>
 <div class="paragraph">
 <p>É importante lembrar que o presente material foi construído com o intuito prioritário
-de atender ao CSTSI. Assim, as buscas por conteúdo foram feitas para atender a :<a href="http://www.ifto.edu.br/palmas/campus-palmas/cursos/graduacao/tecnologico/sistemas-para-internet/copy_of_grade-curricular/grade-curricular-bacharelado-em-engenharia-civil.pdf/view/">ementa da disciplina que está em vigor</a>, que é mostrada a seguir:</p>
+de atender ao CSTSI. Assim, as buscas por conteúdo foram feitas para atender à <a href="http://www.ifto.edu.br/palmas/campus-palmas/cursos/graduacao/tecnologico/sistemas-para-internet/copy_of_grade-curricular/grade-curricular-bacharelado-em-engenharia-civil.pdf/view/">ementa da disciplina que está em vigor</a>, como mostrada a seguir:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Conceitos básicos relacionados a teste de software;</p>
+<p>Conceitos básicos relacionados a testes de <em>software</em>;</p>
 </li>
 <li>
 <p>Processos de testes;</p>
 </li>
 <li>
-<p>Ferramentas para planejamento, elaboração e automatização testes de software;</p>
+<p>Ferramentas para planejamento, elaboração e automatização de testes de <em>software</em>;</p>
 </li>
 <li>
-<p>Manipular ferramentas para execução de planos de testes de software;</p>
+<p>Manipular ferramentas para execução de planos de testes de <em>software</em>;</p>
 </li>
 <li>
 <p>Classes de automação: QAI x ISTQB;</p>
@@ -507,11 +512,11 @@ de atender ao CSTSI. Assim, as buscas por conteúdo foram feitas para atender a 
 <div class="ulist">
 <ul>
 <li>
-<p>O capitulo <a href="#Revisão">As atividades do processo de <em>software</em> e os testes</a> tem o objetivo de posicionar as atividades de teste de software dentre as demais atividades básicas do ciclo de desenvolvimento de software.
+<p>O capítulo "<a href="#Revisão">As atividades do processo de <em>software</em> e os testes</a>" tem o objetivo de posicionar as atividades de teste de <em>sofware</em> dentre as demais atividades básicas do ciclo de desenvolvimento de <em>sofware</em>.
 As interações entre o teste e análise, projeto e implementação são apresentadas com o objetivo de auxiliar o estudante em um primeiro contato e entender em que momento elas ocorrem. Trata-se de capitulo informativo que não está relacionado diretamente com a ementa do curso.</p>
 </li>
 <li>
-<p>O capitulo <a href="#queeteste">Uma visão geral sobre o que é teste de <em>software</em></a> apresenta o conceito sobre teste e reforça sua importância na obtenção de um software que atenda melhor aos requisitos do cliente e que seja construído da melhor forma possível. Aqui é onde o estudo relativo aos testes começa de fato.</p>
+<p>O capítulo <a href="#queeteste">Uma visão geral sobre o que é teste de <em>software</em></a> apresenta o conceito sobre teste e reforça sua importância na obtenção de um <em>sofware</em> que atenda melhor aos requisitos do cliente e que seja construído da melhor forma possível. Aqui é onde o estudo relativo aos testes começa de fato.</p>
 </li>
 </ul>
 </div>
@@ -519,7 +524,7 @@ As interações entre o teste e análise, projeto e implementação são apresen
 <div class="sect2">
 <h3 id="_público_alvo">Público alvo</h3>
 <div class="paragraph">
-<p>O público alvo desse livro, conforme mencionado anteriormente, são os estudantes do Curso Superior de Técnologia em Sistemas para Internet do Instituto Federal de Eucação, Ciência e Tecnologia do Tocantins, na modalidade presencial. Ele pode ser usado por outros cursos em que os estudantes tenham tido contato com disciplinas de Análise e Projeto de sistemas, introdução a programação ou programação para WEB.</p>
+<p>O público alvo desse livro, conforme mencionado anteriormente, são os estudantes do Curso Superior de Técnologia em Sistemas para Internet do Instituto Federal de Eucação, Ciência e Tecnologia do Tocantins, na modalidade presencial. Ele pode ser usado por outros cursos em que os estudantes tenham tido contato com disciplinas de Análise e Projeto de Sistemas, Introdução a Programação ou Programação para Web.</p>
 </div>
 </div>
 <div class="sect2">
@@ -563,32 +568,45 @@ As interações entre o teste e análise, projeto e implementação são apresen
 <div class="sect2">
 <h3 id="_introdução">1.1. Introdução</h3>
 <div class="paragraph">
-<p>Esse capitulo tem como objetivos: fazer uma breve revisão sobre as atividades do processo de software, fornecer ao estudante uma ideia geral de onde os testes de software estão inseridos dentro do processo de desenvolvimento e realizar  algumas conexões entre essa disciplina e outras do curso, sobretudo Analise de Sistemas, Projeto de Sistemas, Programação para WEB II.</p>
-</div>
-<div class="sect3">
-<h4 id="_como_esse_capitulo_está_estruturado">1.1.1. Como esse capitulo está estruturado</h4>
-<div class="paragraph">
-<p>O presente capitulo possui três seções principais. Cada uma delas trata de um assunto específico, conforme a lista a seguir:</p>
+<p>Esse capítulo tem como objetivos:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>A seção <a href="#atividadesprocesso">Atividades do processo de software</a> é um breve resumo sobre as atividades que são executadas durante o processo de software de maneira que possamos encontrar onde os testes estão inseridos.</p>
+<p>fazer uma breve revisão sobre as atividades do processo de <em>software</em>;</p>
 </li>
 <li>
-<p>A seção <a href="#Quando">Quando a atividade de testes inicia?</a> faz uma revisão sobre dois modelos de desenvolvimento bastante conhecidos o cascata e o incremental e discute brevemente sobre quando os testes devem começar.</p>
+<p>fornecer ao estudante uma ideia geral de onde os testes de <em>software</em> estão inseridos dentro do processo de desenvolvimento;</p>
 </li>
 <li>
-<p>A seção <a href="#relacao">Relação entre essa disciplina e outras disciplinas no curso</a></p>
+<p>realizar algumas conexões entre essa disciplina e outras do curso, sobretudo Análise de Sistemas, Projeto de Sistemas, Programação para Web II.</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_como_esse_capítulo_está_estruturado">1.1.1. Como esse capítulo está estruturado</h4>
+<div class="paragraph">
+<p>O presente capítulo possui três seções principais. Cada uma delas trata de um assunto específico, conforme a lista a seguir:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A seção <a href="#atividadesprocesso">Atividades do processo de <em>software</em></a> é um breve resumo sobre as atividades que são executadas durante o processo de <em>software</em>, de maneira que possamos encontrar onde os testes estão inseridos.</p>
+</li>
+<li>
+<p>A seção <a href="#Quando">Quando a atividade de testes inicia?</a> faz uma revisão sobre dois modelos de desenvolvimento bastante conhecidos: o cascata e o incremental. Ainda discute brevemente sobre quando os testes devem começar.</p>
+</li>
+<li>
+<p>A última seção apresenta <a href="#relacao">Relação entre essa disciplina e outras disciplinas no curso</a>.</p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="atividadesprocesso">1.2. Atividades do processo de software</h3>
+<h3 id="atividadesprocesso">1.2. Atividades do processo de <em>software</em></h3>
 <div class="paragraph">
-<p>Antes de falarmos sobre os testes é necessário localizá-lo dentre os processos
+<p>Antes de falarmos sobre os testes é necessário localizá-los dentre os processos
 da Engenharia de <em>software</em>. Existem uma grande quantidade de processos de
 desenvolvimento de <em>software</em> diferentes mas todos possuem as seguintes atividades:</p>
 </div>
@@ -598,41 +616,39 @@ desenvolvimento de <em>software</em> diferentes mas todos possuem as seguintes a
 <p>especificação – definição do quê o sistema deve fazer;</p>
 </li>
 <li>
-<p>projeto e implementação – definição da organização do sistema e implementação do sistema;</p>
+<p>projeto e implementação – definição da organização e implementação do sistema;</p>
 </li>
 <li>
-<p>verificação e validação – checagem de que o sistema faz o que o cliente deseja;</p>
+<p>verificação e validação – checagem se o sistema faz o que o cliente deseja e se satisfaz os requisitos não funcionais;</p>
 </li>
 <li>
-<p>evolução – evolução em resposta a mudanças nas necessidades do cliente.</p>
+<p>evolução – evolução em resposta à mudanças nas necessidades do cliente.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Na primeira atividade, especificação, é onde conseguimos obter um entendimento geral sobre o problema a ser resolvido. Não temos todos os detalhes ainda, mas é possível obter o mínimo necessário para passar para as próximas etapas. Podemos dizer ainda que essa etapa estabelece quais serviços são necessários e quais são as restrições na operação e desenvolvimento do sistema. A disciplina Análise de Sistemas é a responsável por tratar dos assuntos relacionados a essa etapa.</p>
+<p>Na primeira atividade, especificação, é onde conseguimos obter um entendimento geral sobre o problema a ser resolvido. Não temos todos os detalhes ainda, mas é possível obter o mínimo necessário para passar para as próximas etapas. Podemos dizer ainda que essa etapa estabelece quais serviços são necessários e quais são as restrições na operação e desenvolvimento do sistema. A disciplina Análise de Sistemas é a responsável por tratar dos assuntos relacionados a essa etapa.
+Projeto e Implementação é uma atividade que pode ser entendida contendo duas partes. Elas dificilmente são tratadas em separado dentro do mundo da computação. Essas partes têm como objetivo a conversão da especificação do sistema em um sistema executável. Em projeto criamos uma estrutura de <em>software</em> que possa materializar a especificação; e por implementação devemos entender que é o ato de transformar o projeto em um programa executável. No curso de sistemas para internet a disciplina Projeto de <em>software</em> é responsável por apresentar as técnicas e ferramentas utilizadas para a elaboração de estrutura do <em>software</em>. Já implementação está fracionada em várias disciplinas tais como Programação Orientada ao Objeto, Programação para Web, dentre outras.</p>
 </div>
 <div class="paragraph">
-<p>Projeto e implementação é uma atividade que pode ser entendida contendo duas partes que dificilmente são tratadas em separado dentro do mundo da computação e que têm como objetivo a conversão da especificação do sistema em um sistema executável. Em projeto criamos um <em>Design</em> de uma estrutura de <em>software</em> que possa materializar a especificação; e por implementação devemos entender que é o ato de transformar o <em>Design</em> em um programa executável. No curso de sistemas para internet a disciplina Projeto de <em>software</em> é responsável por apresentar as técnicas e ferramentas utilizadas para a elaboração de estrutura do <em>software</em>. Já implementação está fracionada em várias disciplinas tais como Programação Orientada ao Objeto, Programação para WEB, dentre outras.</p>
+<p>A terceira atividade, Verificação e Validação (V&amp;V) tem o objetivo de mostrar que o produto que estamos construindo, um sistema por exemplo,  está em conformidade com sua especificação e que ainda está de acordo com os requisitos do cliente. Essa etapa é o objeto de estudo desta disciplina.</p>
 </div>
 <div class="paragraph">
-<p>A terceira atividade, Verificação e validação (V&amp;V) tem o objetivo de mostrar que o produto que estamos construindo, um sistema por exemplo,  está em conformidade com sua especificação e ainda que ele está de acordo com os requisitos do cliente. Essa etapa é o objeto de estudo desta disciplina.</p>
-</div>
-<div class="paragraph">
-<p>Por fim, temos a atividade chamada de evolução de <em>software</em> ocorre quando é necessário alterar um sistema que já existe, tornando-o adequado a novas necessidades.
-Devemos lembrar que qualquer <em>software</em> precisa evoluir, pois caso isso não aconteça, ele deixará de atender às necessidades de seus usuários o que pode torna-lo útil em pouco tempo. Não há disciplina que específica no Curso de Sistema para Internet do IFTO e provavelmente em nenhum outro curso que lide diretamente com essa questão.</p>
+<p>Por fim, temos a atividade chamada de evolução de <em>software</em>, que ocorre quando é necessário alterar um sistema que já existe, tornando-o adequado à novas necessidades.
+Devemos lembrar que qualquer <em>software</em> precisa evoluir, pois caso isso não aconteça, ele deixará de atender às necessidades de seus usuários, o que pode torná-lo inútil em pouco tempo. Não há disciplina específica no Curso de Sistema para Internet do IFTO e provavelmente em nenhum outro curso que lide diretamente com essa questão. No entanto, existe literatura específica que trata dos chamados <em>softwares</em> legados.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="Quando">1.3. Quando a atividade de testes inicia?</h3>
 <div class="paragraph">
 <p>A resposta para a pergunta depende da maneira como as atividades do processo de
-<em>software</em> estão organizadas. Resumidamente, tudo depende do paradigma que está sendo usado. Assim, se estamos trabalhando em um paradigma orientado a planos, como o modelo cascata, elas são organizadas em sequência. Isso significa que os testes só começarão após as atividade de implementação terem sido concluídas. Já se estivermos falando sobre um ambiente que usa um modelo incremental, tal qual os modelos Ágeis, as atividades de projeto e implementação e de verificação e validação são intercaladas.  Para clarificar um pouco mais, a seguir os modelos em cascata e incremental são apresentados e as figuras <a href="#modeloCascata">Exemplo do modelo em cascata</a> e <a href="#desenvolvimentoIncremental">Exemplo do modelo incremental</a> mostram como as atividades são organizadas.</p>
+<em>software</em> estão organizadas. Resumidamente, tudo depende do paradigma que está sendo usado. Assim, se estamos trabalhando em um paradigma orientado a planos, como o modelo cascata, elas são organizadas em sequência. Isso significa que os testes só começarão após as atividade de implementação terem sido concluídas. Já se estivermos falando sobre um ambiente que usa um modelo incremental, tal qual os modelos Ágeis, as atividades de (i) projeto e implementação e (ii) verificação e validação são intercaladas. Para clarificar um pouco mais, a seguir os modelos em cascata e incremental são apresentados e as figuras <a href="#modeloCascata">Exemplo do modelo em cascata</a> e <a href="#desenvolvimentoIncremental">Exemplo do modelo incremental</a> mostram como as atividades são organizadas.</p>
 </div>
 <div class="sect3">
 <h4 id="_testes_no_modelo_cascata">1.3.1. Testes no modelo cascata</h4>
 <div id="modeloCascata" class="imageblock">
 <div class="content">
-<img src="imagens/Capitulo%201/Modelo-cascata.png" alt="modeloCascata" width="600" height="400">
+<img src="data:image/png;base64," alt="modeloCascata" width="600" height="400">
 </div>
 <div class="title">Figura 1. Exemplo do modelo em cascata</div>
 </div>
@@ -651,7 +667,7 @@ para a próxima. É possível a realização de testes durante a etapa de implem
 </div>
 <div id="desenvolvimentoIncremental" class="imageblock">
 <div class="content">
-<img src="imagens/Capitulo%201/desenvolvimentoincremental2.png" alt="desenvolvimentoIncremental" width="600" height="400">
+<img src="data:image/png;base64," alt="desenvolvimentoIncremental" width="600" height="400">
 </div>
 <div class="title">Figura 2. Exemplo do modelo incremental</div>
 </div>
@@ -659,9 +675,7 @@ para a próxima. É possível a realização de testes durante a etapa de implem
 <p>O modelo incremental é mais flexível que o modelo cascata. Tudo começa com um esboço do sistema. Uma vez que esse esboço seja feito é possível passar para a próxima atividade que intercala especificação, desenvolvimento e validação. Isso significa que a parir do esboço é possível especificar os requisitos, aplicar técnicas de projeto e fazer a implementação e realizar a validação. Essas validações permitem que sejam entregues versões intermediárias que são na verdade um produto operacional.</p>
 </div>
 <div class="paragraph">
-<p>Cumpre ainda dizer que nos últimos anos, a visão sobre os testes vem mudando.
-Dessa maneira, o teste já não é mais visto como uma atividade que começa somente
-após a conclusão da fase de implementação, com o objetivo limitado de detectar falhas. Teste de software é, ou deveria ser, executado durante todo o ciclo de vida de desenvolvimento e manutenção. De fato, o planejamento para testes de software deve começar com os estágios iniciais do processo de requisitos de software, e os planos e procedimentos de teste devem ser sistematicamente e continuamente desenvolvidos - e possivelmente refinados - à medida que o desenvolvimento de software prossiga. Essas atividades de planejamento de teste e projeto de teste fornecem informações úteis para os projetistas de software e ajudam a destacar possíveis fraquezas, como omissões / contradições de design ou omissões / ambiguidades na documentação.</p>
+<p>Cumpre ainda dizer que nos últimos anos, a visão sobre os testes vem mudando. Dessa maneira, o teste já não é mais visto como uma atividade que começa somente após a conclusão da fase de implementação, com o objetivo limitado de detectar falhas. Teste de <em>software</em> é, ou deveria ser, executado durante todo o ciclo de vida de desenvolvimento e manutenção. De fato, o planejamento para testes de <em>software</em> deve começar com os estágios iniciais do processo de requisitos de <em>software</em>, e os planos e procedimentos de teste devem ser sistematicamente e continuamente desenvolvidos - e possivelmente refinados - à medida que o desenvolvimento de <em>software</em> prossiga. Essas atividades de planejamento de teste e projeto de teste fornecem informações úteis para os projetistas de <em>software</em> e ajudam a destacar possíveis fraquezas, como omissões / contradições de design ou omissões / ambiguidades na documentação.</p>
 </div>
 </div>
 </div>
@@ -670,14 +684,13 @@ após a conclusão da fase de implementação, com o objetivo limitado de detect
 <div class="sect3">
 <h4 id="_relação_existente_entre_análise_de_sistema_e_os_testes">1.4.1. Relação existente entre análise de sistema e os testes</h4>
 <div class="paragraph">
-<p>Do ponto de vista do cliente, os maiores erros são aqueles que deixam de
-satisfazer aos seus requisitos. Assim, é importante que uma relação contendo os requisitos funcionais do produto que está sendo desenvolvido e que posteriormente será testado, tenha sido construída. Em geral é durante a fase de análise é que essa relação é feita. Conforme dito anteriormente, o planejamento testes pode ter inicio durante o processo de especificação de requisitos, onde os chamados critérios de aceitação podem ser criados.</p>
+<p>Do ponto de vista do cliente, os maiores erros são aqueles que deixam de satisfazer aos seus requisitos. Assim, é importante que uma relação contendo os requisitos funcionais do produto que está sendo desenvolvido e que posteriormente será testado, tenha sido construída. Em geral é durante a fase de análise é que essa relação é feita. Conforme dito anteriormente, o planejamento testes pode ter inicio durante o processo de especificação de requisitos, onde os chamados critérios de aceitação podem ser criados.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_relação_existente_entre_disciplinas_de_programação_e_os_testes">1.4.2. Relação existente entre disciplinas de programação e os testes</h4>
 <div class="paragraph">
-<p>In particular, unit and integration testing are intimately related to software construction, if not part of it.</p>
+<p>Os testes de integração de de unidade estão fortemente relacionados com ações de implementação quando queremos garantir um nível maior de qualidade ao produto que está sendo produzido. Pode-se testar desde métodos ou funções isoladamente até sistemas inteiros.</p>
 </div>
 </div>
 </div>
@@ -692,7 +705,7 @@ satisfazer aos seus requisitos. Assim, é importante que uma relação contendo 
 <p>Esse capitulo tem o objetivo de passar uma ideia geral sobre os conceitos relacionados ao teste de software.</p>
 </div>
 <div class="sect3">
-<h4 id="_como_esse_capitulo_está_estruturado_2">2.1.1. Como esse capitulo está estruturado</h4>
+<h4 id="_como_esse_capitulo_está_estruturado">2.1.1. Como esse capitulo está estruturado</h4>
 <div class="paragraph">
 <p>O presente capitulo possui quatro seções. Cada uma delas trata de um assunto específico,
 conforme a lista a seguir:</p>
@@ -873,13 +886,11 @@ relação ao produto que está sendo testado. Os testes devem ser os completos p
 </ul>
 </div>
 <div class="paragraph">
-<p>Um negócio e reputação de organizações depende da qualidade de seus produtos e,
-em alguns casos, até a receita pode depender das vendas de produtos de <em>software</em>.</p>
+<p>Um negócio e reputação de organizações depende da qualidade de seus produtos e, em alguns casos, até a receita pode depender das vendas de produtos de <em>software</em>.</p>
 </div>
 <div class="paragraph">
 <p>Os usuários podem preferir comprar um produto concorrente em um produto que tenha qualidade ruim e isso pode resultar em perda de receita para a organização.
-No mundo de hoje, a qualidade é uma das principais prioridades de qualquer
-organização.</p>
+No mundo de hoje, a qualidade é uma das principais prioridades de qualquer organização.</p>
 </div>
 </div>
 <div class="sect2">
@@ -894,7 +905,7 @@ organização.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><strong>Explique por que um programa não precisa, necessáriamente, ser completamente livre de livre de defeitos antes de ser entregue aos seus cliente.</strong></p>
+<p><strong>Explique por que um programa não precisa, necessariamente, ser completamente livre de livre de defeitos antes de ser entregue aos seus cliente.</strong></p>
 </li>
 <li>
 <p><strong>Explique melhor a afirmação que diz que os testes podem detectar apenas a presença de erros e não a sua ausência.</strong></p>
@@ -919,50 +930,49 @@ organização.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_quais_os_estágios_de_teste">3. Quais os estágios de teste?</h2>
+<h2 id="Niveis">3. Níveis de teste de acordo com o SWEBOK</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>O <em>Guide to the Software Engineering Body of Knowledge</em> (SWEBOK) <a href="#SWEBOK">[SWEBOK]</a> é um guia criado pelo IEEE e que trata de vários aspectos sobre a Engenharia de Software. Ele possui um capitulo dedicado ao testes que nos informa que o teste de software é geralmente realizado em diferentes níveis ao longo dos processos de desenvolvimento e manutenção. Os níveis podem ser distinguidos tomando como base o objeto que será testado, que é chamado de alvo, ou na finalidade, que é chamado de objetivo.</p>
-</div>
-<div class="paragraph">
-<p>O alvo do teste pode variar: um único módulo, um grupo desses módulos
-(relacionados por finalidade, uso, comportamento ou estrutura) ou um sistema inteiro.
-Podemos criar três estágios ou níveis de teste. Esses três estágios de teste não
-implicam em nenhum modelo de processo, e nenhum  deles é considerado mais importante que os outros dois.</p>
-</div>
-<div class="paragraph">
-<p>Segundo Ian Sommerville<a href="#SOMMERVILLE">[SOMMERVILLE]</a>, todo software deve passar por três estágios de teste.</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Testes de desenvolvimento</p>
-</li>
-<li>
-<p>Testes de integração</p>
-</li>
-<li>
-<p>Testes de usuário</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Apesar dessa divisão ser simples, podemos criar outras categorias de estágio. Para cada nível de teste, os seguintes aspectos podem ser identificados: seus objetivos genéricos, os produtos de trabalho utilizados como referência para derivar os casos de testes (ex.: base do teste), o objeto do teste (o que está sendo testado), defeitos e falhas típicas a se encontrar, testes (“harness”) e ferramentas de suporte e abordagens e responsabilidades específicas. A seguir cada um dos estágios é tratado com mais detalhes e as suas subdivisões são apresentadas.</p>
-</div>
 <div class="sect2">
-<h3 id="_testes_de_desenvolvimento">3.1. Testes de desenvolvimento</h3>
+<h3 id="_introdução_3">3.1. Introdução</h3>
 <div class="paragraph">
-<p>Os testes de desenvolvimento representam todos os testes que são realizados pelos desenvolvedores de um sistema. Nesse caso, o testador é o próprio desenvolvedor ou um membro da equipe.</p>
+<p>Esse capitulo tem o objetivo de apresentar os níveis de teste de acordo com o <em>Guide to the Software Engineering Body of Knowledge</em> (SWEBOK) <a href="#SWEBOK">[SWEBOK]</a>, fornecendo assim uma ideia geral sobre os conceitos relacionados ao teste de software.</p>
+</div>
+<div class="paragraph">
+<p>O SWEBOK é um guia criado pelo IEEE e que trata de vários aspectos sobre a Engenharia de Software. Em sua última edição, a terceira, o capitulo 4, é dedicado a testes de software. Cumpre ressaltar que essa obra informa que o teste de software geralmente é realizado em diferentes níveis ao longo dos processos de desenvolvimento e manutenção. Os níveis podem ser distinguidos tomando como base o objeto que será testado, que varia conforme o escopo, que é chamado de alvo, ou na finalidade, que é chamado de objetivo.</p>
 </div>
 <div class="sect3">
-<h4 id="_testes_de_unidade_unitário">3.1.1. Testes de unidade / unitário</h4>
+<h4 id="_como_esse_capitulo_está_estruturado_2">3.1.1. Como esse capitulo está estruturado</h4>
 <div class="paragraph">
-<p>Os testes de unidade, muitas vezes chamados de testes unitários, são responsáveis por verificar o funcionamento de elementos de software de maneira isolada, ou seja eles são testados de forma individual ​​separadamente. O teste de unidade focaliza o esforço de verificação na menor unidade do projeto de <em>software</em>&#8201;&#8212;&#8201;o componente ou módulo de <em>software</em>. Se estivermos escrevendo um código usando uma linguagem como o JAVA por exemplo, serão testados os métodos das classes, uma vez que eles normalmente são as menores unidades do projeto. O teste de unidade, na maioria das vezes, ocorre com acesso ao código fonte que está sendo testado e com o suporte de ferramentas de depuração. Os programadores que escreveram o código frequentemente, mas nem sempre, realizam testes unitários. O TDD (do inglês <em>Test Driven Development</em>) ou Desenvolvimento Guiado por Testes, que é um exemplo de teste unitário, é apresentado na seção a seguir.</p>
+<p>O presente capitulo possui duas seções, a saber:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Em <a href="#Alvo">Alvo do teste</a> são apresentados os conceitos sobre os níveis de teste em que é verificado uma parte do software que está sendo desenvolvido, o nível é diferente conforme o escopo.</p>
+</li>
+<li>
+<p><a href="#Objetivo">Objetivos do teste</a> é responsável por falar a respeito dos niveis de testes usados quando temos um objetivo, como usabilidade ou performance em vista.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Esse material pode ajudar. Dar uma olhada !!
-<a href="https://edisciplinas.usp.br/pluginfile.php/384739/mod_resource/content/1/Aula%205_2014_Tipos-de-teste-software-v2.pdf" class="bare">https://edisciplinas.usp.br/pluginfile.php/384739/mod_resource/content/1/Aula%205_2014_Tipos-de-teste-software-v2.pdf</a>
-<a href="http://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/testes-software_v01.pdf" class="bare">http://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/testes-software_v01.pdf</a></p>
+<p>Técnicas para o Teste de Software</p>
+</div>
+<div class="paragraph">
+<p>Medidas de teste de Software
+=&#8658; Avaliação dos testes realizados (?)</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Alvo">3.2. Alvo do teste</h3>
+<div class="paragraph">
+<p>O alvo do teste está relacionado ao escopo. Ele pode  variar: um único módulo, um grupo desses módulos (relacionados por finalidade, uso, comportamento ou estrutura) ou um sistema inteiro. Podemos criar três estágios ou níveis de teste. Esses três estágios de teste não implicam em nenhum modelo de processo e nenhum  deles é considerado mais importante que os outros dois.</p>
+</div>
+<div class="sect3">
+<h4 id="_testes_de_unidade_unitário">3.2.1. Testes de unidade / unitário</h4>
+<div class="paragraph">
+<p>Os testes de unidade, muitas vezes chamados de testes unitários, são responsáveis por verificar o funcionamento de elementos de software de maneira isolada, ou seja eles são testados de forma individual ​​separadamente. O teste de unidade focaliza o esforço de verificação na menor unidade do projeto de <em>software</em>&#8201;&#8212;&#8201;o componente ou módulo de <em>software</em>. Se estivermos escrevendo um código usando uma linguagem como o JAVA por exemplo, serão testados os métodos das classes, uma vez que eles normalmente são as menores unidades do projeto. O teste de unidade, na maioria das vezes, ocorre com acesso ao código fonte que está sendo testado e com o suporte de ferramentas de depuração. Os programadores que escreveram o código frequentemente, mas nem sempre, realizam testes unitários. O TDD (do inglês <em>Test Driven Development</em>) ou Desenvolvimento Guiado por Testes, que é um exemplo de teste unitário, é apresentado na seção a seguir.</p>
 </div>
 <div class="sect4">
 <h5 id="_desenvolvimento_guiado_por_testes_tdd_do_inglês_em_test_driven_development_em">Desenvolvimento Guiado por Testes (TDD, do inglês <em>Test Driven Development</em>)</h5>
@@ -971,7 +981,7 @@ implicam em nenhum modelo de processo, e nenhum  deles é considerado mais impor
 </div>
 <div id="tdd" class="imageblock">
 <div class="content">
-<img src="imagens/Capitulo%203/tdd.png" alt="testeAB" width="600" height="400">
+<img src="data:image/png;base64," alt="testeAB" width="600" height="400">
 </div>
 <div class="title">Figura 3. O ciclo do TDD</div>
 </div>
@@ -1026,10 +1036,10 @@ Mas por que? Lembre-se que você ainda não implementou a nova funcionalidade. E
 </div>
 </div>
 <div class="sect3">
-<h4 id="_testes_de_integração">3.1.2. Testes de integração</h4>
+<h4 id="_testes_de_integração">3.2.2. Testes de integração</h4>
 <div class="imageblock">
 <div class="content">
-<img src="imagens/Capitulo%203/testing-integration.png" alt="Teste de integração" width="300" height="300">
+<img src="data:image/png;base64," alt="Teste de integração" width="300" height="300">
 </div>
 </div>
 <div class="paragraph">
@@ -1037,20 +1047,125 @@ Mas por que? Lembre-se que você ainda não implementou a nova funcionalidade. E
 </div>
 </div>
 <div class="sect3">
-<h4 id="_teste_de_regressão_reteste">3.1.3. Teste de regressão (reteste)</h4>
-<div class="paragraph">
-<p>Cada vez que um novo módulo é adicionado como parte do teste de integração, o <em>software</em> se modifica. Novos caminhos de fluxo de dados são estabelecidos, nova E/S pode ocorrer e nova lógica de controle é acionada. Assim sendo, tudo o que havia sido previamente testado corre o risco de apresentarem problemas. Esse tipo de teste ajuda a garantir que modificações não introduzam algum comportamento indesejável ou erros adicionais.</p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_teste_de_sistema">3.2. Teste de sistema</h3>
+<h4 id="_teste_de_sistema">3.2.3. Teste de sistema</h4>
 <div class="paragraph">
 <p>O teste do sistema está preocupado em testar o comportamento de um sistema inteiro definido pelo escopo de um projeto ou programa de desenvolvimento. De acordo com o ISTQB, no teste de sistema, o ambiente de teste deve corresponder o máximo possível ao objetivo final, ou o ambiente de produção, para minimizar que os riscos de falhas específicas de ambiente não serem encontradas durante o teste. Ele pode ser baseado em descrições de alto nível do comportamento do sistema, tais como especificação de riscos e/ou de requisitos, processos de negócios ou casos de uso. O teste do sistema é geralmente considerado apropriado para avaliar os requisitos não funcionais do sistema, ou seja a segurança, a velocidade, precisão e também a confiabilidade. Interfaces externas para outros aplicativos, utilitários, dispositivos de <em>hardware</em> ou os ambientes operacionais também são geralmente avaliados nesse nível. Uma equipe de teste independente é frequentemente responsável pelo teste de sistema.</p>
 </div>
 </div>
+</div>
 <div class="sect2">
-<h3 id="_teste_de_aceitação">3.3. Teste de aceitação</h3>
+<h3 id="Objetivo">3.3. Objetivos do teste</h3>
+<div class="paragraph">
+<p>Quando tratamos de objetivos do teste, estamos nos referindo a uma característica especifica. Ela pode sofrer alterações conforme o software é testado. Segundo o SWEBOK, declarar os objetivos do teste em termos precisos e quantitativos permite que os resultados obtidos possam ser medidos além de permitir mais controle do processo de teste.</p>
+</div>
+<div class="paragraph">
+<p>O teste pode ser destinado a verificar propriedades diferentes. Os casos de teste podem ser projetados para verificar se as especificações funcionais estão corretamente implementadas, o que é referido na literatura como testes de conformidade, testes de correção ou testes funcionais. No entanto, várias outras propriedades emergentes também podem ser testadas, incluindo desempenho, confiabilidade e usabilidade, entre muitas outras.</p>
+</div>
+<div class="paragraph">
+<p>Outros objetivos importantes para o teste incluem, mas não se limitam a, medição de confiabilidade, identificação de vulnerabilidades de segurança, avaliação de usabilidade e aceitação de software, para os quais diferentes abordagens seriam adotadas. Observe que, em geral, os objetivos do teste variam de acordo com a meta de teste; diferentes finalidades são abordadas em diferentes níveis de teste.</p>
+</div>
+<div class="paragraph">
+<p>Os itens elencados a seguir são os mais usados na  literatura. Observe que alguns tipos de testes são mais apropriados para pacotes de software personalizados - testes de instalação, por exemplo - e outros para produtos de consumo, como o teste beta.</p>
+</div>
+<div class="paragraph">
+<p>O SWEBOK enumera 13 testes diferentes nessa categoria, a saber:</p>
+</div>
+<div class="sect3">
+<h4 id="_teste_de_aceitação_qualificação">3.3.1. Teste de Aceitação / Qualificação</h4>
+<div class="paragraph">
+<p>O teste de aceitação / qualificação determina se um sistema satisfaz seus critérios de aceitação, geralmente verificando os comportamentos desejados do sistema em relação aos requisitos do cliente. O cliente ou o representante de um cliente, portanto, especifica ou realiza atividades diretamente para verificar se seus requisitos foram atendidos ou, no caso de um produto de consumo, se a organização atendeu aos requisitos estabelecidos para o mercado-alvo.</p>
+</div>
+<div class="paragraph">
+<p>O objetivo desse teste é estabelecer a confiança no sistema, parte do sistema ou uma característica não específica do sistema. Procurar defeitos não é o principal foco. Ele pode avaliar a disponibilidade do sistema para entrar em produção, apesar de não ser necessariamente o último nível de teste, uma vez que, por exemplo, um teste de integração em larga escala pode ser feito após.</p>
+</div>
+<div class="paragraph">
+<p>Esse teste é realizado pelo cliente ou por usuário do sistema; os interessados (<em>stakeholders</em>) também podem ser envolvidos.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testes_de_instalação">3.3.2. Testes de Instalação</h4>
+<div class="paragraph">
+<p>Muitas vezes, após a conclusão do sistema e teste de aceitação, o software é verificado após a instalação no ambiente de destino. Os testes de instalação podem ser vistos como testes de sistema realizados no ambiente operacional de configurações de hardware e outras restrições operacionais. Os procedimentos de instalação também podem ser verificados.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teste_alfa_e_beta">3.3.3. Teste Alfa e Beta</h4>
+<div class="paragraph">
+<p>Antes do lançamento do software, às vezes é dado a um grupo pequeno e selecionado de usuários em potencial para uso experimental (teste alfa) e / ou para um conjunto maior de usuários representativos (teste beta). Esses usuários relatam problemas com o produto. Os testes alfa e beta geralmente não são controlados e nem sempre são mencionados em um plano de teste.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_conquista_e_avaliação_de_confiabilidade">3.3.4. Conquista e Avaliação de Confiabilidade</h4>
+<div class="paragraph">
+<p>O teste melhora a confiabilidade identificando e corrigindo falhas. Além disso, medidas estatísticas de confiabilidade podem ser obtidas gerando aleatoriamente casos de teste de acordo com o perfil operacional do software (consulte Perfil Operacional na seção 3.5, Técnicas Baseadas em Uso). A última abordagem é chamada de teste operacional. Usando modelos de crescimento de confiabilidade, ambos os objetivos podem ser perseguidos juntos [3] (ver Teste de Vida, Avaliação de Confiabilidade na seção 4.1, Avaliação do Programa em Teste).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teste_de_regressão">3.3.5. Teste de regressão</h4>
+<div class="paragraph">
+<p>Mostra que o software ainda passa nos testes feitos ​​anteriormente (na verdade, às vezes também é chamado de teste de não-regressão). Para desenvolvimento incremental, o objetivo do teste de regressão é mostrar que o comportamento do software não é alterado por mudanças incrementais no software, exceto na medida em que deveria. Em alguns casos, uma compensação deve ser feita entre a garantia dada pelo teste de regressão toda vez que uma alteração é feita e os recursos necessários para executar os testes de regressão, o que pode ser bastante demorado devido ao grande número de testes que podem ser executados. O teste de regressão envolve selecionar, minimizar e / ou priorizar um subconjunto dos casos de teste em um conjunto de testes existente [8]. O teste de regressão pode ser realizado em cada um dos níveis de teste descritos na seção 2.1, O Alvo do Teste, e pode ser aplicado a testes funcionais e não funcionais.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teste_de_performance">3.3.6. Teste de performance</h4>
+<div class="paragraph">
+<p>O teste de desempenho verifica se o software atende aos requisitos de desempenho especificados e avalia as características de desempenho - por exemplo, capacidade e tempo de resposta.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_testes_de_segurança">3.3.7. Testes de segurança</h4>
+<div class="paragraph">
+<p>O teste de segurança é focado na verificação de que o software está protegido contra ataques externos. Em particular, o teste de segurança verifica a confidencialidade, integridade e disponibilidade dos sistemas e seus dados. Geralmente, o teste de segurança inclui a verificação contra uso indevido e abuso do software ou sistema (teste negativo).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teste_de_estresse">3.3.8. Teste de estresse</h4>
+<div class="paragraph">
+<p>O teste de estresse exerce o software na carga máxima do projeto, além dele, com o objetivo de determinar os limites comportamentais e testar os mecanismos de defesa em sistemas críticos.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teste_de_back_to_back_7">3.3.9. Teste de back-to-back [7]</h4>
+<div class="paragraph">
+<p>O padrão IEEE / ISO / IEC 24765 define o teste back-to-back como “teste em que duas ou mais variantes de um programa são executadas com as mesmas entradas, as saídas são comparadas e os erros são analisados ​​em caso de discrepâncias”.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teste_de_recuperação">3.3.10. Teste de Recuperação</h4>
+<div class="paragraph">
+<p>O teste de recuperação visa verificar os recursos de reinicialização do software após uma falha do sistema ou outro "desastre".</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teste_de_interface">3.3.11. Teste de interface</h4>
+<div class="paragraph">
+<p>Os defeitos da interface são comuns em sistemas complexos. O teste de interface visa verificar se os componentes fazem interface corretamente para fornecer a troca correta de dados e informações de controle. Normalmente, os casos de teste são gerados a partir da especificação da interface. Um objetivo específico do teste de interface é simular o uso de APIs por aplicativos de usuário final. Isso envolve a geração de parâmetros das chamadas da API, a configuração de condições externas do ambiente e a definição de dados internos que afetam a API.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teste_de_configuração">3.3.12. Teste de configuração</h4>
+<div class="paragraph">
+<p>Nos casos em que o software é criado para atender a diferentes usuários, o teste de configuração verifica o software em diferentes configurações especificadas.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teste_de_interação_usabilidade_e_computador_humano">3.3.13. Teste de Interação Usabilidade e Computador Humano</h4>
+<div class="paragraph">
+<p>A principal tarefa dos testes de usabilidade e interação com computadores humanos é avaliar como é fácil para os usuários finais aprenderem e usarem o software. Em geral, pode envolver o teste das funções do software que suportam as tarefas do usuário, a documentação que ajuda os usuários e a capacidade do sistema de se recuperar dos erros do usuário (consulte Design da interface do usuário no Software Design KA).</p>
+</div>
+<div class="paragraph">
+<p>=x=x=x=x=x=x=x</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testes_de_desenvolvimento">3.4. Testes de desenvolvimento</h3>
+<div class="paragraph">
+<p>Os testes de desenvolvimento representam todos os testes que são realizados pelos desenvolvedores de um sistema. Nesse caso, o testador é o próprio desenvolvedor ou um membro da equipe.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_teste_de_aceitação">3.5. Teste de aceitação</h3>
 <div class="paragraph">
 <p>O teste de aceitação ou de aceite frequentemente é realizado pelo cliente ou por usuário do sistema; os interessados (<em>stakeholders</em>) também podem ser envolvidos.
 O objetivo desse teste é estabelecer a confiança no sistema, parte do sistema ou uma característica não específica do sistema. Procurar defeitos não é o principal foco. Ele pode avaliar a disponibilidade do sistema para entrar em produção, apesar de não ser necessariamente o último nível de teste, uma vez que, por exemplo, um teste de integração em larga escala pode ser feito após.
@@ -1084,6 +1199,30 @@ As formas de teste de aceite incluem tipicamente os seguintes:</p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>Estratégias de teste
+Segundo Roger Pressman <a href="#PRESSMAN">[PRESSMAN]</a>, há várias estratégias de testes existentes e elas fornecem as seguintes características genéricas:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>As revisões formais são feitas no inicio</p>
+</li>
+<li>
+<p>O teste começa no nível de componente e prossegue "para fora", em direção à integração de todo o sistema</p>
+</li>
+<li>
+<p>Diferentes técnicas de teste são adequadas em diferentes momentos</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Técnicas para o Teste de Software</p>
+</div>
+<div class="paragraph">
+<p>Medidas de teste de Software
+=&#8658; Avaliação dos testes realizados (?)</p>
+</div>
 </div>
 </div>
 </div>
@@ -1091,7 +1230,7 @@ As formas de teste de aceite incluem tipicamente os seguintes:</p>
 <h2 id="Tecnicas">4. Técnicas de Teste</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_introdução_3">4.1. Introdução</h3>
+<h3 id="_introdução_4">4.1. Introdução</h3>
 <div class="paragraph">
 <p>Esse capitulo vai &#8230;&#8203;</p>
 </div>
@@ -1099,8 +1238,29 @@ As formas de teste de aceite incluem tipicamente os seguintes:</p>
 <div class="sect2">
 <h3 id="_o_que_são_técnicas_de_teste">4.2. O que são técnicas de teste</h3>
 <div class="paragraph">
-<p>As técnicas de teste fornecem as diretrizes sistemáticas para que sejam projetados
-testes eficientes. Testes eficientes são aqueles que conseguem:</p>
+<p>Um dos objetivos do teste é detectar tantas falhas quanto possível. As técnicas de teste fornecem as diretrizes sistemáticas para que sejam projetados testes eficientes. Testes eficientes são aqueles que conseguem:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>exercitar a lógica interna e as interfaces de cada componente de <em>software</em></p>
+</li>
+<li>
+<p>verificam as entradas e saídas dos programas usando dados um conjunto de dados de teste, de maneira que possam ser encontrados erros em funções ou métodos, comportamento indesejado ou desempenho inadequado.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Essas técnicas tentam “quebrar” um programa sendo o mais sistemático possível na identificação de entradas que produzirão comportamentos representativos de programas; por exemplo, considerando subclasses do domínio de entrada, cenários, estados e fluxos de dados.</p>
+</div>
+<div class="paragraph">
+<p>A classificação das técnicas de teste apresentadas pelo SWEBOK é baseada em como os testes são gerados: da intuição e experiência do engenheiro de software, as especificações, a estrutura do código, as falhas reais ou imaginadas a serem descobertas, uso previsto, modelos ou a natureza do aplicativo. Uma categoria lida com o uso combinado de duas ou mais técnicas.</p>
+</div>
+<div class="paragraph">
+<p>Às vezes, essas técnicas são classificadas como caixa branca (também chamada de caixa de vidro), se os testes forem baseados em informações sobre como o software foi projetado ou codificado ou como caixa preta se os casos de teste dependerem apenas da entrada / saída do software. Essas técnicas também pode ser referenciadas como testes estruturais e testes funcionais respectivamente.</p>
+</div>
+<div class="paragraph">
+<p>As técnicas de teste fornecem as diretrizes sistemáticas para que sejam projetados testes eficientes. Testes eficientes são aqueles que conseguem:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1111,10 +1271,47 @@ testes eficientes. Testes eficientes são aqueles que conseguem:</p>
 <p>verificam as entradas e saídas dos programas usando dados um conjunto de dados
 de teste, de maneira que possam ser encontrados erros em funções ou métodos,
 comportamento indesejado ou desempenho inadequado.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A lista a seguir inclui as técnicas de teste que são comumente usadas, mas alguns profissionais dependem de algumas técnicas mais do que outras.</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Caixa Branca ( caixa aberta  - visualiza o código fonte - Teste de unidade, testes estáticos ( análise do código, sem executar-lo ) )</p>
+<p>Caixa Branca - Este teste também é chamado de teste de caixa vidro. Segundo <a href="#PRESSMAN">[PRESSMAN]</a>, ele é uma filosofia de projeto de casos de teste que usa a estrutura de controle descrita como parte do projeto ao nível de componentes para derivar casos de teste. Usando métodos de teste caixa-branca, o engenheiro de software pode derivar casos de testes que</p>
+<div class="ulist">
+<ul>
+<li>
+<p>garantem que todos os caminhos independentes de um módulo tenham sido exercitados pelo menos uma vez</p>
+</li>
+<li>
+<p>exercitem todas as decisões lógicas em seus lados verdadeiro e falso</p>
+</li>
+<li>
+<p>executam todos os ciclos nos seus limites e dentro de seus intervalos operacionais</p>
+</li>
+<li>
+<p>exercitem as estruturas de dados internas para garantir a sua validade.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>( caixa aberta  - visualiza o código fonte - Teste de unidade, testes estáticos ( análise do código, sem executar-lo ) ) Dentro dessa categoria de teste de software, o testador tem acesso ao código fonte da aplicação e pode construir códigos para efetuar linker(?) de componentes. Essa técnica adota critérios para a geração dos casos de teste com a finalidade de encontrar defeitos nas estruturas internas no software, através de situação que exercitem adequadamente todas as estruturas utilizadas na codificação.</p>
+</div>
+<div class="paragraph">
+<p>Esse tipo de teste é desenvolvido analisando-se o código-fonte e elaborando os casos de teste que possam cobrir todas as possibilidades do programa.</p>
+</div>
+<div class="paragraph">
+<p>DEssa maneira, todas as variações originadas por estruturas de condições são testadas. Um exemplo prático desse teste e o JUnit.</p>
+</div>
+<div class="paragraph">
+<p>O analista tem acesso ao código fonte, conhece a estrutura interna do produto sendo analisado e possibilita que sejam escolhidas partes específicas de um componente para serem avaliadas. Esse tipo de teste, também conhecido como teste estrutural, é projetado em função da estrutura do componente e permite uma averiguação mais precisa do comportamento dessa estrutura. Perceba que o acesso ao código facilita o isolamento de uma função ou ação, o que ajuda na análise comportamental das mesmas.</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
@@ -1132,6 +1329,13 @@ comportamento indesejado ou desempenho inadequado.</p>
 </li>
 <li>
 <p>Teste de condições</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Caixa Cinza - uma definição deste tipo de teste seria um ponto de equilibro virtual entre o teste de caixa-branca e o caia-preta.</p>
+</li>
+<li>
+<p>Caixa-preta - Neste tipo de teste de software, o desenvolvedor dos testes não possui acesso ao código fonte do programa. Técnica de teste que adota critérios para a geração dos casos de teste com a finalidade de garantir que os requisitos funcionais do software que foi construído sejam plenamente atendidos. Verifica se o resultado gerado por esses requisitos estão de acordo com o esperado.</p>
 </li>
 </ul>
 </div>
@@ -1139,13 +1343,51 @@ comportamento indesejado ou desempenho inadequado.</p>
 </ul>
 </div>
 </li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Para essa categoria podem ser levados em consideração todos os eventos que podem ser disparados pelo usuário, como por exemplo, cada clique de mouse a ser realizado em uma interface.</p>
+</div>
+<div class="paragraph">
+<p>O analista não tem acesso ao código fonte e desconhece a estrutura interna do sistema. É também conhecido como teste funcional, pois é baseado nos requisitos funcionais do software. O foco, nesse caso, é nos requisitos da aplicação, ou seja, nas ações que ela deve desempenhar.</p>
+</div>
+<div class="paragraph">
+<p>Para mostrar quais problemas que esse tipo de teste rastreia, podemos citar alguns exemplos:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Data de nascimento preenchida com data futura;</p>
+</li>
+<li>
+<p>Campos de preenchimento obrigatório que não são validados;</p>
+</li>
+<li>
+<p>Utilizar números negativos em campos tipo valor a pagar;</p>
+</li>
+<li>
+<p>Botões que não executam as ações devidas;</p>
+</li>
+<li>
+<p>Enfim, todo tipo de falha funcional, ou seja, falhas que contrariam os requisitos da aplicação.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Exemplos:
+- Teste de valor limite
+- Teste de classe de equivalência</p>
+</div>
+<div class="paragraph">
+<p>Há que se destacar, contudo, que existe um elemento comum aos dois tipos de teste. Tanto no teste de caixa branca quanto no teste de caixa preta, o analista não sabe qual será o comportamento da aplicação ou do alvo de teste em uma determinada situação. A imprevisibilidade de resultados é comum aos dois casos.</p>
+</div>
+<div class="ulist">
+<ul>
 <li>
 <p>Caixa Preta ( não vejo o interior - é baseado em entradas e saídas - Teste de integração, Teste de sistema, Teste de Aceitação, Teste Alfa, Teste Beta )
 Teste baseado em entradas e saídas de Cenários Macro</p>
-</li>
-</ul>
-</div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>Teste baseado em cenários</p>
 </li>
@@ -1157,8 +1399,27 @@ Teste baseado em entradas e saídas de Cenários Macro</p>
 </li>
 </ul>
 </div>
+</li>
+</ul>
+</div>
 <div class="paragraph">
-<p>Testes A/B</p>
+<p>3.1. Baseado na intuição e experiência do engenheiro de software</p>
+</div>
+<div class="paragraph">
+<p>3.1.1. Ad hoc
+Talvez a técnica mais amplamente praticada seja o teste ad hoc: os testes são obtidos com base na habilidade, intuição e experiência do engenheiro de software com programas semelhantes. O teste ad hoc pode ser útil para identificar casos de testes que não são facilmente gerados por técnicas mais formalizadas. visa explorar o sistema sem nenhum planejamento definido, sem um resultado esperado, neste caso os bugs são descobertos por acaso
+Imagine você tendo que entender um sistema de grande porte para criar e realizar os testes em um curto espaço de tempo. Nesse caso, seriam inviáveis os planejamentos e documentação. Então, nada melhor do que utilizar testes ad-hoc, a não ser que o testador não tenha experiência suficiente para isso. Não é porque o mesmo não possui planejamento que qualquer um poderá fazê-lo com eficiência. O teste ad-hoc exige muito mais experiência e criatividade do testador, porém é mais passível a insucessos.</p>
+</div>
+<div class="paragraph">
+<p>3.1.2. Teste exploratório
+O teste exploratório é definido como aprendizado simultâneo, projeto de teste e execução de testes [6, parte 1]; ou seja, os testes não são definidos com antecedência em um plano de teste estabelecido, mas são projetados, executados e modificados dinamicamente. A eficácia dos testes exploratórios depende do software o conhecimento do engenheiro, que pode ser derivado de várias fontes: comportamento observado do produto durante o teste, familiaridade com o aplicativo, a plataforma, o processo de falha, o tipo de possíveis falhas e falhas, o risco associado a um produto específico etc.
+Todo o planejamento é pré definido assim como o tempo para a realização do mesmo, neste caso, o entendimento do sistema fica muito mais evidente e os erros encontrados são bem entendidos
+Leia mais aqui:</p>
+</div>
+<div class="paragraph">
+<p>Testes A/B
+:cap: Capitulo5
+:imagesdir: ../imagens/Capitulo4/</p>
 </div>
 </div>
 </div>
@@ -1170,9 +1431,9 @@ Teste baseado em entradas e saídas de Cenários Macro</p>
 <p>Tipos de Teste: o alvo do teste</p>
 </div>
 <div class="paragraph">
-<p>Um grupo de atividades de teste pode ser direcionado para verificar o sistema (ou uma parte do sistema) com base em um motivo ou alvo específico.
-Cada tipo de teste tem foco em um objetivo particular, que pode ser o teste de uma funcionalidade, a ser realizada pelo software; uma característica da qualidade não funcional, tal como a confiabilidade ou usabilidade, a estrutura ou arquitetura do software ou sistema; ou mudanças relacionadas, ex.: confirmar que os defeitos foram solucionados (teste de confirmação) e procurar por mudanças inesperadas (teste de regressão).
-Modelos do software podem ser elaborados e/ou usados no teste estrutural ou funcional. Por exemplo, para o teste funcional, um diagrama de fluxo de processo, um diagrama de transição de estados ou uma especificação do programa, e para teste estrutural um diagrama de controle de fluxo ou modelo de estrutura do menu.</p>
+<p>Um grupo de atividades de teste pode ser direcionado para verificar o sistema (ou uma parte do sistema) com base em um motivo ou alvo específico.
+Cada tipo de teste tem foco em um objetivo particular, que pode ser o teste de uma funcionalidade, a ser realizada pelo software; uma característica da qualidade não funcional, como por exemplo a confiabilidade ou a usabilidade, a estrutura ou arquitetura do software ou sistema; ou ainda mudanças relacionadas, ex.: confirmar que os defeitos foram solucionados (teste de confirmação) e procurar por mudanças inesperadas (teste de regressão).
+Modelos do software podem ser elaborados e/ou usados no teste estrutural ou funcional. Por exemplo, para o teste funcional, um diagrama de fluxo de processo, um diagrama de transição de estados ou uma especificação do programa, e para teste estrutural um diagrama de controle de fluxo ou modelo de estrutura do menu.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1197,7 +1458,13 @@ Modelos do software podem ser elaborados e/ou usados no teste estrutural ou func
 </ul>
 </div>
 <div class="sect2">
-<h3 id="_testes_de_usabilidade">5.1. Testes de usabilidade</h3>
+<h3 id="_teste_de_regressão_reteste">5.1. Teste de regressão (reteste)</h3>
+<div class="paragraph">
+<p>Cada vez que um novo módulo é adicionado como parte do teste de integração, o <em>software</em> se modifica. Novos caminhos de fluxo de dados são estabelecidos, nova E/S pode ocorrer e nova lógica de controle é acionada. Assim sendo, tudo o que havia sido previamente testado corre o risco de apresentarem problemas. Esse tipo de teste ajuda a garantir que modificações não introduzam algum comportamento indesejável ou erros adicionais.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_testes_de_usabilidade">5.2. Testes de usabilidade</h3>
 <div class="paragraph">
 <p>Os testes devem ser realizados independentemente do tamanho do projeto e da estrutura
 disponível, pois sempre revelam aspectos que influenciarão com mais ou menos profundidade
@@ -1235,30 +1502,19 @@ do produto.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_testes_de_usuário">5.2. Testes de usuário</h3>
+<h3 id="_testes_de_usuário">5.3. Testes de usuário</h3>
 <div class="paragraph">
 <p>São testes onde os usuários ou clientes usam o <em>software</em> a fim de fornecer um <em>feedback</em>.
-Assim, eles experimentam o <em>software</em> para ver se gostam desse produto e verificam também se
-ele está em conformidade com a suas necessidades.</p>
+Assim, eles experimentam o <em>software</em> para ver se gostam desse produto e verificam também se ele está em conformidade com a suas necessidades.</p>
 </div>
 <div class="paragraph">
-<p>De modo geral, os testes de usuário ajudam a verificar se a interface permite o uso fácil
-e intuitivo, se provê funcionalidades que os usuários valorizam e se
-proporciona, de modo geral, uma experiência de uso satisfatória.</p>
+<p>De modo geral, os testes de usuário ajudam a verificar se a interface permite o uso fácil e intuitivo, se provê funcionalidades que os usuários valorizam e se proporciona, de modo geral, uma experiência de uso satisfatória.</p>
 </div>
 <div class="paragraph">
-<p>O teste de usuário é essencial, mesmo em sistemas abrangentes ou quando testes de
- release tenham sido feitos. O motivo é que a influencia realizada pelo ambiente
- de trabalho do usuário interfere muito sobre a confiabilidade, o desempenho, a
- usabilidade e a robustez de um sistema, tendo em vista que para o desenvolvedor é
- praticamente impossível replicar o ambiente de trabalho em que todos os possíveis
- usuários estarão.</p>
+<p>O teste de usuário é essencial, mesmo em sistemas abrangentes ou quando testes de release tenham sido feitos. O motivo é que a influencia realizada pelo ambiente de trabalho do usuário interfere muito sobre a confiabilidade, o desempenho, a usabilidade e a robustez de um sistema, tendo em vista que para o desenvolvedor é praticamente impossível replicar o ambiente de trabalho em que todos os possíveis usuários estarão.</p>
 </div>
 <div class="paragraph">
-<p>Sobre o teste de aceitação é importante lembrar que os clientes querem usar o
-<em>software</em> assim que possível por causa dos benefícios que podem ser obtidos. Os
-testes de aceitação podem não terem obtido um bom resultado mas devido a uma séria
-de outros fatores, a adoção do produto pode começar mesmo assim.</p>
+<p>Sobre o teste de aceitação é importante lembrar que os clientes querem usar o <em>software</em> assim que possível por causa dos benefícios que podem ser obtidos. Os testes de aceitação podem não terem obtido um bom resultado mas devido a uma séria de outros fatores, a adoção do produto pode começar mesmo assim.</p>
 </div>
 <div class="paragraph">
 <p>Podemos separar os testes de usuário em três categorias:</p>
@@ -1303,15 +1559,12 @@ de outros fatores, a adoção do produto pode começar mesmo assim.</p>
 </div>
 <div id="testeAB" class="imageblock">
 <div class="content">
-<img src="imagens/testesAB.png" alt="testeAB" width="300" height="200">
+<img src="data:image/png;base64," alt="testeAB" width="300" height="200">
 </div>
 <div class="title">Figura 4. A mountain sunset</div>
 </div>
 <div class="paragraph">
-<p>As pesquisas atitudinais são focadas no que as pessoas falam que acreditam
-(por exemplo, ao responderem um formulário online ou em uma conversa dentro de
-um grupo focal (<em>focus group</em>)), enquanto as pesquisas comportamentais analisam
-o que as pessoas fazem (por exemplo, em um teste de usabilidade, ou em testes A/B).</p>
+<p>As pesquisas atitudinais são focadas no que as pessoas falam que acreditam (por exemplo, ao responderem um formulário online ou em uma conversa dentro de um grupo focal (<em>focus group</em>)), enquanto as pesquisas comportamentais analisam o que as pessoas fazem (por exemplo, em um teste de usabilidade, ou em testes A/B).</p>
 </div>
 <div class="paragraph">
 <p><a href="https://brasil.uxdesign.cc/muito-além-do-teste-de-usabilidade-os-vários-tipos-de-pesquisas-com-usuários-em-ux-b91a6e15bc61" class="bare">https://brasil.uxdesign.cc/muito-além-do-teste-de-usabilidade-os-vários-tipos-de-pesquisas-com-usuários-em-ux-b91a6e15bc61</a></p>
@@ -1340,7 +1593,7 @@ o que as pessoas fazem (por exemplo, em um teste de usabilidade, ou em testes A/
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-29 17:29:15 -03
+Last updated 2018-11-13 16:44:57 -03
 </div>
 </div>
 </body>

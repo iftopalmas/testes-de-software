@@ -1,0 +1,8 @@
+http://todomvc.com
+
+https://github.com/manoelcampos/ecommerce-demo / https://jb-ecommerce-demo.herokuapp.com
+
+http://a.testaddressbook.com
+http://automationpractice.com
+https://phptravels.com/demo/
+http://enterprise.demo.orangehrmlive.com/symfony/web/index.php/auth/login

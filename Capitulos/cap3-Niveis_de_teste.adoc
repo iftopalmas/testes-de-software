@@ -1,25 +1,25 @@
 :cap: Capitulo3
-:imagesdir: ../imagens/{cap}/
+:imagesdir: imagens/{cap}/
 
 [#Niveis]
 == Níveis de teste de acordo com o SWEBOK
 
-
 === Introdução
-Esse capitulo tem o objetivo de apresentar os níveis de teste de acordo com o _Guide to the Software Engineering Body of Knowledge_ (SWEBOK) <<SWEBOK>>, fornecendo assim uma ideia geral sobre os conceitos relacionados ao teste de software.
+Esse capítulo tem o objetivo de apresentar os níveis de teste de acordo com o _Guide to the Software Engineering Body of Knowledge_ (SWEBOK) <<SWEBOK>> (Guia para a Base de Conhecimento de Engenharia de _Software_), fornecendo assim uma ideia geral sobre os conceitos relacionados ao teste de _software_.
 
-O SWEBOK é um guia criado pelo IEEE e que trata de vários aspectos sobre a Engenharia de Software. Em sua última edição, a terceira, o capitulo 4, é dedicado a testes de software. Cumpre ressaltar que essa obra informa que o teste de software geralmente é realizado em diferentes níveis ao longo dos processos de desenvolvimento e manutenção. Os níveis podem ser distinguidos tomando como base o objeto que será testado, que varia conforme o escopo, que é chamado de alvo, ou na finalidade, que é chamado de objetivo.
+O SWEBOK é um guia criado pelo _Institute of Electrical and Electronics Engineers_ - IEEE (Instituto de Engenheiros Elétricos e Eletrônicos) que trata de vários aspectos sobre a Engenharia de _Software_. O capítulo 4 de sua última edição, a terceira, é dedicado a testes de _software_. Cumpre ressaltar que essa obra informa que o teste de _software_ geralmente é realizado em diferentes níveis ao longo dos processos de desenvolvimento e manutenção. Os níveis podem ser distinguidos tomando como base o objeto que será testado. Este varia conforme (i) o escopo, que é chamado de alvo, ou (ii) finalidade, que é chamado de objetivo.
 
-==== Como esse capitulo está estruturado
-O presente capitulo possui duas seções, a saber:
+==== Como esse capítulo está estruturado
+O presente capítulo possui duas seções, a saber:
 
-- Em <<Alvo>> são apresentados os conceitos sobre os níveis de teste em que é verificado uma parte do software que está sendo desenvolvido, o nível é diferente conforme o escopo.
+- Em <<Alvo>> são apresentados os conceitos sobre os níveis de testes, em que é verificada uma parte do _software_ que está sendo desenvolvido. O nível é diferente conforme o escopo.
 
-- <<Objetivo>> é responsável por falar a respeito dos niveis de testes usados quando temos um objetivo, como usabilidade ou performance em vista.
+- <<Objetivo>> é responsável por falar sobre os niveis de testes usados quando temos um objetivo em vista, como usabilidade ou performance.
 
-Técnicas para o Teste de Software
+Técnicas para o Teste de _Software_
 
-Medidas de teste de Software
+Medidas de Teste de _Software_
+
 ==> Avaliação dos testes realizados (?)
 
 
@@ -34,37 +34,42 @@ Medidas de teste de Software
 
 [#Alvo]
 === Alvo do teste
-O alvo do teste está relacionado ao escopo. Ele pode  variar: um único módulo, um grupo desses módulos (relacionados por finalidade, uso, comportamento ou estrutura) ou um sistema inteiro. Podemos criar três estágios ou níveis de teste. Esses três estágios de teste não implicam em nenhum modelo de processo e nenhum  deles é considerado mais importante que os outros dois.
+O alvo do teste está relacionado ao escopo, podendo ser um: 
+- único módulo;
+- grupo desses módulos (relacionados por finalidade, uso, comportamento ou estrutura);
+- ou um sistema inteiro. 
 
-==== Testes de unidade / unitário
-Os testes de unidade, muitas vezes chamados de testes unitários, são responsáveis por verificar o funcionamento de elementos de software de maneira isolada, ou seja eles são testados de forma individual ​​separadamente. O teste de unidade focaliza o esforço de verificação na menor unidade do projeto de _software_ -- o componente ou módulo de _software_. Se estivermos escrevendo um código usando uma linguagem como o JAVA por exemplo, serão testados os métodos das classes, uma vez que eles normalmente são as menores unidades do projeto. O teste de unidade, na maioria das vezes, ocorre com acesso ao código fonte que está sendo testado e com o suporte de ferramentas de depuração. Os programadores que escreveram o código frequentemente, mas nem sempre, realizam testes unitários. O TDD (do inglês _Test Driven Development_) ou Desenvolvimento Guiado por Testes, que é um exemplo de teste unitário, é apresentado na seção a seguir.
+Podemos criar três estágios ou níveis de teste. Esses três estágios de teste não implicam em nenhum modelo de processo e nenhum  deles é considerado mais importante que os outros dois.
+
+==== Testes de unidade / unitários
+Os testes de unidade, comumente chamados de testes unitários, são responsáveis por verificar o funcionamento de elementos de _software_ de maneira isolada. Ou seja, eles são testados individualmente. O teste de unidade focaliza o esforço de verificação na menor unidade do projeto de _software_ -- o componente ou módulo de _software_. Se estivermos escrevendo um código usando uma linguagem como o Java por exemplo, serão testados os métodos das classes, uma vez que eles normalmente são as menores unidades do projeto. O teste de unidade, na maioria das vezes, ocorre com acesso ao código fonte que está sendo testado e com o suporte de ferramentas de depuração. Os programadores que escreveram o código frequentemente, mas nem sempre, realizam testes unitários. O _Test Driven Development_ (TDD) ou Desenvolvimento Guiado por Testes, um exemplo de teste unitário, é apresentado na seção a seguir.
 
 //Esse material pode ajudar. Dar uma olhada !!
 //https://edisciplinas.usp.br/pluginfile.php/384739/mod_resource/content/1/Aula%205_2014_Tipos-de-teste-software-v2.pdf
 //http://homepages.dcc.ufmg.br/~figueiredo/disciplinas/aulas/testes-software_v01.pdf
 
 ===== Desenvolvimento Guiado por Testes (TDD, do inglês _Test Driven Development_)
-O TDD é uma abordagem para o desenvolvimento de programas em que se intercalam testes e a escrita de código-fonte. O código evolui de maneira incremental, juntamente com um teste para esse incremento. Importante: *Nada é feito, ou seja, nenhum novo código é escrito sem que aquilo que está sendo testado passe no teste.* A figura <<#tdd>>, mostrada a seguir, que foi copiada do livro de Engenharia de Software de Ian Sommerville<<SOMMERVILLE>>, fornece uma visão geral sobre o processo do TDD.
+O TDD é uma abordagem para o desenvolvimento de programas em que se intercalam testes e a escrita de código-fonte. O código evolui de maneira incremental, juntamente com um teste para esse incremento. Importante: *Nada é feito, ou seja, nenhum novo código é escrito, sem que aquilo que está sendo testado passe no teste.* A figura <<#tdd>>, mostrada a seguir, que foi copiada do livro de Engenharia de _Software_ de Ian Sommerville<<SOMMERVILLE>>, fornece uma visão geral sobre o processo do TDD.
 
 [#tdd]
 .O ciclo do TDD
 //[link=https://cdn-images-1.medium.com/max/1200/1*5vlem2hirY1jr_jXt8-QZA.png]
 image::tdd.png[testeAB,600,400]
 
-O ciclo de desenvolvimento usando o TDD envolve antes de tudo uma mudança no paradigma ao qual o programador está acostumando. Ao invés de começar a escrever a funcionalidade a ser incrementada, ele escreve um teste. A sequencia de passos do TDD pode ser explicada assim:
+O ciclo de desenvolvimento usando o TDD envolve antes de tudo uma mudança no paradigma ao qual o programador está acostumado. Ao invés de começar a escrever a funcionalidade a ser incrementada, ele escreve um teste. A sequencia de passos do TDD pode ser explicada assim:
 
-. Identificar o incremento necessário. Ele deve ser pequeno e implementável em
+1. Identificar o incremento necessário. Ele deve ser pequeno e implementável em
 poucas linhas de código. Ele não será escrito ainda;
-. Escrever um teste para esse incremento. Esse teste será feito por uma ferramenta própria de testes, como o _JUnit_. Esse ferramenta é quem fará o teste e relatará se houve sucesso ou não.
-. Executar o teste. A ferramenta poderá também refazer todos os testes que já
+1. Escrever um teste para esse incremento. Esse teste será feito por uma ferramenta própria de testes, como o _JUnit_. Essa ferramenta é que fará o teste e relatará se houve sucesso ou não.
+1. Executar o teste. A ferramenta poderá também refazer todos os testes que já
 foram feitos anteriormente. Nesse caso, o resultado obtido é uma falha do teste.
 Mas por que? Lembre-se que você ainda não implementou a nova funcionalidade. Essa falha o ajudará a não esquecer de fazer a codificação.
-. Implementar a nova funcionalidade e executar o teste novamente. O código pode ser refatorado e melhorado completamente.
-. Depois que os testes forem executados com sucesso, voltamos ao passo 1.
+1. Implementar a nova funcionalidade e executar o teste novamente. O código pode ser refatorado para melhorá-lo.
+1. Depois que os testes forem executados com sucesso, voltamos ao passo 1.
 
-*Beneficios do TDD*
+*Benefícios do TDD*
 
-Cobertura de código::: Cada segmento de código que você escreve deve ter pelo menos um teste associado, para todo o código escrito tem pelo menos um teste.
+Cobertura de código::: Cada segmento de código que você escreve deve ter pelo menos um teste associado.
 
 Testes de regressão::: Um conjunto de testes de regressão é desenvolvido de forma incremental enquanto um programa é desenvolvido.
 
@@ -75,21 +80,25 @@ Documentação de sistema::: Os próprios testes são uma forma de documentaçã
 ==== Testes de integração
 image::testing-integration.png[Teste de integração,300,300]
 
-O teste de integração, também conhecido como teste de componente, é o processo de verificar as interações entre os componentes de software. Ele fará com que duas ou mais classes, por exemplo, sejam postas em funcionamento juntas. Devemos pensar que se individualmente elas funcionaram, quando colocadas juntas, elas devem continuar funcionando. Estratégias clássicas de teste de integração, como _top-down_ e _bottom-up_, são frequentemente usadas com software estruturado hierarquicamente. Estratégias de integração modernas e sistemáticas são tipicamente direcionadas à arquitetura, o que envolve a integração gradual dos componentes ou subsistemas de software com base em segmentos funcionais identificados. O teste de integração geralmente é uma atividade contínua em cada estágio do desenvolvimento, durante o qual os engenheiros de software abstraem as perspectivas de nível inferior e concentram-se nas perspectivas do nível em que estão integrando. Para outros, além do software pequeno e simples, as estratégias de teste de integração incremental geralmente são preferidas para reunir todos os componentes de uma só vez - o que geralmente é chamado de teste _“big bang”_.
+O teste de integração, também conhecido como teste de componente, é o processo de verificar as interações entre os componentes de _software_. Ele fará com que duas ou mais classes, por exemplo, sejam postas em funcionamento juntas. Devemos pensar que se individualmente elas funcionaram, quando colocadas juntas, elas devem continuar funcionando. Estratégias clássicas de teste de integração, como _top-down_ e _bottom-up_, são frequentemente usadas com _software_ estruturado hierarquicamente. Estratégias de integração modernas e sistemáticas são tipicamente direcionadas à arquitetura, o que envolve a integração gradual dos componentes ou subsistemas de _software_, com base em segmentos funcionais identificados. 
+
+O teste de integração geralmente é uma atividade contínua em cada estágio do desenvolvimento, durante o qual os engenheiros de _software_ abstraem as perspectivas de nível inferior e concentram-se nas perspectivas do nível em que estão integrando. Para outros, além do _software_ pequeno e simples, as estratégias de teste de integração incremental geralmente são preferidas para reunir todos os componentes de uma só vez - o que geralmente é chamado de teste _“big bang”_.
 
 ==== Teste de sistema
-O teste do sistema está preocupado em testar o comportamento de um sistema inteiro definido pelo escopo de um projeto ou programa de desenvolvimento. De acordo com o ISTQB, no teste de sistema, o ambiente de teste deve corresponder o máximo possível ao objetivo final, ou o ambiente de produção, para minimizar que os riscos de falhas específicas de ambiente não serem encontradas durante o teste. Ele pode ser baseado em descrições de alto nível do comportamento do sistema, tais como especificação de riscos e/ou de requisitos, processos de negócios ou casos de uso. O teste do sistema é geralmente considerado apropriado para avaliar os requisitos não funcionais do sistema, ou seja a segurança, a velocidade, precisão e também a confiabilidade. Interfaces externas para outros aplicativos, utilitários, dispositivos de _hardware_ ou os ambientes operacionais também são geralmente avaliados nesse nível. Uma equipe de teste independente é frequentemente responsável pelo teste de sistema.
+O teste do sistema está preocupado em testar o comportamento de um sistema inteiro, definido pelo escopo de um projeto ou programa de desenvolvimento. De acordo com o ISTQB, no teste de sistema, o ambiente de teste deve corresponder o máximo possível ao objetivo final ou ao ambiente de produção. Isto visa minimizar os riscos de falhas específicas de ambiente não serem encontradas durante o teste. Ele pode ser baseado em descrições de alto nível do comportamento do sistema, tais como: (i) especificação de riscos e/ou de requisitos, (ii) processos de negócios ou (iii) casos de uso. 
+
+O teste do sistema é geralmente considerado apropriado para avaliar os requisitos não funcionais do sistema como segurança, velocidade, precisão e confiabilidade. Interfaces externas para outros aplicativos, utilitários, dispositivos de _hardware_ ou os ambientes operacionais também são geralmente avaliados nesse nível. Uma equipe de teste independente é frequentemente responsável pelos testes de sistema.
 
 [#Objetivo]
 === Objetivos do teste
 
-Quando tratamos de objetivos do teste, estamos nos referindo a uma característica especifica. Ela pode sofrer alterações conforme o software é testado. Segundo o SWEBOK, declarar os objetivos do teste em termos precisos e quantitativos permite que os resultados obtidos possam ser medidos além de permitir mais controle do processo de teste.
+Quando tratamos de objetivos do teste, estamos nos referindo a uma característica específica. Ela pode sofrer alterações conforme o _software_ é testado. Segundo o SWEBOK, declarar os objetivos do teste em termos precisos e quantitativos permite que os resultados obtidos possam ser medidos, além de dar mais controle ao processo de teste.
 
-O teste pode ser destinado a verificar propriedades diferentes. Os casos de teste podem ser projetados para verificar se as especificações funcionais estão corretamente implementadas, o que é referido na literatura como testes de conformidade, testes de correção ou testes funcionais. No entanto, várias outras propriedades emergentes também podem ser testadas, incluindo desempenho, confiabilidade e usabilidade, entre muitas outras.
+O teste pode ser destinado a verificar propriedades diferentes. Os casos de teste podem ser projetados para verificar se as especificações funcionais estão corretamente implementadas. Isto é referido na literatura como testes de conformidade, testes de correção ou testes funcionais. No entanto, várias outras propriedades emergentes também podem ser testadas, incluindo desempenho, confiabilidade, usabilidade, entre muitas outras.
 
-Outros objetivos importantes para o teste incluem, mas não se limitam a, medição de confiabilidade, identificação de vulnerabilidades de segurança, avaliação de usabilidade e aceitação de software, para os quais diferentes abordagens seriam adotadas. Observe que, em geral, os objetivos do teste variam de acordo com a meta de teste; diferentes finalidades são abordadas em diferentes níveis de teste.
+Outros objetivos importantes para o teste incluem, mas não se limitam a, medição de confiabilidade, identificação de vulnerabilidades de segurança, avaliação de usabilidade e aceitação de _software_. Para estes objetivos, diferentes abordagens podem ser adotadas. Observe que, em geral, os objetivos do teste variam de acordo com a meta de teste; diferentes finalidades são abordadas em diferentes níveis de teste.
 
-Os itens elencados a seguir são os mais usados na  literatura. Observe que alguns tipos de testes são mais apropriados para pacotes de software personalizados - testes de instalação, por exemplo - e outros para produtos de consumo, como o teste beta.
+Os itens elencados a seguir são os mais usados na  literatura. Observe que alguns tipos de testes são mais apropriados para pacotes de _software_ personalizados - testes de instalação, por exemplo - e outros para produtos de consumo, como o teste beta.
 
 O SWEBOK enumera 13 testes diferentes nessa categoria, a saber:
 
@@ -98,7 +107,7 @@ O teste de aceitação / qualificação determina se um sistema satisfaz seus cr
 
 O objetivo desse teste é estabelecer a confiança no sistema, parte do sistema ou uma característica não específica do sistema. Procurar defeitos não é o principal foco. Ele pode avaliar a disponibilidade do sistema para entrar em produção, apesar de não ser necessariamente o último nível de teste, uma vez que, por exemplo, um teste de integração em larga escala pode ser feito após.
 
-Esse teste é realizado pelo cliente ou por usuário do sistema; os interessados (_stakeholders_) também podem ser envolvidos.
+Esse teste é realizado pelo cliente ou por usuários do sistema; os interessados (_stakeholders_) também podem ser envolvidos.
 
 
 //As formas de teste de aceite incluem tipicamente os seguintes testes:
@@ -114,45 +123,44 @@ Esse teste é realizado pelo cliente ou por usuário do sistema; os interessado
 
 //Teste Alfa::: Realizados pelos usuários - testes manuais. São testes realizados em um ambiente controlado pelo desenvolvedor que registra os problemas de uso e os erros que aconteceram.
 
-//Teste Beta::: Realizados pelos usuários mais usuários - testes manuais. Os testes são feitos no ambiente do usuário. Mais mais difícil para o desenvolvedor acompanhar uma vez que podem haver uma quantidade muito grande de usuários.
-
+//Teste Beta::: Realizados pelos usuários mais usuários - testes manuais. Os testes são feitos no ambiente do usuário. Mas mais difícil para o desenvolvedor acompanhar, uma vez que pode haver uma quantidade muito grande de usuários.
 
 ==== Testes de Instalação
-Muitas vezes, após a conclusão do sistema e teste de aceitação, o software é verificado após a instalação no ambiente de destino. Os testes de instalação podem ser vistos como testes de sistema realizados no ambiente operacional de configurações de hardware e outras restrições operacionais. Os procedimentos de instalação também podem ser verificados.
+Muitas vezes, após a conclusão do sistema e teste de aceitação, o _software_ é verificado após a instalação no ambiente de destino. Os testes de instalação podem ser vistos como testes de sistema realizados no ambiente operacional de configurações de hardware e outras restrições operacionais. Os procedimentos de instalação também podem ser verificados.
 
 ==== Teste Alfa e Beta
-Antes do lançamento do software, às vezes é dado a um grupo pequeno e selecionado de usuários em potencial para uso experimental (teste alfa) e / ou para um conjunto maior de usuários representativos (teste beta). Esses usuários relatam problemas com o produto. Os testes alfa e beta geralmente não são controlados e nem sempre são mencionados em um plano de teste.
+Antes do lançamento do _software_, às vezes é dado a um grupo pequeno e selecionado de usuários em potencial para uso experimental (teste alfa) e / ou para um conjunto maior de usuários representativos (teste beta). Esses usuários relatam problemas com o produto. Os testes alfa e beta geralmente não são controlados e nem sempre são mencionados em um plano de teste.
 
 ==== Conquista e Avaliação de Confiabilidade
-O teste melhora a confiabilidade identificando e corrigindo falhas. Além disso, medidas estatísticas de confiabilidade podem ser obtidas gerando aleatoriamente casos de teste de acordo com o perfil operacional do software (consulte Perfil Operacional na seção 3.5, Técnicas Baseadas em Uso). A última abordagem é chamada de teste operacional. Usando modelos de crescimento de confiabilidade, ambos os objetivos podem ser perseguidos juntos [3] (ver Teste de Vida, Avaliação de Confiabilidade na seção 4.1, Avaliação do Programa em Teste).
+O teste melhora a confiabilidade identificando e corrigindo falhas. Além disso, medidas estatísticas de confiabilidade podem ser obtidas gerando aleatoriamente casos de teste de acordo com o perfil operacional do _software_ (consulte Perfil Operacional na seção 3.5, Técnicas Baseadas em Uso). A última abordagem é chamada de teste operacional. Usando modelos de crescimento de confiabilidade, ambos os objetivos podem ser perseguidos juntos [3] (ver Teste de Vida, Avaliação de Confiabilidade na seção 4.1, Avaliação do Programa em Teste).
 
 ==== Teste de regressão
-Mostra que o software ainda passa nos testes feitos ​​anteriormente (na verdade, às vezes também é chamado de teste de não-regressão). Para desenvolvimento incremental, o objetivo do teste de regressão é mostrar que o comportamento do software não é alterado por mudanças incrementais no software, exceto na medida em que deveria. Em alguns casos, uma compensação deve ser feita entre a garantia dada pelo teste de regressão toda vez que uma alteração é feita e os recursos necessários para executar os testes de regressão, o que pode ser bastante demorado devido ao grande número de testes que podem ser executados. O teste de regressão envolve selecionar, minimizar e / ou priorizar um subconjunto dos casos de teste em um conjunto de testes existente [8]. O teste de regressão pode ser realizado em cada um dos níveis de teste descritos na seção 2.1, O Alvo do Teste, e pode ser aplicado a testes funcionais e não funcionais.
+Mostra que o _software_ ainda passa nos testes feitos ​​anteriormente (na verdade, às vezes também é chamado de teste de não-regressão). Para desenvolvimento incremental, o objetivo do teste de regressão é mostrar que o comportamento do _software_ não é alterado por mudanças incrementais no _software_, exceto na medida em que deveria. Em alguns casos, uma compensação deve ser feita entre a garantia dada pelo teste de regressão toda vez que uma alteração é feita e os recursos necessários para executar os testes de regressão, o que pode ser bastante demorado devido ao grande número de testes que podem ser executados. O teste de regressão envolve selecionar, minimizar e / ou priorizar um subconjunto dos casos de teste em um conjunto de testes existente [8]. O teste de regressão pode ser realizado em cada um dos níveis de teste descritos na seção 2.1, O Alvo do Teste, e pode ser aplicado a testes funcionais e não funcionais.
 
 ==== Teste de performance
-O teste de desempenho verifica se o software atende aos requisitos de desempenho especificados e avalia as características de desempenho - por exemplo, capacidade e tempo de resposta.
+O teste de desempenho verifica se o _software_ atende aos requisitos de desempenho especificados e avalia as características de desempenho - por exemplo, capacidade e tempo de resposta.
 
 ==== Testes de segurança
-O teste de segurança é focado na verificação de que o software está protegido contra ataques externos. Em particular, o teste de segurança verifica a confidencialidade, integridade e disponibilidade dos sistemas e seus dados. Geralmente, o teste de segurança inclui a verificação contra uso indevido e abuso do software ou sistema (teste negativo).
+O teste de segurança é focado na verificação de que o _software_ está protegido contra ataques externos. Em particular, o teste de segurança verifica a confidencialidade, integridade e disponibilidade dos sistemas e seus dados. Geralmente, o teste de segurança inclui a verificação contra uso indevido e abuso do _software_ ou sistema (teste negativo).
 
 ==== Teste de estresse
-O teste de estresse exerce o software na carga máxima do projeto, além dele, com o objetivo de determinar os limites comportamentais e testar os mecanismos de defesa em sistemas críticos.
+O teste de estresse exerce o _software_ na carga máxima do projeto, além dele, com o objetivo de determinar os limites comportamentais e testar os mecanismos de defesa em sistemas críticos.
 
 
 ==== Teste de back-to-back [7]
 O padrão IEEE / ISO / IEC 24765 define o teste back-to-back como “teste em que duas ou mais variantes de um programa são executadas com as mesmas entradas, as saídas são comparadas e os erros são analisados ​​em caso de discrepâncias”.
 
 ==== Teste de Recuperação
-O teste de recuperação visa verificar os recursos de reinicialização do software após uma falha do sistema ou outro "desastre".
+O teste de recuperação visa verificar os recursos de reinicialização do _software_ após uma falha do sistema ou outro "desastre".
 
 ==== Teste de interface
 Os defeitos da interface são comuns em sistemas complexos. O teste de interface visa verificar se os componentes fazem interface corretamente para fornecer a troca correta de dados e informações de controle. Normalmente, os casos de teste são gerados a partir da especificação da interface. Um objetivo específico do teste de interface é simular o uso de APIs por aplicativos de usuário final. Isso envolve a geração de parâmetros das chamadas da API, a configuração de condições externas do ambiente e a definição de dados internos que afetam a API.
 
 ==== Teste de configuração
-Nos casos em que o software é criado para atender a diferentes usuários, o teste de configuração verifica o software em diferentes configurações especificadas.
+Nos casos em que o _software_ é criado para atender a diferentes usuários, o teste de configuração verifica o _software_ em diferentes configurações especificadas.
 
 ==== Teste de Interação Usabilidade e Computador Humano
-A principal tarefa dos testes de usabilidade e interação com computadores humanos é avaliar como é fácil para os usuários finais aprenderem e usarem o software. Em geral, pode envolver o teste das funções do software que suportam as tarefas do usuário, a documentação que ajuda os usuários e a capacidade do sistema de se recuperar dos erros do usuário (consulte Design da interface do usuário no Software Design KA).
+A principal tarefa dos testes de usabilidade e interação com computadores humanos é avaliar como é fácil para os usuários finais aprenderem e usarem o _software_. Em geral, pode envolver o teste das funções do _software_ que suportam as tarefas do usuário, a documentação que ajuda os usuários e a capacidade do sistema de se recuperar dos erros do usuário (consulte Design da interface do usuário no Software Design KA).
 
 
 =x=x=x=x=x=x=x
