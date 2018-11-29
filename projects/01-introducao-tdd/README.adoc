@@ -47,11 +47,15 @@ Se você buscar por `junit`, encontrará tal dependência normalmente no topo da
 .Buscando uma dependência como o JUnit no http://search.maven.org[Maven Central].
 image::junit-maven-central.png[]
 
+{nbsp} +
+
 Clicando no número da versão na 3ª coluna, podemos obter o trecho XML exibido acima para incluir no nosso arquivo link:pom.xml[]. Este é exibido no canto superior direito.
 Observe que é exibida a última versão da dependência selecionada. Se você quiser uma versão diferente, pode escolher no canto superior esquerdo e depois copiar o trecho XML no canto superior direito. A imagem abaixo apresenta estes detalhes.
 
 .Copiando o trecho XML para incluir a dependência no arquivo link:pom.xml[pom.xml] do projeto Maven.
 image::junit-maven-central-pom.png[]
+
+{nbsp} +
 
 Observe que, apesar de existir um botão de download nas páginas apresentadas, criando um projeto Maven, não precisamos baixar manualmente qualquer dependência. As dependências baixadas ficam salvas na pasta `.m2/repository` dentro da pasta do 
 seu usuário no computador que estiver usando. Assim, a pasta do seu projeto não fica cheia de arquivos que podem
