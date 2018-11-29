@@ -3555,7 +3555,8 @@
 																}
 															]
 														}
-													]
+													],
+													"documentation": "Pacote contendo classes que implementam o Padrão de Projetos Data Access Objects (DAO). Tais classes são responsáveis por fazer o acesso ao banco de dados."
 												},
 												{
 													"_type": "UMLPackage",
@@ -4206,7 +4207,8 @@
 																}
 															]
 														}
-													]
+													],
+													"documentation": "Pacote contendo as classes de negócio do sistema, ou seja, as classes principais que importam para o negócio do cliente (dono do sistema)."
 												}
 											]
 										}
