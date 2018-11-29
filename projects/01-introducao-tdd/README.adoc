@@ -71,7 +71,7 @@ Se a classe principal tiver muitos métodos ou a quantidade de testes para cada 
 destes métodos for muito grande, podemos criar uma classe de teste contendo 
 apenas testes para um determinado método da classe sendo testada.
 
-Assim, para a classe principal como link:src/main/java/com/manoelcampos/tdd/MathUtil.java[MathUtil.java],
+Assim, para a classe principal como link:src/main/java/com/manoelcampos/tdd/com.manoelcampos.noite.MathUtil.java[com.manoelcampos.noite.MathUtil.java],
 poderíamos ter a classe de teste `MathUtilTest.java`.
 No entanto, como só os testes do método `mdc` já são muitos,
 foi criada uma classe de teste link:src/test/java/com/manoelcampos/tdd/MathUtilMdcTest.java[MathUtilMdcTest.java]
