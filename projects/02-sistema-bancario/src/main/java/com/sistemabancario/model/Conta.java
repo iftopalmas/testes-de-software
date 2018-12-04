@@ -1,6 +1,4 @@
-package main.java.com.sistemabancario.model;
-
-import java.util.*;
+package com.sistemabancario.model;
 
 /**
  * Representa uma conta bancária de um determinado cliente, tendo os seguintes requisitos:
@@ -11,32 +9,32 @@ import java.util.*;
 public class Conta implements Cadastro {
 
     /**
-     * Default constructor
-     */
-    public Conta() {
-    }
-
-    /**
-     * 
+     *
      */
     private long id;
 
     /**
-     * 
+     *
      */
     private String numero;
 
     /**
-     * Contas devem ser instanciadas como como "Conta Corrente" e não como "Poupança". 
-     * Mesmo que o valor padrão para o atributo "poupanca" seja false, 
+     * Contas devem ser instanciadas como como "Conta Corrente" e não como "Poupança".
+     * Mesmo que o valor padrão para o atributo "poupanca" seja false,
      * o código pode ser alterado e tal requisito pode deixar de  ser atendido futuramente.
      */
     private boolean poupanca;
 
     /**
-     * 
+     *
      */
     private boolean especial;
+
+    /**
+     * Default constructor
+     */
+    public Conta() {
+    }
 
     /**
      * 
@@ -55,7 +53,7 @@ public class Conta implements Cadastro {
      * 
      */
     public void Conta() {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
     }
 
     /**
@@ -64,7 +62,7 @@ public class Conta implements Cadastro {
      * @param limite
      */
     public void Conta(Banco banco, boolean especial, double limite) {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
     }
 
     /**
@@ -72,7 +70,7 @@ public class Conta implements Cadastro {
      * @return
      */
     public double getSaldoTotal() {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
         return 0.0d;
     }
 
@@ -88,7 +86,7 @@ public class Conta implements Cadastro {
      * @param valor
      */
     public void saque(double valor) {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
     }
 
     /**
@@ -97,7 +95,7 @@ public class Conta implements Cadastro {
      * @param valor
      */
     public void depositoEnvelope(double valor) {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
     }
 
     /**
@@ -108,14 +106,14 @@ public class Conta implements Cadastro {
      * @param movimentacao
      */
     public void addMovimentacao(Movimentacao movimentacao) {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
     }
 
     /**
      * @return
      */
     public long getId() {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
         return 0;
     }
 
@@ -123,7 +121,7 @@ public class Conta implements Cadastro {
      * @param id
      */
     public void setId(long id) {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
     }
 
 }

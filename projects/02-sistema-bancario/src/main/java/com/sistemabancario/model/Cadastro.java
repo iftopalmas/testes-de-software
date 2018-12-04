@@ -1,4 +1,4 @@
-package main.java.com.sistemabancario.model;
+package com.sistemabancario.model;
 
 import java.util.*;
 

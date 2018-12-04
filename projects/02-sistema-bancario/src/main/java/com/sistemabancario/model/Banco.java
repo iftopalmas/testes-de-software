@@ -1,6 +1,4 @@
-package main.java.com.sistemabancario.model;
-
-import java.util.*;
+package com.sistemabancario.model;
 
 /**
  * Representa uma instituição bancária com os seguintes requisitos:
@@ -11,23 +9,17 @@ import java.util.*;
 public class Banco implements Cadastro {
 
     /**
-     * Default constructor
-     */
-    public Banco() {
-    }
-
-    /**
-     * 
+     *
      */
     private long id;
 
     /**
-     * 
+     *
      */
     private String nome;
 
     /**
-     * 
+     *
      */
     private String sigla;
 
@@ -38,10 +30,16 @@ public class Banco implements Cadastro {
 
 
     /**
+     * Default constructor
+     */
+    public Banco() {
+    }
+
+    /**
      * @return
      */
     public long getId() {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
         return 0;
     }
 
@@ -49,7 +47,7 @@ public class Banco implements Cadastro {
      * @param id
      */
     public void setId(long id) {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
     }
 
 }
