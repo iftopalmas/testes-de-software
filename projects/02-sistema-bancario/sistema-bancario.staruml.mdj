@@ -4191,6 +4191,7 @@
 																		"$ref": "AAAAAAFmnWOVoMEKDz0="
 																	},
 																	"name": "valor",
+																	"documentation": "Valor monetário da movimentação.\nO valor não deve ser negativo, uma vez que existe o atributo {@link #tipo}.",
 																	"visibility": "private",
 																	"type": "double"
 																},

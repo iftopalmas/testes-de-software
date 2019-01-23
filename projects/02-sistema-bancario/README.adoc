@@ -8,7 +8,7 @@ O diagrama pode ser editado no arquivo link:sistema-bancario.staruml.mdj[sistema
 que é um projeto do http://staruml.io[StarUML].
 No projeto podem ser observados diversos detalhes e documentação das classes apresentadas abaixo.
 
-.Diagrama das Classes de Negócio do Sistema Bancário.
+.Diagrama das Classes de Negócio do Sistema Bancário (pacote link:src/main/java/com/sistemabancario/model[model]).
 image::diagrama-classes-model.png[]
 
 {nbsp} + 
@@ -25,5 +25,3 @@ O projeto Java possui os seguintes pacotes:
 
 - link:src/main/java/com/sistemabancario/dao[dao]: ver definição no arquivo link:src/main/java/com/sistemabancario/dao/package-info.java[package-info.java].
 - link:src/main/java/com/sistemabancario/model[model]: ver definição no arquivo link:src/main/java/com/sistemabancario/model/package-info.java[package-info.java].
-
-O diagrama acima são para as classes do pacote _model_.
