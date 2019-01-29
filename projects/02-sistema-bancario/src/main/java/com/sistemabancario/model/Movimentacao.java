@@ -10,14 +10,10 @@ package com.sistemabancario.model;
  *
  * Mesmo sendo possível obter o saldo somando-se todas as movimentações, 
  * à medida que os dados no sistema aumentarem ao longo do tempo, 
- * calcular o saldo pode ser tornar uma operação extremamente lenta caso o histórico de movimentações seja grande 
+ * calcular o saldo pode se tornar uma operação extremamente lenta caso o histórico de movimentações seja grande 
  * (principalmente depois de alguns anos).
  */
 public class Movimentacao {
-
-    /**
-     *
-     */
     private String descricao;
 
     /**
@@ -40,9 +36,6 @@ public class Movimentacao {
      */
     private boolean confirmada;
 
-    /**
-     * Default constructor
-     */
     public Movimentacao() {
     }
 
@@ -53,6 +46,5 @@ public class Movimentacao {
     public void setTipo(char tipo){
         this.tipo = tipo;
     }
-
 
 }

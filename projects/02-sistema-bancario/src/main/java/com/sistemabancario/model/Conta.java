@@ -7,53 +7,27 @@ package com.sistemabancario.model;
  * - Uma conta não pode ser excluída se existirem movimentações.
  */
 public class Conta implements Cadastro {
-
-    /**
-     *
-     */
     private long id;
 
-    /**
-     *
-     */
     private String numero;
 
     /**
-     * Contas devem ser instanciadas como como "Conta Corrente" e não como "Poupança".
+     * Contas devem ser instanciadas como "Conta Corrente" e não como "Poupança".
      * Mesmo que o valor padrão para o atributo "poupanca" seja false,
      * o código pode ser alterado e tal requisito pode deixar de  ser atendido futuramente.
      */
     private boolean poupanca;
 
     /**
-     *
+     * Contas especiais podem ter limite.
      */
     private boolean especial;
 
-    /**
-     * Default constructor
-     */
-    public Conta() {
-    }
-
-    /**
-     * 
-     */
     private double saldo;
 
-    /**
-     * 
-     */
     private double limite;
 
-
-
-
-    /**
-     * 
-     */
-    public void Conta() {
-        // TODO: Você precisa implementar este método
+    public Conta() {
     }
 
     /**
@@ -75,7 +49,9 @@ public class Conta implements Cadastro {
     }
 
     /**
-     * Adiciona uma nova movimentação para retirar um determinado valor da conta.
+     * Registra uma nova movimentação para retirar um determinado valor da conta.
+     * 
+     * <p>Se o valor for maior que o saldo total.</p>
      * 
      * <p>Se for tentando realizar dois saques ao mesmo tempo com valor igual ao saldo total, 
      * somente o primeiro saque deve ser permitido. 
@@ -109,9 +85,7 @@ public class Conta implements Cadastro {
         // TODO: Você precisa implementar este método
     }
 
-    /**
-     * @return
-     */
+    @Override
     public long getId() {
         // TODO: Você precisa implementar este método
         return 0;
@@ -120,8 +94,8 @@ public class Conta implements Cadastro {
     /**
      * @param id
      */
+    @Override
     public void setId(long id) {
         // TODO: Você precisa implementar este método
     }
-
 }
