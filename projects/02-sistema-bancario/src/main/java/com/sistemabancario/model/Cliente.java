@@ -8,9 +8,6 @@ package com.sistemabancario.model;
  */
 public class Cliente implements Cadastro {
 
-    /**
-     *
-     */
     private long id;
 
     /**
@@ -25,34 +22,36 @@ public class Cliente implements Cadastro {
      */
     private String nome;
 
-    /**
-     * Default constructor
-     */
-    public Cliente() {
-    }
-
-
-    /**
-     * @return
-     */
     public boolean isCpfValido() {
         // TODO: Você precisa implementar este método
         return false;
     }
 
-    /**
-     * @return
-     */
+    @Override
     public long getId() {
         // TODO: Você precisa implementar este método
         return 0;
     }
 
-    /**
-     * @param id
-     */
+    @Override
     public void setId(long id) {
         // TODO: Você precisa implementar este método
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
 }

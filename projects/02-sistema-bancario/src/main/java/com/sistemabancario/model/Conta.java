@@ -30,12 +30,7 @@ public class Conta implements Cadastro {
     public Conta() {
     }
 
-    /**
-     * @param banco 
-     * @param especial 
-     * @param limite
-     */
-    public void Conta(Banco banco, boolean especial, double limite) {
+    public Conta(Agencia agencia, boolean especial, double limite) {
         // TODO: Você precisa implementar este método
     }
 
@@ -52,6 +47,7 @@ public class Conta implements Cadastro {
      * Registra uma nova movimentação para retirar um determinado valor da conta.
      * 
      * <ul>
+     * <li>Após realizar um saque, o saldo deve ser atualizado.</li>
      * <li>Se o valor for menor ou igual ao saldo total.</li>
      * <li>Se for tentando realizar dois saques ao mesmo tempo com valor igual ao saldo total, 
      * somente o primeiro saque deve ser permitido. 
@@ -93,11 +89,48 @@ public class Conta implements Cadastro {
         return 0;
     }
 
-    /**
-     * @param id
-     */
     @Override
     public void setId(long id) {
         // TODO: Você precisa implementar este método
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public boolean isPoupanca() {
+        return poupanca;
+    }
+
+    public void setPoupanca(boolean poupanca) {
+        this.poupanca = poupanca;
+    }
+
+    public boolean isEspecial() {
+        return especial;
+    }
+
+    public void setEspecial(boolean especial) {
+        this.especial = especial;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public double getLimite() {
+        return limite;
+    }
+
+    public void setLimite(double limite) {
+        this.limite = limite;
     }
 }
