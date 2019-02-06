@@ -51,15 +51,17 @@ public class Conta implements Cadastro {
     /**
      * Registra uma nova movimentação para retirar um determinado valor da conta.
      * 
-     * <p>Se o valor for maior que o saldo total.</p>
-     * 
-     * <p>Se for tentando realizar dois saques ao mesmo tempo com valor igual ao saldo total, 
+     * <ul>
+     * <li>Se o valor for menor ou igual ao saldo total.</li>
+     * <li>Se for tentando realizar dois saques ao mesmo tempo com valor igual ao saldo total, 
      * somente o primeiro saque deve ser permitido. 
      * Isto evita que um cliente que possua dois cartões da mesma conta
      * tente retirar mais dinheiro do que há disponível na conta. 
      * Ele poderia tentar fazer isso solicitando a ajuda de outra pessoa. 
-     * Assim, as duas pessoas poderiam tentar ir em caixas diferentes ao mesmo tempo para tentar realizar um saque em duplicidade.</p>
-     * @param valor
+     * Assim, as duas pessoas poderiam tentar ir em caixas diferentes ao mesmo tempo 
+     * para tentar realizar um saque em duplicidade.</li>
+     * </ul>
+     * @param valor valor a ser sacado (deve ser um valor positivo)
      */
     public void saque(double valor) {
         // TODO: Você precisa implementar este método
@@ -68,7 +70,7 @@ public class Conta implements Cadastro {
     /**
      * Adiciona uma nova movimentação de depósito em envelope
      * (que deve ser confirmada posteriormente por um funcionário do banco).
-     * @param valor
+     * @param valor valor a ser depositado (deve ser um valor positivo)
      */
     public void depositoEnvelope(double valor) {
         // TODO: Você precisa implementar este método
@@ -77,8 +79,8 @@ public class Conta implements Cadastro {
     /**
      * Adiciona uma nova movimentação genérica, como 
      * saque, transferência, depósito no balcão 
-     * (no lugar de depósito no caixa eletrônico), etc.
-     * Movimentações adicionadas com este método deve ser automaticamente confirmadas e o saldo atualizado.
+     * (no lugar de depósito por envelope), etc.
+     * Movimentações adicionadas com este método devem ser automaticamente confirmadas e o saldo atualizado.
      * @param movimentacao
      */
     public void addMovimentacao(Movimentacao movimentacao) {
