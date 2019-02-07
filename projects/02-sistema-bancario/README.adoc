@@ -13,7 +13,7 @@ image::diagrama-classes-model.png[]
 
 {nbsp} + 
 
-Perceba que a interface `Cadastro` é implementada por todas as classes exibidas acima, mas o relacionamento não foi exibido para evitar um emaranhado de linhas. De qualquer form, pode observar que as classes são estereotipadas (rotuladas) com `\<<Cadastro>>`.
+Perceba que a interface `Cadastro` é implementada por todas as classes exibidas acima, mas o relacionamento não foi exibido para evitar um emaranhado de linhas. De qualquer forma, pode observar que as classes são estereotipadas (rotuladas) com `\<<Cadastro>>`.
 
 O código de tais classes foi gerado a partir do StarUML e está disponível em um link:src[projeto Java
 na pasta src], contendo a mesma documentação disponível no projeto UML.

@@ -8,5 +8,5 @@ target/
 .idea
 *.iml
 ~$*
-/projects/01-introducao-tdd/nbproject/
+/nbproject/
 aulas

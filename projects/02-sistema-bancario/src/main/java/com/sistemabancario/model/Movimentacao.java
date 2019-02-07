@@ -13,7 +13,8 @@ package com.sistemabancario.model;
  * calcular o saldo pode se tornar uma operação extremamente lenta caso o histórico de movimentações seja grande 
  * (principalmente depois de alguns anos).
  */
-public class Movimentacao {
+public class Movimentacao implements Cadastro {
+    private long id;
     private String descricao;
 
     /**
@@ -35,6 +36,16 @@ public class Movimentacao {
      * Após uma operação ser confirmada, deve-se atualizar o saldo da conta.</p>
      */
     private boolean confirmada;
+
+    @Override
+    public long getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public char getTipo(){
         return tipo;

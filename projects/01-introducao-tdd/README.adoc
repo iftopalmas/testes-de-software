@@ -1,6 +1,6 @@
 = Introdução ao Test Driven Development (TDD): Desenvolvimento Guiado por Testes
 
-Esta pasta fornece um projeto de exemplo de aplicação de TDD como processo
+Esta pasta fornece, além de uma apresentação sobre link:tdd.pptx[TDD], um projeto de exemplo da aplicação de TDD como processo
 de desenvolvimento de software, utilizando neste caso o paradigma de 
 Programação Orientada a Objetos (POO).
 
