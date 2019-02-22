@@ -1,4 +1,13 @@
-:cap: Capitulo2
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+:cap: capitulo2
 :imagesdir: imagens/{cap}/
 
 [#queeteste]
@@ -75,12 +84,12 @@ O teste é importante porque os erros de _software_ podem ser caros ou até torn
 - O Voo 501 da Agência Espacial Européia Ariane 5 foi destruído 40 segundos após a decolagem (4 de junho de 1996). 
 - O protótipo de foguete de US$ 1 bilhão foi destruído devido a um bug no _software_ de orientação a bordo. Clique no link abaixo para ver como foi o lançamento e a destruição do foguete.
 
-ifdef::backend-pdf[]
-    http://youtu.be/gp_D8r-2hwk
+ifdef::backend-pdf,env-github[]
+http://youtu.be/gp_D8r-2hwk
 endif::[]
 
 ifdef::backend-html5[]
-    video::gp_D8r-2hwk[youtube, 800, 600]
+video::gp_D8r-2hwk[youtube, 800, 600]
 endif::[]
 
 // http://tryqa.com/what-is-software-testing/

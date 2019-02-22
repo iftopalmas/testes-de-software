@@ -1,3 +1,15 @@
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+:cap: capitulo6
+:imagesdir: imagens/{cap}/
+
 == Plano de teste
 
 === O que é um plano de teste?
@@ -303,7 +315,6 @@ Os resultados finais do teste são fornecidos após o término dos ciclos de tes
 . Faça com que o plano de teste seja revisado várias vezes antes de fazer o baselining ou enviá-lo para aprovação. A qualidade do seu plano de teste fala muito sobre a qualidade dos testes que você ou sua equipe irão realizar.
 
 . Atualize o plano como e quando necessário. Um documento desatualizado e não utilizado fede e é pior do que não ter o documento em primeiro lugar.
-
 
 //Link para o original
 //https://www.guru99.com/what-everybody-ought-to-know-about-test-planing.html

@@ -1,0 +1,19 @@
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+= Sumário
+
+. link:ebook/README.adoc[Prefácio]
+. link:ebook/cap1-processos_de_software.adoc[Capitulo 1 - Breve Revisão sobre Processos de Software]
+. link:ebook/cap2-o_que_e_teste_de_software.adoc[Capitulo 2 - O que é Teste de Software?]
+. link:ebook/cap3-niveis_de_teste.adoc[Capitulo 3 - Níveis de Teste segundo o SWEBOK]
+. link:ebook/cap4-tecnicas_de_teste.adoc[Capitulo 4 - Técnicas de Teste]
+. link:ebook/cap5-tipos_de_teste.adoc[Capitulo 5 - Tipos de Teste]
+. link:ebook/cap6-plano_de_teste.adoc[Capitulo 6 - Plano de Teste]
+. link:ebook/bibliografia.adoc[Bibliografia]
