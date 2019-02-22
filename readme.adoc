@@ -17,6 +17,15 @@
 :figure-caption: Figura
 :data-uri:
 
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
 = Testes de Software
 :author: Mauro Henrique Lima de Boni
 :email: mhldeboni@gmail.com
