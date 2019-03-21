@@ -1,6 +1,17 @@
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+:cap: capitulo4
+:imagesdir: imagens/{cap}/
+
 [#Tecnicas]
 == Técnicas de Teste
-:cap: Capitulo4
 
 === Introdução
 Esse capitulo vai ...
@@ -36,10 +47,6 @@ A lista a seguir inclui as técnicas de teste que são comumente usadas, mas alg
 - executam todos os ciclos nos seus limites e dentro de seus intervalos operacionais
 
 - exercitem as estruturas de dados internas para garantir a sua validade.
-
-
-
-
 
 ( caixa aberta  - visualiza o código fonte - Teste de unidade, testes estáticos ( análise do código, sem executar-lo ) ) Dentro dessa categoria de teste de software, o testador tem acesso ao código fonte da aplicação e pode construir códigos para efetuar linker(?) de componentes. Essa técnica adota critérios para a geração dos casos de teste com a finalidade de encontrar defeitos nas estruturas internas no software, através de situação que exercitem adequadamente todas as estruturas utilizadas na codificação.
 
@@ -84,7 +91,6 @@ Teste baseado em entradas e saídas de Cenários Macro
 	- Teste baseado em cenários
 	- Teste baseado em Casos de uso
 	- Análise de Valores limites
-
 
 3.1. Baseado na intuição e experiência do engenheiro de software
 

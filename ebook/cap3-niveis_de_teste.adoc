@@ -1,4 +1,13 @@
-:cap: Capitulo3
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+:cap: capitulo3
 :imagesdir: imagens/{cap}/
 
 [#Niveis]

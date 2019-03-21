@@ -1,4 +1,13 @@
-:cap: Capitulo1
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+:cap: capitulo1
 :imagesdir: imagens/{cap}/
 
 [#Revisão]
@@ -51,9 +60,7 @@ _software_ estão organizadas. Resumidamente, tudo depende do paradigma que est�
 .Exemplo do modelo em cascata
 //[link=https://cdn-images-1.medium.com/max/1200/1*5vlem2hirY1jr_jXt8-QZA.png]
 
-//image::images/{cap}/
-image::Modelo-cascata.png[modeloCascata,600,400]
-//image::Modelo-cascata.png[modeloCascata,600,400]
+image::modelo-cascata.png[modeloCascata,600,400]
 
 Antes de mais nada é importante lembrar que o esse modelo, que pode ser chamado de ciclo de vida clássico, que segue uma abordagem sistemática e sequencial. Ele pode ser usado em cenários em os requisitos são bem entendidos ou que mudam pouco. Esse é o paradigma mais antigo da Engenharia de _software_, tendo provavelmente sido introduzido por engenheiros de outras áreas.
 
