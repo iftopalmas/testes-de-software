@@ -26,6 +26,7 @@ Mauro Henrique Lima de Boni - mauro@ifto.edu.br
 
 // é possível usar um simblo obtido por um codigo unicode!
 :tip-caption: 💡
+
 :toc:
 :toc-title: Sumário
 :toclevels: 5

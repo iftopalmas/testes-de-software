@@ -14,6 +14,8 @@
 :experimental:
 :toc-title: Sumário
 :toclevels: 5
+:sectnumlevels: 5
+:tip-caption: pass:[&#128161;]
 :figure-caption: Figura
 :data-uri:
 

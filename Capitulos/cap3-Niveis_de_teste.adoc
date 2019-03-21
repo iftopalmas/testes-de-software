@@ -152,7 +152,7 @@ Os defeitos da interface são comuns em sistemas complexos. O teste de interface
 Nos casos em que o software é criado para atender a diferentes usuários, o teste de configuração verifica o software em diferentes configurações especificadas.
 
 ==== Teste de Interação Usabilidade e Computador Humano
-A principal tarefa dos testes de usabilidade e interação com computadores humanos é avaliar como é fácil para os usuários finais aprenderem e usarem o software. Em geral, pode envolver o teste das funções do software que suportam as tarefas do usuário, a documentação que ajuda os usuários e a capacidade do sistema de se recuperar dos erros do usuário (consulte Design da interface do usuário no Software Design KA).
+A principal tarefa dos testes de usabilidade e interação com computadores humanos é avaliar como é fácil para os usuários finais aprenderem e usarem o software. Em geral, pode envolver o teste das funções do software que suportam as tarefas do usuário, a documentação que ajuda os usuários e a capacidade do sistema de se recuperar dos erros do usuário
 
 
 =x=x=x=x=x=x=x
