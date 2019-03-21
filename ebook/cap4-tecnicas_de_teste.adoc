@@ -1,0 +1,113 @@
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+:cap: capitulo4
+:imagesdir: imagens/{cap}/
+
+[#Tecnicas]
+== Técnicas de Teste
+
+=== Introdução
+Esse capitulo vai ...
+
+=== O que são técnicas de teste
+Um dos objetivos do teste é detectar tantas falhas quanto possível. As técnicas de teste fornecem as diretrizes sistemáticas para que sejam projetados testes eficientes. Testes eficientes são aqueles que conseguem:
+
+- exercitar a lógica interna e as interfaces de cada componente de _software_
+- verificam as entradas e saídas dos programas usando dados um conjunto de dados de teste, de maneira que possam ser encontrados erros em funções ou métodos, comportamento indesejado ou desempenho inadequado.
+
+Essas técnicas tentam “quebrar” um programa sendo o mais sistemático possível na identificação de entradas que produzirão comportamentos representativos de programas; por exemplo, considerando subclasses do domínio de entrada, cenários, estados e fluxos de dados.
+
+A classificação das técnicas de teste apresentadas pelo SWEBOK é baseada em como os testes são gerados: da intuição e experiência do engenheiro de software, as especificações, a estrutura do código, as falhas reais ou imaginadas a serem descobertas, uso previsto, modelos ou a natureza do aplicativo. Uma categoria lida com o uso combinado de duas ou mais técnicas.
+
+Às vezes, essas técnicas são classificadas como caixa branca (também chamada de caixa de vidro), se os testes forem baseados em informações sobre como o software foi projetado ou codificado ou como caixa preta se os casos de teste dependerem apenas da entrada / saída do software. Essas técnicas também pode ser referenciadas como testes estruturais e testes funcionais respectivamente.
+
+
+As técnicas de teste fornecem as diretrizes sistemáticas para que sejam projetados testes eficientes. Testes eficientes são aqueles que conseguem:
+
+- exercitar a lógica interna e as interfaces de cada componente de _software_
+- verificam as entradas e saídas dos programas usando dados um conjunto de dados
+de teste, de maneira que possam ser encontrados erros em funções ou métodos,
+comportamento indesejado ou desempenho inadequado.
+
+A lista a seguir inclui as técnicas de teste que são comumente usadas, mas alguns profissionais dependem de algumas técnicas mais do que outras.
+
+* Caixa Branca - Este teste também é chamado de teste de caixa vidro. Segundo <<PRESSMAN>>, ele é uma filosofia de projeto de casos de teste que usa a estrutura de controle descrita como parte do projeto ao nível de componentes para derivar casos de teste. Usando métodos de teste caixa-branca, o engenheiro de software pode derivar casos de testes que
+
+- garantem que todos os caminhos independentes de um módulo tenham sido exercitados pelo menos uma vez
+
+- exercitem todas as decisões lógicas em seus lados verdadeiro e falso
+
+- executam todos os ciclos nos seus limites e dentro de seus intervalos operacionais
+
+- exercitem as estruturas de dados internas para garantir a sua validade.
+
+( caixa aberta  - visualiza o código fonte - Teste de unidade, testes estáticos ( análise do código, sem executar-lo ) ) Dentro dessa categoria de teste de software, o testador tem acesso ao código fonte da aplicação e pode construir códigos para efetuar linker(?) de componentes. Essa técnica adota critérios para a geração dos casos de teste com a finalidade de encontrar defeitos nas estruturas internas no software, através de situação que exercitem adequadamente todas as estruturas utilizadas na codificação.
+
+Esse tipo de teste é desenvolvido analisando-se o código-fonte e elaborando os casos de teste que possam cobrir todas as possibilidades do programa.
+
+DEssa maneira, todas as variações originadas por estruturas de condições são testadas. Um exemplo prático desse teste e o JUnit.
+
+
+O analista tem acesso ao código fonte, conhece a estrutura interna do produto sendo analisado e possibilita que sejam escolhidas partes específicas de um componente para serem avaliadas. Esse tipo de teste, também conhecido como teste estrutural, é projetado em função da estrutura do componente e permite uma averiguação mais precisa do comportamento dessa estrutura. Perceba que o acesso ao código facilita o isolamento de uma função ou ação, o que ajuda na análise comportamental das mesmas.
+
+** Teste de métodos e Classes, Testes de comando de repetição, teste de condições
+*** Teste de cobertura
+*** Teste de Caminhos
+*** Teste de comandos
+*** Teste de condições
+
+
+* Caixa Cinza - uma definição deste tipo de teste seria um ponto de equilibro virtual entre o teste de caixa-branca e o caia-preta.
+
+* Caixa-preta - Neste tipo de teste de software, o desenvolvedor dos testes não possui acesso ao código fonte do programa. Técnica de teste que adota critérios para a geração dos casos de teste com a finalidade de garantir que os requisitos funcionais do software que foi construído sejam plenamente atendidos. Verifica se o resultado gerado por esses requisitos estão de acordo com o esperado.
+
+Para essa categoria podem ser levados em consideração todos os eventos que podem ser disparados pelo usuário, como por exemplo, cada clique de mouse a ser realizado em uma interface.
+
+O analista não tem acesso ao código fonte e desconhece a estrutura interna do sistema. É também conhecido como teste funcional, pois é baseado nos requisitos funcionais do software. O foco, nesse caso, é nos requisitos da aplicação, ou seja, nas ações que ela deve desempenhar.
+
+Para mostrar quais problemas que esse tipo de teste rastreia, podemos citar alguns exemplos:
+
+. Data de nascimento preenchida com data futura;
+. Campos de preenchimento obrigatório que não são validados;
+. Utilizar números negativos em campos tipo valor a pagar;
+. Botões que não executam as ações devidas;
+. Enfim, todo tipo de falha funcional, ou seja, falhas que contrariam os requisitos da aplicação.
+
+Exemplos:
+- Teste de valor limite
+- Teste de classe de equivalência
+
+Há que se destacar, contudo, que existe um elemento comum aos dois tipos de teste. Tanto no teste de caixa branca quanto no teste de caixa preta, o analista não sabe qual será o comportamento da aplicação ou do alvo de teste em uma determinada situação. A imprevisibilidade de resultados é comum aos dois casos.
+
+* Caixa Preta ( não vejo o interior - é baseado em entradas e saídas - Teste de integração, Teste de sistema, Teste de Aceitação, Teste Alfa, Teste Beta )
+Teste baseado em entradas e saídas de Cenários Macro
+	- Teste baseado em cenários
+	- Teste baseado em Casos de uso
+	- Análise de Valores limites
+
+3.1. Baseado na intuição e experiência do engenheiro de software
+
+3.1.1. Ad hoc
+Talvez a técnica mais amplamente praticada seja o teste ad hoc: os testes são obtidos com base na habilidade, intuição e experiência do engenheiro de software com programas semelhantes. O teste ad hoc pode ser útil para identificar casos de testes que não são facilmente gerados por técnicas mais formalizadas. visa explorar o sistema sem nenhum planejamento definido, sem um resultado esperado, neste caso os bugs são descobertos por acaso
+Imagine você tendo que entender um sistema de grande porte para criar e realizar os testes em um curto espaço de tempo. Nesse caso, seriam inviáveis os planejamentos e documentação. Então, nada melhor do que utilizar testes ad-hoc, a não ser que o testador não tenha experiência suficiente para isso. Não é porque o mesmo não possui planejamento que qualquer um poderá fazê-lo com eficiência. O teste ad-hoc exige muito mais experiência e criatividade do testador, porém é mais passível a insucessos.
+
+
+3.1.2. Teste exploratório
+O teste exploratório é definido como aprendizado simultâneo, projeto de teste e execução de testes [6, parte 1]; ou seja, os testes não são definidos com antecedência em um plano de teste estabelecido, mas são projetados, executados e modificados dinamicamente. A eficácia dos testes exploratórios depende do software o conhecimento do engenheiro, que pode ser derivado de várias fontes: comportamento observado do produto durante o teste, familiaridade com o aplicativo, a plataforma, o processo de falha, o tipo de possíveis falhas e falhas, o risco associado a um produto específico etc.
+Todo o planejamento é pré definido assim como o tempo para a realização do mesmo, neste caso, o entendimento do sistema fica muito mais evidente e os erros encontrados são bem entendidos
+Leia mais aqui:
+//http://dextra.com.br/pt/blog/testes-exploratorios/
+//https://www.devmedia.com.br/conhecendo-os-testes-exploratorios-revista-engenharia-de-software-magazine-53-parte-1/26286
+
+// Questões sobre testes
+// https://www.gabaritou.com.br/Questao?AreaConhecimentoID=8&DisciplinaID=7&AssuntoID=286
+
+
+Testes A/B

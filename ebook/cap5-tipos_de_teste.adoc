@@ -1,0 +1,93 @@
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+:cap: capitulo5
+:imagesdir: imagens/{cap}/
+
+[#Tipos]
+== Quais são os tipos de teste
+
+Tipos de Teste: o alvo do teste
+
+Um grupo de atividades de teste pode ser direcionado para verificar o sistema (ou uma parte do sistema) com base em um motivo ou alvo específico.
+Cada tipo de teste tem foco em um objetivo particular, que pode ser o teste de uma funcionalidade, a ser realizada pelo software; uma característica da qualidade não funcional, como por exemplo a confiabilidade ou a usabilidade, a estrutura ou arquitetura do software ou sistema; ou ainda mudanças relacionadas, ex.: confirmar que os defeitos foram solucionados (teste de confirmação) e procurar por mudanças inesperadas (teste de regressão).
+Modelos do software podem ser elaborados e/ou usados no teste estrutural ou funcional. Por exemplo, para o teste funcional, um diagrama de fluxo de processo, um diagrama de transição de estados ou uma especificação do programa, e para teste estrutural um diagrama de controle de fluxo ou modelo de estrutura do menu.
+
+
+- Teste de funcionalidade
+- Teste de interface
+- Teste de desempenho
+- Teste de usabilidade
+- Teste de segurança
+- Teste usuário
+
+=== Teste de regressão (reteste)
+Cada vez que um novo módulo é adicionado como parte do teste de integração, o _software_ se modifica. Novos caminhos de fluxo de dados são estabelecidos, nova E/S pode ocorrer e nova lógica de controle é acionada. Assim sendo, tudo o que havia sido previamente testado corre o risco de apresentarem problemas. Esse tipo de teste ajuda a garantir que modificações não introduzam algum comportamento indesejável ou erros adicionais.
+
+
+=== Testes de usabilidade
+Os testes devem ser realizados independentemente do tamanho do projeto e da estrutura
+disponível, pois sempre revelam aspectos que influenciarão com mais ou menos profundidade
+o produto final. Os principais objetivos dos testes são:
+
+- Permitir que cada usuário realize a tarefa a que se propõe ao usar a interface,
+ em um tempo razoável. Se a utilização é fácil, precisa, auto-explicativa,
+ relativamente rápida, mas não atende a uma necessidades clara, não tem muita
+ utilidade. Ou valor.
+
+- Tornar o uso da interface o mais intuitivo possível. Quanto menos tempo o
+usuário leva para realizar seu objetivo no website, maior e seu grau de satisfação
+ com a interface.
+
+- Verificar a atitude positiva ou negativa do usuário durante a experiência de uso.
+Neste caso, “atitude” se refere a percepções, sentimentos, opiniões do usuário,
+que podem ser verificadas por meio de entrevistas orais ou escritas.
+
+As pessoas tendem a realizar melhor as suas tarefas e objetivos ao usar uma interface quando esta os agrada de maneira geral e lhes é familiar. Estabelecer consenso na equipe de projeto ou manutenção evolutiva sobre os resultados esperados. Os testes podem diminuir as dúvidas e discordâncias sobre as soluções e decisões adotadas. Os objetivos de testes como os citados acima podem ser baseados em aspectos quantitativos, mas não se resumir a estatísticas sobre o uso e a satisfação do uso. É importante também considerar aspectos qualitativos, mais subjetivos, que compõem quadros mais completos do contexto de uso.
+
+Os testes de usabilidade fazem com que o desenvolvedor/testador fique junto ao usuário.
+O objetivo é aprender como ele realmente usa seu produto. O desenvolvedor escolhe
+algumas tarefas que ele precisa realizar e assiste e registra ele os locais em
+surgiram algum tipo de dificuldades. Este teste ajuda a criar hipóteses de melhoria
+do produto.
+
+=== Testes de usuário
+
+São testes onde os usuários ou clientes usam o _software_ a fim de fornecer um _feedback_.
+Assim, eles experimentam o _software_ para ver se gostam desse produto e verificam também se ele está em conformidade com a suas necessidades.
+
+De modo geral, os testes de usuário ajudam a verificar se a interface permite o uso fácil e intuitivo, se provê funcionalidades que os usuários valorizam e se proporciona, de modo geral, uma experiência de uso satisfatória.
+
+O teste de usuário é essencial, mesmo em sistemas abrangentes ou quando testes de release tenham sido feitos. O motivo é que a influencia realizada pelo ambiente de trabalho do usuário interfere muito sobre a confiabilidade, o desempenho, a usabilidade e a robustez de um sistema, tendo em vista que para o desenvolvedor é praticamente impossível replicar o ambiente de trabalho em que todos os possíveis usuários estarão.
+
+Sobre o teste de aceitação é importante lembrar que os clientes querem usar o _software_ assim que possível por causa dos benefícios que podem ser obtidos. Os testes de aceitação podem não terem obtido um bom resultado mas devido a uma séria de outros fatores, a adoção do produto pode começar mesmo assim.
+
+Podemos separar os testes de usuário em três categorias:
+
+ - Teste Alfa
+ - Teste Beta
+ - Teste de aceitação
+
+Os testes de aceitação possuem seis estágios a saber:
+
+ . Definir critérios de aceitação
+ . Planejar os testes de aceitação
+ . Derivar testes
+ . Executar testes
+ . Negociar resultados dos testes
+ . Rejeitar / aceitar o sistema
+
+[#testeAB]
+.A mountain sunset
+//[link=https://cdn-images-1.medium.com/max/1200/1*5vlem2hirY1jr_jXt8-QZA.png]
+image::testesAB.png[testeAB,300,200]
+
+As pesquisas atitudinais são focadas no que as pessoas falam que acreditam (por exemplo, ao responderem um formulário online ou em uma conversa dentro de um grupo focal (_focus group_)), enquanto as pesquisas comportamentais analisam o que as pessoas fazem (por exemplo, em um teste de usabilidade, ou em testes A/B).
+
+https://brasil.uxdesign.cc/muito-além-do-teste-de-usabilidade-os-vários-tipos-de-pesquisas-com-usuários-em-ux-b91a6e15bc61

@@ -1,0 +1,12 @@
+*.html
+*.pdf
+build/
+
+#Java Projects
+*.class
+target/
+.idea
+*.iml
+~$*
+/nbproject/
+aulas
