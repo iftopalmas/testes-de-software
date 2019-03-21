@@ -96,8 +96,7 @@ public class MathUtil {
         /*Este é o Caso Geral para cálculo do MDC.
         Resolvendo-se o caso geral, é mais fácil resolver 
         casos específicos que sejam uma variação do caso geral.*/
-        double res = a - b;
-        return mdc(res, b);
+        return mdc(a - b, b);
     }
     
     public static double mdc(double ...valor){

@@ -109,7 +109,7 @@ O SWEBOK enumera 13 tipos de testes na categoria de objetivos do teste. Os tipos
 
 O teste de aceitação / qualificação determina se um sistema satisfaz seus critérios de aceitação, geralmente verificando os comportamentos desejados do sistema em relação aos requisitos do cliente. O cliente ou representante de um cliente, portanto, especifica ou realiza atividades diretamente para verificar se seus requisitos foram atendidos. No caso de um produto de consumo,ele verifica se a organização atendeu aos requisitos estabelecidos para o mercado-alvo.
 
-O objetivo desse teste é estabelecer a confiança no sistema, parte do sistema ou uma característica não específica do sistema. Procurar defeitos não é o principal foco. Ele pode avaliar a disponibilidade do sistema para entrar em produção. Este não é necessariamente o último nível de teste, uma vez que, por exemplo, um teste de integração em larga escala pode ser feito posteriormente.
+O objetivo desse teste é estabelecer a confiança no sistema, parte do sistema ou uma característica não específica do sistema. Procurar defeitos não é o principal foco. Ele pode avaliar a disponibilidade do sistema para entrar em produção. Este não é necessariamente o último nível de teste, uma vez que, por exemplo, um teste de integração em larga escala pode ser feito posteriormente.
 
 Esse teste é realizado pelo cliente ou por usuários do sistema; os interessados (_stakeholders_) também podem ser envolvidos.
 

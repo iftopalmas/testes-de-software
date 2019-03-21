@@ -1,6 +1,4 @@
-package main.java.com.sistemabancario.model;
-
-import java.util.*;
+package com.sistemabancario.model;
 
 /**
  * Cliente do banco tendo os seguintes requisitos:
@@ -10,51 +8,50 @@ import java.util.*;
  */
 public class Cliente implements Cadastro {
 
-    /**
-     * Default constructor
-     */
-    public Cliente() {
-    }
-
-    /**
-     * 
-     */
     private long id;
 
     /**
      * CPF que é uma das formas de permitir representar o cliente unicamente.
-     * 
+     *
      * Não pode ser vazio nem nulo, não pode ter todos os dígitos iguais, não pode conter hífens e traços.
      */
     private String cpf;
 
     /**
-     * 
+     *
      */
     private String nome;
 
-
-    /**
-     * @return
-     */
     public boolean isCpfValido() {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
         return false;
     }
 
-    /**
-     * @return
-     */
+    @Override
     public long getId() {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
         return 0;
     }
 
-    /**
-     * @param id
-     */
+    @Override
     public void setId(long id) {
-        // TODO implement here
+        // TODO: Você precisa implementar este método
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
 }

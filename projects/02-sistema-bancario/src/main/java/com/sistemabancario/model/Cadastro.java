@@ -1,4 +1,4 @@
-package main.java.com.sistemabancario.model;
+package com.sistemabancario.model;
 
 import java.util.*;
 
@@ -14,11 +14,11 @@ public interface Cadastro {
     /**
      * @return
      */
-    public long getId();
+    long getId();
 
     /**
      * @param id
      */
-    public void setId(long id);
+    void setId(long id);
 
 }
