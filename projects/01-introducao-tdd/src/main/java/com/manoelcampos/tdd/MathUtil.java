@@ -24,10 +24,11 @@ public class MathUtil {
     private MathUtil(){}
     
     /**
-     * Calcula o MDC de dois números
+     * Calcula o MDC de dois números.
      * @param a 1º valor pra calcular o MDC
      * @param b 2º valor pra calcular o MDC
-     * @return 
+     * @return o MDC calculado
+     *
      * @see <a href="https://pt.wikipedia.org/wiki/Máximo_divisor_comum#Propriedades">Propriedades MDC</a>
      */
     public static double mdc(double a, double b){
@@ -95,7 +96,12 @@ public class MathUtil {
 
         /*Este é o Caso Geral para cálculo do MDC.
         Resolvendo-se o caso geral, é mais fácil resolver 
-        casos específicos que sejam uma variação do caso geral.*/
+        casos específicos que sejam apenas uma variação do caso geral.
+        Existem diferentes maneiras de resolver o caso geral,
+        com o Algoritmo de Euclides (https://pt.wikipedia.org/wiki/Algoritmo_de_Euclides)
+        ou os métodos indicados em https://pt.wikipedia.org/wiki/Máximo_divisor_comum#Determinação_do_máximo_divisor_comum.
+        Neste caso, estamos usando o método do item 3 da link acima.
+        */
         return mdc(a - b, b);
     }
     

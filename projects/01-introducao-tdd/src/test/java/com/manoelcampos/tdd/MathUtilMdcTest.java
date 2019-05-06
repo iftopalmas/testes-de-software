@@ -16,20 +16,7 @@ import static org.junit.Assert.*;
  * @author Manoel Campos da Silva Filho <http://github.com/manoelcampos>
  */
 public class MathUtilMdcTest {
-    /**
-     * Caso geral que aplica o processo comum de resolução
-     * do MDC. Este é normalmente o primeiro a ser resolvido.
-     * O caso geral é a regra, os outros são casos alternativos (exceções).
-     */
-    @Test
-    public void testMdcParaCasoGeral() {
-        double a = 30;
-        double b = 12;
-        double result = MathUtil.mdc(a, b);
-        double expResult = 6;
-        assertEquals(expResult, result, 0.0);
-    }  
-    
+
     /**
      * Propriedade 1: Se b > 0 é um divisor de a, então mdc(a, b) = b
      * Verifica b positivo.
@@ -200,8 +187,21 @@ public class MathUtilMdcTest {
         double result = MathUtil.mdc(p, a);
         double expResult = 1;
         assertEquals(expResult, result, 0.0);
-    }  
-    
+    }
+
+    /**
+     * Caso geral que aplica o processo comum de resolução
+     * do MDC. O caso geral é a regra, os outros são casos alternativos (exceções).
+     */
+    @Test
+    public void testMdcParaCasoGeral() {
+        double a = 30;
+        double b = 12;
+        double result = MathUtil.mdc(a, b);
+        double expResult = 6;
+        assertEquals(expResult, result, 0.0);
+    }
+
     /**
      * Testa uma série de conjuntos de mais de 2 valores.
      * Assim, a versão sobrecarregada {@link MathUtil#mdc(double...)} será
