@@ -1,7 +1,6 @@
 = Projeto de Sistema Bancário para Inclusão de Testes Unitários
 
-Este projeto fornece um conjunto de classes base para que sejam implementados um
-conjunto de testes unitários.
+Este projeto fornece um conjunto de classes base para que sejam implementados testes unitários.
 
 As classes do sistema são apresentadas no diagrama UML abaixo.
 O diagrama pode ser editado no arquivo link:sistema-bancario.staruml.mdj[sistema-bancario.staruml.mdj],
