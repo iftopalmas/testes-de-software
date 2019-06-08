@@ -27,8 +27,7 @@ e deixar o Maven fazer o download de tal dependência.
 
 Tudo isso é feito pelo Maven a partir do momento que você indica
 na tag `<dependencies>` (que se não existir deve ser criada em qualquer lugar
-na raiz da tag `<project>` (como por exemplo, antes de `</project>`), dentro do arquivo link:pom.xml[pom.xml],
-quais são as dependências (tags `<dependency>`) que seu projeto precisa.
+na raiz da tag `<project>` (como por exemplo, antes de `</project>`), dentro do arquivo link:pom.xml[pom.xml], quais são as dependências (tags `<dependency>`) que seu projeto precisa.
 No caso do JUnit, tal tag dentro de `<dependencies>` será, por exemplo:
 
 [source,xml]
@@ -75,7 +74,7 @@ Se a classe principal tiver muitos métodos ou a quantidade de testes para cada 
 destes métodos for muito grande, podemos criar uma classe de teste contendo 
 apenas testes para um determinado método da classe sendo testada.
 
-Assim, para a classe principal como link:src/main/java/com/manoelcampos/tdd/com.manoelcampos.noite.MathUtil.java[com.manoelcampos.noite.MathUtil.java],
+Assim, para a classe principal como link:src/main/java/com/manoelcampos/tdd/MathUtil.java[MathUtil.java],
 poderíamos ter a classe de teste `MathUtilTest.java`.
 No entanto, como só os testes do método `mdc` já são muitos,
 foi criada uma classe de teste link:src/test/java/com/manoelcampos/tdd/MathUtilMdcTest.java[MathUtilMdcTest.java]
