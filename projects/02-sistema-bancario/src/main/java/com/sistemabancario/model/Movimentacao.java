@@ -18,7 +18,8 @@ public class Movimentacao implements Cadastro {
     private String descricao;
 
     /**
-     * Tipo da movimentação deve ser C para crédito (entrada de dinheiro) ou D para débito (saída de dinheiro).
+     * Tipo da movimentação deve ser C para crédito (entrada de dinheiro)
+     * ou D para débito (saída de dinheiro).
      */
     private char tipo;
 
@@ -37,6 +38,10 @@ public class Movimentacao implements Cadastro {
      */
     private boolean confirmada;
 
+    public Movimentacao(){
+        tipo = 'C';
+    }
+
     @Override
     public long getId() {
         return id;
@@ -52,7 +57,11 @@ public class Movimentacao implements Cadastro {
     }
 
     public void setTipo(char tipo){
-        this.tipo = tipo;
+        if(tipo == 'C' || tipo == 'c' || tipo == 'D' || tipo == 'd' )
+            this.tipo = tipo;
+        else {
+            throw new IllegalArgumentException("Tipo inválido. Informe C ou D.");
+        }
     }
 
     public String getDescricao() {
@@ -68,7 +77,9 @@ public class Movimentacao implements Cadastro {
     }
 
     public void setValor(double valor) {
-        this.valor = valor;
+        if(valor > 0)
+            this.valor = valor;
+        else throw new IllegalArgumentException("Valor deve ser maior que zero");
     }
 
     public boolean isConfirmada() {
