@@ -1,5 +1,5 @@
 = Testes de _software_
-Mauro Henrique Lima de Boni - mauro@ifto.edu.br
+Mauro Henrique Lima de Boni - mauro@ifto.edu.br; Manoel Campos da Silva Filho - mcampos@ifto.edu.br
 :toc:
 :toc-title: Sumário
 :toclevels: 5
