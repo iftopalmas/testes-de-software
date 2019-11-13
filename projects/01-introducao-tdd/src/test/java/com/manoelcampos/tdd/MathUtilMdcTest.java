@@ -23,10 +23,10 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_P1_Quando_B_Positivo() {
-        double a = 6;
-        double b = 2;
-        double expResult = b;
-        double result = MathUtil.mdc(a, b);
+        int a = 6;
+        int b = 2;
+        int expResult = b;
+        int result = MathUtil.mdc(a, b);
         assertEquals(expResult, result, 0.0); 
     }
 
@@ -36,10 +36,10 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_P1_Quando_B_Negativo() {
-        double a = 6;
-        double b = -2;
-        double expResult = 2;
-        double result = MathUtil.mdc(a, b);
+        int a = 6;
+        int b = -2;
+        int expResult = 2;
+        int result = MathUtil.mdc(a, b);
         assertEquals(expResult, result, 0.0); 
     }
 
@@ -51,10 +51,10 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_P3_Quando_A_Positivo() {
-        double a = 6;
-        double b = 0;
-        double expResult = 6;
-        double result = MathUtil.mdc(a, b);
+        int a = 6;
+        int b = 0;
+        int expResult = 6;
+        int result = MathUtil.mdc(a, b);
         assertEquals(expResult, result, 0.0);
     }
     
@@ -66,10 +66,10 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_P3_Quando_A_Negativo() {
-        double a = -6;
-        double b = 0;
-        double expResult = 6;
-        double result = MathUtil.mdc(a, b);
+        int a = -6;
+        int b = 0;
+        int expResult = 6;
+        int result = MathUtil.mdc(a, b);
         assertEquals(expResult, result, 0.0);
     }
 
@@ -79,11 +79,11 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_P4() {
-        double m = 2.5;
-        double a = 6;
-        double b = 0;
-        double expResult = m*MathUtil.mdc(a, b);
-        double result = MathUtil.mdc(m*a, m*b);
+        int m = 2;
+        int a = 6;
+        int b = 0;
+        int expResult = m*MathUtil.mdc(a, b);
+        int result = MathUtil.mdc(m*a, m*b);
         assertEquals(expResult, result, 0.0);
     }
     
@@ -92,10 +92,10 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_ResultadoIgual1() {
-        double a = 9;
-        double b = 2;
-        double expResult = 1;
-        double result = MathUtil.mdc(a, b);
+        int a = 9;
+        int b = 2;
+        int expResult = 1;
+        int result = MathUtil.mdc(a, b);
         assertEquals(expResult, result, 0.0);
     }
 
@@ -110,11 +110,11 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_P5() {
-        double a = 9;
-        double b = 2;
-        double c = 5;
-        double expResult = MathUtil.mdc(a,c) * MathUtil.mdc(b,c);
-        double result = MathUtil.mdc(a*b, c);
+        int a = 9;
+        int b = 2;
+        int c = 5;
+        int expResult = MathUtil.mdc(a,c) * MathUtil.mdc(b,c);
+        int result = MathUtil.mdc(a*b, c);
         assertEquals(expResult, result, 0.0);
     }
 
@@ -124,15 +124,15 @@ public class MathUtilMdcTest {
     @Test
     public void testMdc_P6() {
         //Matriz onde cada linha representa um par de valores a,b para serem testados
-        double matrizValores[][] = {{9,2}, {6,2}, {6,0}, {-6,0}};
-        double expResult;
-        double result;
+        int matrizValores[][] = {{9,2}, {6,2}, {6,0}, {-6,0}};
+        int expResult;
+        int result;
         String msg;
-        for (double[] valores : matrizValores) {
+        for (int[] valores : matrizValores) {
             expResult = MathUtil.mdc(valores[1], valores[0]);
             result = MathUtil.mdc(valores[0], valores[1]);
-            msg = String.format("a: %.2f b: %.2f", valores[0], valores[1]);
-            assertEquals(msg, expResult, result, 0.0);
+            msg = String.format("a: %d b: %d", valores[0], valores[1]);
+            assertEquals(msg, expResult, result);
         }
     }
     
@@ -141,17 +141,17 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_P7() {
-        double a = 8;
-        double b = 2;
-        double expResult = MathUtil.mdc(a,-b);
-        double result = MathUtil.mdc(-a, b);
-        assertEquals(expResult, result, 0.0);
+        int a = 8;
+        int b = 2;
+        int expResult = MathUtil.mdc(a, -b);
+        int result = MathUtil.mdc(-a, b);
+        assertEquals(expResult, result);
         
-        expResult = MathUtil.mdc(-a,-b);
-        assertEquals(expResult, result, 0.0);
+        expResult = MathUtil.mdc(-a, -b);
+        assertEquals(expResult, result);
 
-        expResult = MathUtil.mdc(a,b);
-        assertEquals(expResult, result, 0.0);
+        expResult = MathUtil.mdc(a, b);
+        assertEquals(expResult, result);
     }   
     
     /**
@@ -159,10 +159,10 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_P8() {
-        double a = 9;
-        double expResult = a;
-        double result = MathUtil.mdc(a, a);
-        assertEquals(expResult, result, 0.0);
+        int a = 9;
+        int expResult = a;
+        int result = MathUtil.mdc(a, a);
+        assertEquals(expResult, result);
     }
     
     /**
@@ -170,11 +170,11 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_P12_ResultadoPrimo() {
-        double p = 11;
-        double a = p;
-        double result = MathUtil.mdc(p, a);
-        double expResult = p;
-        assertEquals(expResult, result, 0.0);
+        int p = 11;
+        int a = p;
+        int result = MathUtil.mdc(p, a);
+        int expResult = p;
+        assertEquals(expResult, result);
     }    
     
     /**
@@ -182,11 +182,11 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdc_P12_ResultadoIgual1() {
-        double p = 11;
-        double a = 2;
-        double result = MathUtil.mdc(p, a);
-        double expResult = 1;
-        assertEquals(expResult, result, 0.0);
+        int p = 11;
+        int a = 2;
+        int result = MathUtil.mdc(p, a);
+        int expResult = 1;
+        assertEquals(expResult, result);
     }
 
     /**
@@ -195,24 +195,24 @@ public class MathUtilMdcTest {
      */
     @Test
     public void testMdcParaCasoGeral() {
-        double a = 30;
-        double b = 12;
-        double result = MathUtil.mdc(a, b);
-        double expResult = 6;
-        assertEquals(expResult, result, 0.0);
+        int a = 30;
+        int b = 12;
+        int result = MathUtil.mdc(a, b);
+        int expResult = 6;
+        assertEquals(expResult, result);
     }
 
     /**
      * Testa uma série de conjuntos de mais de 2 valores.
-     * Assim, a versão sobrecarregada {@link MathUtil#mdc(double...)} será
-     * chamada no lugar da {@link MathUtil#mdc(double, double)}.
+     * Assim, a versão sobrecarregada {@link MathUtil#mdc(int...)} será
+     * chamada no lugar da {@link MathUtil#mdc(int, int)}.
      */
     @Test
     public void testMdc_Diversos() {
-        assertEquals(1, MathUtil.mdc(2, 3, 5), 0.0);
-        assertEquals(2, MathUtil.mdc(2, 6, 4), 0.0);
-        assertEquals(2, MathUtil.mdc(2, 12, 2, 4, 8), 0.0);
-        assertEquals(3, MathUtil.mdc(3, 15, 18), 0.0);
+        assertEquals(1, MathUtil.mdc(2, 3, 5));
+        assertEquals(2, MathUtil.mdc(2, 6, 4));
+        assertEquals(2, MathUtil.mdc(2, 12, 2, 4, 8));
+        assertEquals(3, MathUtil.mdc(3, 15, 18));
     }  
 
 }

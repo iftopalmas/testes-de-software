@@ -31,7 +31,7 @@ public class MathUtil {
      *
      * @see <a href="https://pt.wikipedia.org/wiki/Máximo_divisor_comum#Propriedades">Propriedades MDC</a>
      */
-    public static double mdc(double a, double b){
+    public static int mdc(int a, int b){
         /*
         Propriedade 7
         ------------------------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ public class MathUtil {
         como indicado abaixo.
         Ordenando decrescentemente,
         */
-        final double min = Math.min(a, b);
+        final int min = Math.min(a, b);
         a = Math.max(a, b);        
         b = min;
 
@@ -105,14 +105,13 @@ public class MathUtil {
         return mdc(a - b, b);
     }
     
-    public static double mdc(double ...valor){
-        if(valor.length == 0){
+    public static int mdc(int ...valores){
+        if(valores.length == 0){
             throw new IllegalArgumentException("Informe ao menos um valor para calcular o MDC");
         }
                 
-        final List<Double> list = Arrays.stream(valor).boxed().collect(Collectors.toList());
-        double a = list.get(0);
-        for (Double b : list) {
+        int a = valores[0];
+        for (int b : valores) {
             a = mdc(a, b);
         }
         
