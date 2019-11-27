@@ -57,11 +57,7 @@ public class Movimentacao implements Cadastro {
     }
 
     public void setTipo(char tipo){
-        if(tipo == 'C' || tipo == 'c' || tipo == 'D' || tipo == 'd' )
-            this.tipo = tipo;
-        else {
-            throw new IllegalArgumentException("Tipo inválido. Informe C ou D.");
-        }
+        this.tipo = tipo;
     }
 
     public String getDescricao() {
@@ -77,9 +73,7 @@ public class Movimentacao implements Cadastro {
     }
 
     public void setValor(double valor) {
-        if(valor > 0)
-            this.valor = valor;
-        else throw new IllegalArgumentException("Valor deve ser maior que zero");
+        this.valor = valor;
     }
 
     public boolean isConfirmada() {
