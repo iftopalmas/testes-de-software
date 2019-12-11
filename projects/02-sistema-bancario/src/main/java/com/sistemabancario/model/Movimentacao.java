@@ -1,45 +1,59 @@
 package com.sistemabancario.model;
 
 /**
- * Representa uma movimentação em uma conta bancária, que pode indicar entrada ou saída. 
- * A classe possui os seguintes requisitos:
- * 
- * - Se o tipo for débito, o valor da movimentação não pode ser superior ao saldo total.
- * - A cada movimentação adicionada, alterada ou removida, deve-se atualizar o saldo, 
- * caso a operação tenha sido confirmada.
+ * Representa uma movimentação em uma {@link Conta} bancária, que pode indicar entrada ou saída.
  *
- * Mesmo sendo possível obter o saldo somando-se todas as movimentações, 
+ * <p>
+ * <b>NOTA</b>: Mesmo sendo possível obter o saldo somando-se todas as movimentações,
  * à medida que os dados no sistema aumentarem ao longo do tempo, 
- * calcular o saldo pode se tornar uma operação extremamente lenta caso o histórico de movimentações seja grande 
+ * calcular o saldo pode se tornar uma operação extremamente lenta.
+ * Isto normalmente ocorrer quando o histórico de movimentações se torna longo
  * (principalmente depois de alguns anos).
+ * </p>
  */
 public class Movimentacao implements Cadastro {
     private long id;
     private String descricao;
 
     /**
-     * Tipo da movimentação deve ser C para crédito (entrada de dinheiro)
-     * ou D para débito (saída de dinheiro).
+     * Conta bancária a qual a movimentação está vinculada.
+     */
+    private Conta conta;
+
+    /**
+     * Tipo da movimentação deve ser 'C' para crédito (entrada de dinheiro)
+     * ou 'D' para débito (saída de dinheiro).
+     *
+     * (1)
      */
     private char tipo;
 
     /**
      * Valor monetário da movimentação.
-     * O valor não deve ser negativo, uma vez que existe o atributo {@link #tipo}.
+     * O valor não deve ser negativo, uma vez que existe o atributo {@link #tipo}. (2)
+     * Se o tipo for débito, o valor da movimentação não pode ser superior ao saldo total da {@link Conta}. (3)
      */
     private double valor;
 
     /**
-     * Indica se a movimentação foi confirmada e deve ser registrada no saldo da conta.
-     * Movimentacoes devem ser instanciadas como "confirmadas".
+     * Indica se a movimentação foi confirmada e deve ser registrada no saldo da conta,
+     * quando for adicionada à lista de movimentações usando {@link Conta#addMovimentacao(Movimentacao)}.
      *
-     * <p>Somente operações como depósito em envelope ou em cheque devem ser registradas inicialmente como não confirmadas.
+     * <p>Movimentacoes devem ser instanciadas como "confirmadas" por padrão. (4)
+     * Somente operações como depósito em envelope ou em cheque devem ser registradas inicialmente como não confirmadas.
      * Após uma operação ser confirmada, deve-se atualizar o saldo da conta.</p>
+     *
+     * @see Conta#depositoEnvelope(double)
+     * @see Conta#depositoCheque(double)
      */
     private boolean confirmada;
 
-    public Movimentacao(){
-        tipo = 'C';
+    /**
+     * Instancia uma movimentação para uma determinada {@link Conta} bancária. (5)
+     * @param conta a {@link Conta} para vincular a movimentação.
+     */
+    public Movimentacao(Conta conta){
+        // TODO: Você precisa implementar este método
     }
 
     @Override

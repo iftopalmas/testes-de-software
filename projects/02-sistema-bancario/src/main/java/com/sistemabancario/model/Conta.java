@@ -1,10 +1,15 @@
 package com.sistemabancario.model;
 
+import java.util.Collections;
+import java.util.List;
+
 /**
- * Representa uma conta bancária de um determinado cliente, tendo os seguintes requisitos:
- * 
- * - Somente contas especiais podem ter limite (ou seja limite maior que 0).
- * - Uma conta não pode ser excluída se existirem movimentações.
+ * Representa uma conta bancária de um determinado {@link Cliente}, tendo os seguintes requisitos:
+ *
+ * <ul>
+ *  <li>Somente contas especiais podem ter limite (ou seja limite maior que 0). (1)</li>
+ *  <li>Uma conta não pode ser excluída se existirem movimentações.</li>
+ * </ul>
  */
 public class Conta implements Cadastro {
     private long id;
@@ -12,34 +17,94 @@ public class Conta implements Cadastro {
     private String numero;
 
     /**
-     * Contas devem ser instanciadas como "Conta Corrente" e não como "Poupança".
+     * Contas devem ser instanciadas como "Conta Corrente" e não como "Poupança". (2)
      * Mesmo que o valor padrão para o atributo "poupanca" seja false,
      * o código pode ser alterado e tal requisito pode deixar de  ser atendido futuramente.
+     * Isto quer dizer que não precisa escrever código adicional para definir "poupanca" como false,
+     * mas é preciso escrever o teste para verificar tal situação. Com isto, buscamos detectar se uma
+     * alteração no código fez com que este requisito deixasse de ser atendido.
      */
     private boolean poupanca;
 
     /**
-     * Contas especiais podem ter limite.
+     * Indica se a conta é especial ou não. Caso seja, ela pode ter {@link #limite}.
      */
     private boolean especial;
 
+    /**
+     * Valor que o cliente possui na conta, sem incluir o {@link #limite}.
+     */
     private double saldo;
 
+    /**
+     * Limite da conta: valor que o cliente pode utilizar além do {@link #saldo} disponível.
+     * Somente contas especiais podem ter limite, ou seja,
+     * o limite de contas "não especiais" não pode ser maior que zero (3).
+     */
     private double limite;
 
+    /**
+     * Histórico de movimentações da conta. Deve ser inicializado no construtor com uma lista vazia.
+     * Sem isto, ao tentar utilizar a lista, dará o erro NullPointerException.
+     * Um teste deve verificar se, após instanciar uma conta usando qualquer um dos construtores,
+     * a lista de movimentações não é nula, chamando o método {@link #getMovimentacoes()}. (4)
+     */
+    private List<Movimentacao> movimentacoes;
+
     public Conta() {
+        // TODO: Você precisa implementar este método
     }
 
-    public Conta(Agencia agencia, boolean especial, double limite) {
+    public Conta(Agencia agencia, boolean especial, final double limite) {
         // TODO: Você precisa implementar este método
     }
 
     /**
-     * Valor total disponível na conta, incluindo o limite.
+     * Retorna uma lista não modificáveis (unmodifiable) das movimentações,
+     * para evitar que a lista seja alterada diretamente
+     * com inclusão e remoção de elementos
+     * (isto poderia tornar o saldo da conta inconsistente).
+     *
+     * <p>Isto de fato não impede que os elementos na lista sejam alterados.
+     * Uma solução seria retornar uma cópia da lista. Assim, se qualquer
+     * elemento for alterado, apenas uma cópia dela seria, não
+     * a lista original. Alterações na cópia não causam efeito colateral algum.
+     * No entanto, se o histórico de movimentações for longo,
+     * fazer uma cópia de tal lista pode impactar no consumo de memória e desempenho
+     * do sistema.</p>
+     *
+     * <p>Uma solução ideal é retornar listas imutáveis (immutable) no lugar
+     * de apenas não modificáveis (unmodifiable). A diferença é sutil,
+     * mas o primeiro tipo de lista não permite adições ou remoções, mas permite
+     * alteração dos elementos existentes. A segunda não permite qualquer alteração.
+     * No entanto, objetos imutáveis não são nativamente suportados em Java.
+     * É normalmente preciso um esforço de programação e o uso de bibliotecas externas.</p>
+     * @return
+     */
+    public List<Movimentacao> getMovimentacoes(){
+        return Collections.unmodifiableList(movimentacoes);
+    }
+
+    /**
+     * Adiciona uma nova movimentação à lista de {@link #movimentacoes}. (5)
+     * Se a movimentação estiver confirmada, seu valor deve ser:
+     * <ul>
+     *     <li>somado ao saldo da conta caso o tipo da movimentação seja 'C';</li>
+     *     <li>subtraída do saldo da conta caso o tipo da movimentação seja 'D'.</li>
+     * </ul>
+     *
+     * @param movimentacao {@link Movimentacao} a ser adicionada
+     */
+    public void addMovimentacao(Movimentacao movimentacao) {
+        // TODO: Você precisa implementar este método
+    }
+
+    /**
+     * Valor total disponível na conta, representando o {@link #saldo} mais o {@link #limite}. (6)
      * @return
      */
     public double getSaldoTotal() {
-        // TODO: Você precisa implementar este método
+        // TODO: Você precisa implementar este método. A linha abaixo deve ser substituída pelo seu código
         return 0.0d;
     }
 
@@ -59,7 +124,7 @@ public class Conta implements Cadastro {
      * </p>
      * @param valor valor a ser sacado (deve ser um valor positivo)
      */
-    public void saque(double valor) {
+    public void saque(final double valor) {
         if(valor < 0){
             throw new IllegalArgumentException("Valor deve ser positivo");
         }
@@ -72,20 +137,16 @@ public class Conta implements Cadastro {
      * (que deve ser confirmada posteriormente por um funcionário do banco).
      * @param valor valor a ser depositado (deve ser um valor positivo)
      */
-    public void depositoEnvelope(double valor) {
+    public void depositoEnvelope(final double valor) {
         // TODO: Você precisa implementar este método
     }
 
     /**
-     * Adiciona uma nova movimentação genérica, como 
-     * saque, transferência, depósito no balcão 
-     * (no lugar de depósito por envelope), etc.
-     * Movimentações adicionadas com este método devem ser
-     * automaticamente confirmadas e o saldo atualizado.
-     *
-     * @param movimentacao
+     * Adiciona uma nova movimentação de depósito em cheque
+     * (que deve ser confirmada posteriormente por um funcionário do banco).
+     * @param valor valor a ser depositado (deve ser um valor positivo)
      */
-    public void addMovimentacao(Movimentacao movimentacao) {
+    public void depositoCheque(final double valor) {
         // TODO: Você precisa implementar este método
     }
 
@@ -125,10 +186,6 @@ public class Conta implements Cadastro {
 
     public double getSaldo() {
         return saldo;
-    }
-
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
     }
 
     public double getLimite() {
