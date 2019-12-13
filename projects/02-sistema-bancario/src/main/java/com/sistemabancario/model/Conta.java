@@ -7,7 +7,6 @@ import java.util.List;
  * Representa uma conta bancária de um determinado {@link Cliente}, tendo os seguintes requisitos:
  *
  * <ul>
- *  <li>Somente contas especiais podem ter limite (ou seja limite maior que 0). (1)</li>
  *  <li>Uma conta não pode ser excluída se existirem movimentações.</li>
  * </ul>
  */
@@ -17,7 +16,7 @@ public class Conta implements Cadastro {
     private String numero;
 
     /**
-     * Contas devem ser instanciadas como "Conta Corrente" e não como "Poupança". (2)
+     * Contas devem ser instanciadas como "Conta Corrente" e não como "Poupança". (1)
      * Mesmo que o valor padrão para o atributo "poupanca" seja false,
      * o código pode ser alterado e tal requisito pode deixar de  ser atendido futuramente.
      * Isto quer dizer que não precisa escrever código adicional para definir "poupanca" como false,
@@ -39,7 +38,7 @@ public class Conta implements Cadastro {
     /**
      * Limite da conta: valor que o cliente pode utilizar além do {@link #saldo} disponível.
      * Somente contas especiais podem ter limite, ou seja,
-     * o limite de contas "não especiais" não pode ser maior que zero (3).
+     * o limite de contas "não especiais" não pode ser maior que zero (2).
      */
     private double limite;
 
@@ -47,7 +46,7 @@ public class Conta implements Cadastro {
      * Histórico de movimentações da conta. Deve ser inicializado no construtor com uma lista vazia.
      * Sem isto, ao tentar utilizar a lista, dará o erro NullPointerException.
      * Um teste deve verificar se, após instanciar uma conta usando qualquer um dos construtores,
-     * a lista de movimentações não é nula, chamando o método {@link #getMovimentacoes()}. (4)
+     * a lista de movimentações não é nula, chamando o método {@link #getMovimentacoes()}. (3)
      */
     private List<Movimentacao> movimentacoes;
 
@@ -86,7 +85,7 @@ public class Conta implements Cadastro {
     }
 
     /**
-     * Adiciona uma nova movimentação à lista de {@link #movimentacoes}. (5)
+     * Adiciona uma nova movimentação à lista de {@link #movimentacoes}. (4)
      * Se a movimentação estiver confirmada, seu valor deve ser:
      * <ul>
      *     <li>somado ao saldo da conta caso o tipo da movimentação seja 'C';</li>
@@ -100,7 +99,7 @@ public class Conta implements Cadastro {
     }
 
     /**
-     * Valor total disponível na conta, representando o {@link #saldo} mais o {@link #limite}. (6)
+     * Valor total disponível na conta, representando o {@link #saldo} mais o {@link #limite}. (5)
      * @return
      */
     public double getSaldoTotal() {
