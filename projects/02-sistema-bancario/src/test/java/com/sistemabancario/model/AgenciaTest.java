@@ -18,7 +18,7 @@ public class AgenciaTest {
 
     @Test
     public void setNumeroValido() {
-        String esperado = "1886-4";
+        String esperado = "1867-8";
         instance.setNumero(esperado);
         assertEquals(esperado, instance.getNumero());
     }

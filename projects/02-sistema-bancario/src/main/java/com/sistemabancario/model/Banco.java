@@ -12,7 +12,12 @@ public class Banco implements Cadastro {
     private String sigla;
 
     /**
-     * Número único do banco. Deve ter exatamente 3 algarismos.
+     * Número único do banco. Deve ter exatamente 3 algarismos. Senão, uma exceção deve ser lançada informando o problema. (1).
+     * É um atributo obrigatório, não podendo ser nulo nem vazio. Se não for preenchido, uma exceção deve ser lançada informando o problema. (2).
+     *
+     * O tipo é String para permitir restringir o total de caracteres,
+     * mas deve ser informado um número válido (somente dígitos de 0 a 9).
+     * Senão for um número válido, uma exceção deve ser lançada informando o problema. (3).
      */
     private String numero;
 

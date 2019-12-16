@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a6aea60-9913-4a93-8ea4-50a51ecd1ca5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sistemabancario/model/AgenciaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sistema-bancario.iws" beforeDir="false" afterPath="$PROJECT_DIR$/sistema-bancario.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemabancario/model/Agencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemabancario/model/Agencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemabancario/model/Conta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemabancario/model/Conta.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +17,7 @@
       <list>
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -141,15 +142,12 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sistemabancario/model/Agencia.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Calcula dígito de agência usando módulo 10." />
+    <MESSAGE value="Calcula dígito de agência usando módulo 11,&#10;pois este é o padrão de bancos como o Banco do Brasil." />
+    <MESSAGE value="Calcula dígito de agência usando módulo 11,&#10;pois este é o padrão de bancos como o Banco do Brasil.&#10;Atualiza documentação" />
+    <option name="LAST_COMMIT_MESSAGE" value="Calcula dígito de agência usando módulo 11,&#10;pois este é o padrão de bancos como o Banco do Brasil.&#10;Atualiza documentação" />
   </component>
 </project>

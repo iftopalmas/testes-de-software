@@ -17,6 +17,7 @@ public class Conta implements Cadastro {
 
     /**
      * Contas devem ser instanciadas como "Conta Corrente" e não como "Poupança". (1)
+     *
      * Mesmo que o valor padrão para o atributo "poupanca" seja false,
      * o código pode ser alterado e tal requisito pode deixar de  ser atendido futuramente.
      * Isto quer dizer que não precisa escrever código adicional para definir "poupanca" como false,
