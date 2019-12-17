@@ -9,4 +9,5 @@ target/
 *.iml
 ~$*
 /nbproject/
-aulas
+aulas/
+provas
