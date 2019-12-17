@@ -12,10 +12,17 @@ public class Cliente implements Cadastro {
 
     /**
      * CPF que é uma das formas de permitir representar o cliente unicamente.
-     * Não pode ser vazio nem nulo, não pode ter todos os dígitos iguais, não pode conter hífens e traços. (1)
-     * Ao setar o CPF, deve-se utilizar o método {@link #isCpfValido(String)} para verificar
-     * se o CPF é válido ou não. Se for inválido, o valor não deve ser armazenado
-     * e deve-se lançar uma exceção com a mensagem "CPF inválido" (2).
+     * 
+     * <ul>
+     *      <li>Não pode ser vazio nem nulo, não pode ter todos os dígitos iguais, não pode conter hífens e traços. (R01)</li>
+     *      <li>
+     *          Ao setar o CPF, deve-se utilizar o método {@link #isCpfValido(String)}
+     *          para verificar se o CPF é válido ou não. Se for inválido, o valor não deve
+     *          ser armazenado e deve-se lançar uma exceção com a mensagem "CPF inválido".
+     * 
+     *          (R02)
+     *      </li>
+     * <ul>
      */
     private String cpf;
 
@@ -27,11 +34,17 @@ public class Cliente implements Cadastro {
      *          Pode-se fazer nome = nome.trim() para remover quaisquer espaços vazios no início e fim
      *          da String. Após isto, pode-se verificar se a String é vazia.
      *          Se o nome for inválido, deve-se lançar uma exceção informando o erro.
-     *          (3)
+     * 
+     *          (R03)
      *      </li>
-     *      <li>Deve conter pelo menos um sobrenome. Para isto, depois da verificação anterior, basta checar se há ao menos um espaço
-     *      no nome, usando o método contains() da classe String. Se não tiver um sobrenome, deve ser lançada
-     *      uma exceção informando isto. (4)</li>
+     *      <li>
+     *      
+     *          Deve conter pelo menos um sobrenome. Para isto, depois da verificação anterior, basta checar se há ao menos um espaço
+     *          no nome, usando o método contains() da classe String. Se não tiver um sobrenome, deve ser lançada
+     *          uma exceção informando isto. 
+     * 
+     *          (R04)
+     *      </li>
      * </ul>
      */
     private String nome;
