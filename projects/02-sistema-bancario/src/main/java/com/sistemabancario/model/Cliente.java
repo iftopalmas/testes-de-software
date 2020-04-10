@@ -69,7 +69,7 @@ public class Cliente implements Cadastro {
     }
 
     /**
-     * Verifica se um CPF é válido ou não, utilizando o algorítmo denominado Módulo
+     * Verifica se um CPF é válido ou não, utilizando o algoritmo denominado Módulo
      * 11, como descrito em
      * https://pt.wikipedia.org/wiki/Dígito_verificador#Módulo_11.
      *

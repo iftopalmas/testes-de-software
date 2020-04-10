@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a6aea60-9913-4a93-8ea4-50a51ecd1ca5" name="Default Changelist" comment="" />
+    <list default="true" id="4a6aea60-9913-4a93-8ea4-50a51ecd1ca5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../backup-moodle2-testes_de_software.mbz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema-bancario.iws" beforeDir="false" afterPath="$PROJECT_DIR$/sistema-bancario.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sistemabancario/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sistemabancario/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sistemabancario/model/AgenciaTest.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
