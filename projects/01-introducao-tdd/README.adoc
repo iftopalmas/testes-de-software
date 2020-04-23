@@ -1,4 +1,20 @@
-= Introdução ao Test Driven Development (TDD): Desenvolvimento Guiado por Testes (link:https://kinolien.github.io/gitzip/?download=/ifto-palmas/testes-de-software/tree/master/projects/01-introducao-tdd[zip])
+:source-highlighter: highlightjs
+:numbered:
+:unsafe:
+
+ifdef::env-github[]
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+= Introdução ao Test Driven Development (TDD) com JUnit image:https://junit.org/junit5/assets/img/junit5-logo.png[width=40px] (link:https://kinolien.github.io/gitzip/?download=/ifto-palmas/testes-de-software/tree/master/projects/01-introducao-tdd[zip])
+
+
+IMPORTANT: https://www.youtube.com/watch?v=_BP3SLcB0QE&list=PLyo0RUAM69UufupuvTfSM0XffFTvZReet&index=2[Vídeo aula de introdução ao JUnit 5 no NetBeans 11]
 
 Esta pasta fornece, além de uma apresentação sobre link:tdd.pptx[TDD], um projeto de exemplo da aplicação de TDD como processo
 de desenvolvimento de software, utilizando neste caso o paradigma de 
