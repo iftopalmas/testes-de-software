@@ -28,7 +28,7 @@ nas https://pt.wikipedia.org/wiki/Máximo_divisor_comum#Propriedades[propriedade
 
 Este não é um projeto Java comum, mas um projeto do tipo Maven [https://pt.wikipedia.org/wiki/Apache_Maven[1], http://maven.apache.org[2]].
 
-O projeto disponibilizado aqui utiliza a versão 5 do framework http://junit.org[JUnit] para construção e automação de execução de testes unitários. Como o JUnit é uma dependência externa (que não vem disponível com o JDK), 
+O projeto disponibilizado aqui utiliza o http://junit.org[JUnit 5] para construção e automação de execução de testes unitários. Como o JUnit é uma dependência externa (que não vem disponível com o JDK), 
 é extremamente mais fácil criar um projeto Maven, indicar que ele depende do JUnit e deixar o Maven fazer o download de tal dependência. Veja o link:pom.xml[pom.xml] para identificar as configurações realizadas para utilizar o JUnit 5.
 
 == Estrutura do Projeto
