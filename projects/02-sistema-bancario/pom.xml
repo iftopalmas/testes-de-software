@@ -14,7 +14,19 @@
     </properties>
     
     <build>
-        <plugins>       
+        <plugins>      
+            <!-- Necessário para executar o JUnit em projetos Maven -->
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>            
+                        
+            <!-- Necessário para executar o JUnit em projetos Maven -->
+            <plugin>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>2.22.2</version>
+            </plugin>             
+            
             <!--
              Plugin para computar cobertura de código,
              ou seja: computar o percentual do código que está sendo coberto pelos 
@@ -46,9 +58,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.6.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>

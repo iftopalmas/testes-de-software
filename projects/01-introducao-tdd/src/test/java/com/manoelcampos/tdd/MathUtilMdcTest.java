@@ -1,7 +1,7 @@
 package com.manoelcampos.tdd;
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * Realiza vários testes unitários para
@@ -132,7 +132,7 @@ public class MathUtilMdcTest {
             expResult = MathUtil.mdc(valores[1], valores[0]);
             result = MathUtil.mdc(valores[0], valores[1]);
             msg = String.format("a: %d b: %d", valores[0], valores[1]);
-            assertEquals(msg, expResult, result);
+            assertEquals(expResult, result, msg);
         }
     }
     

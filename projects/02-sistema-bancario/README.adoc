@@ -1,4 +1,4 @@
-= Projeto de Sistema Bancário para Inclusão de Testes Unitários (link:https://kinolien.github.io/gitzip/?download=/ifto-palmas/testes-de-software/tree/master/projects/02-sistema-bancario[zip])
+= Projeto de Sistema Bancário para Inclusão de Testes Unitários com JUnit 5 (link:https://kinolien.github.io/gitzip/?download=/ifto-palmas/testes-de-software/tree/master/projects/02-sistema-bancario[zip])
 
 Este projeto fornece um conjunto de classes base para que sejam implementados testes unitários.
 
