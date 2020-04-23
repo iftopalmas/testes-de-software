@@ -1,0 +1,113 @@
+:revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/
+//:revealjsdir: https://cdnjs.com/libraries/reveal.js/3.8.0
+:revealjs_slideNumber: true
+:source-highlighter: highlightjs
+:icons: font
+:allow-uri-read:
+:imagesdir: ../images
+:stylesheet: ../../adoc-golo.css
+:customcss: ../../slides-base.css
+:numbered:
+:toc: left
+:toc-title: Sumário
+:toclevels: 5
+
+ifdef::env-github[]
+//Exibe ícones para os blocos como NOTE e IMPORTANT no GitHub
+
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+:chapter-label:
+:listing-caption: Listagem
+:figure-caption: Figura
+
+//Transição para todos os slides // none/fade/slide/convex/concave/zoom
+//:revealjs_transition: 'zoom'
+
+//https://github.com/hakimel/reveal.js#theming
+:revealjs_theme: league
+
+= Automação de Testes com JUnit
+
+image::https://junit.org/junit5/assets/img/junit5-logo.png[width=100px, link=https://junit.org]
+https://junit.org
+
+
+Prof. Manoel Campos https://about.me/manoelcampos
+Prof. Mauro Henrique
+
+[transition=zoom]
+== Introdução ao JUnit
+
+[%step]
+- Framework para escrita e automação da execução de testes na JVM. 
+- Possivelmente a ferramenta mais famosa da plataforma Java.
+- Fundamental para o Test-Driven Development (TDD).
+- Versão 5 reescrita do zero: https://youtu.be/WZ5J4eocHjY
+
+[transition=fade]
+== JUnit 5 :: Estrutura
+
+[%step]
+- Dividido em 3 módulos específicos
+- Mais fácil para o projeto evoluir
+- O desenvolvedor usa somente o que precisa, reduzindo o tamanho do download
+
+[transition=fade]
+== JUnit 5 :: Algumas Melhorias
+
+[%step]
+- Facilita o uso e resolve coisas irritantes para quem vem do JUnit 4
+- Mensagem de erro opcional para a falha de um teste é o último parâmetro
+- Classes de teste e testes não precisam ser públicos
+
+[transition=fade]
+== JUnit 5 :: Algumas Melhorias
+
+[%step]
+- Testes Parametrizados
+- Permite utilizar Expressões Lambda (http://github.com/manoelcampos/programacao-funcional-java[Programação Funcional no Java])
+- Principais recursos nos seguintes links: https://developer.ibm.com/dwblog/2017/best-new-features-junit-5/[<1>] https://stackify.com/junit-5/[<2>]
+
+[transition=fade]
+== JUnit 5 :: Módulos
+
+[%step]
+- *JUnit Platform*: base para desenvolvimento e execução de frameworks de teste na JVM.
+- *JUnit Jupiter*: para escrita de testes e extensões
+- *JUnit Vintage*: executar testes do JUnit 3 e 4 no JUnit 5
+
+[transition=fade]
+== JUnit 5 :: Utilização - JDK
+
+- JDK 8 ou superior
+
+[transition=fade]
+== JUnit 5 :: Utilização - IDEs
+
+[%step]
+- NetBeans image:netbeans.png[width=50px] 
+- IntelliJ image:intellij.png[width=50px] 
+- Eclipse image:eclipse.png[width=50px] 
+- E editor Visual Studio Code (com plugin) image:vscode.png[width=50px] 
+
+[transition=fade]
+== JUnit 5 :: Utilização - Ferramentas de automação de Build
+
+[%step]
+- Maven
+- Gradle
+- Outras
+
+[transition=fade]
+== !
+
+image::typing.gif[background]
+
+// Imagem: tenor.com
+
