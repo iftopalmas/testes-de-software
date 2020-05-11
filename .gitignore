@@ -12,3 +12,6 @@ target/
 aulas/
 provas
 seu-nome-aqui.zip
+
+#MacOS Files
+.DS_Store
