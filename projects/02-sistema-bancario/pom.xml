@@ -19,6 +19,17 @@
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.2</version>
+                <configuration>
+                    <!-- 
+                    Workaround para
+                    "Corrupted STDOUT by directly writing to native stream in forked JVM 1" 
+                    em versãos mais recentes do JDK,
+                    antes de corrigigem na versão 3 do plugin.
+                    O problema só ocorreu com a inclusão do plugin
+                    JaCoCo.
+                    -->
+                    <forkCount>0</forkCount>
+                </configuration>                
             </plugin>            
                         
             <!-- Necessário para executar o JUnit em projetos Maven -->
