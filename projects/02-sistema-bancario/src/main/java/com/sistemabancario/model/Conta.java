@@ -54,8 +54,7 @@ public class Conta implements Cadastro {
     private double limite;
 
     /**
-     * Histórico de movimentações da conta. Deve ser inicializado no construtor 
-     * com uma lista vazia.
+     * Histórico de movimentações da conta. Deve ser inicializado com uma lista vazia.
      * Sem isto, ao tentar utilizar a lista, dará o erro NullPointerException.
      * Um teste deve verificar se, após instanciar uma conta 
      * usando qualquer um dos construtores, a lista de movimentações não é nula, 
