@@ -15,7 +15,8 @@ public class Banco implements Cadastro {
      * Número único do banco.
      * 
      * <ul>
-     *  <li>Deve ter exatamente 3 algarismos. Senão, uma exceção deve ser lançada informando o problema. (R01)</li>
+     *  <li>Deve ter exatamente 3 algarismos. Senão, uma exceção deve ser 
+     * lançada informando o problema. (R01)</li>
      *  <li>
      *      O tipo é String para permitir restringir o total de caracteres, mas deve
      *      ser informado um número válido (somente dígitos de 0 a 9). Senão for um

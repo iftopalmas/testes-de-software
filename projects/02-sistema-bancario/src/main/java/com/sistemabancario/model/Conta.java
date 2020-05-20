@@ -4,7 +4,8 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Representa uma conta bancária de um determinado {@link Cliente}, tendo os seguintes requisitos:
+ * Representa uma conta bancária de um determinado {@link Cliente}, 
+ * tendo os seguintes requisitos:
  *
  * <ul>
  *  <li>Uma conta não pode ser excluída se existirem movimentações.</li>
@@ -21,7 +22,8 @@ public class Conta implements Cadastro {
      * Mesmo que o valor padrão para o atributo "poupanca" seja false,
      * o código pode ser alterado e tal requisito pode deixar de  ser atendido futuramente.
      * Isto quer dizer que não precisa escrever código adicional para definir "poupanca" como false,
-     * mas é preciso escrever o teste para verificar tal situação. Com isto, buscamos detectar se uma
+     * mas é preciso escrever o teste para verificar tal situação. 
+     * Com isto, buscamos detectar se uma
      * alteração no código fez com que este requisito deixasse de ser atendido.
      */
     private boolean poupanca;
@@ -44,10 +46,12 @@ public class Conta implements Cadastro {
     private double limite;
 
     /**
-     * Histórico de movimentações da conta. Deve ser inicializado no construtor com uma lista vazia.
+     * Histórico de movimentações da conta. Deve ser inicializado no construtor 
+     * com uma lista vazia.
      * Sem isto, ao tentar utilizar a lista, dará o erro NullPointerException.
-     * Um teste deve verificar se, após instanciar uma conta usando qualquer um dos construtores,
-     * a lista de movimentações não é nula, chamando o método {@link #getMovimentacoes()}. (R03)
+     * Um teste deve verificar se, após instanciar uma conta 
+     * usando qualquer um dos construtores, a lista de movimentações não é nula, 
+     * chamando o método {@link #getMovimentacoes()}. (R03)
      */
     private List<Movimentacao> movimentacoes;
 
@@ -100,11 +104,13 @@ public class Conta implements Cadastro {
     }
 
     /**
-     * Valor total disponível na conta, representando o {@link #saldo} mais o {@link #limite}. (R05)
+     * Valor total disponível na conta, representando o {@link #saldo} 
+     * mais o {@link #limite}. (R05)
      * @return
      */
     public double getSaldoTotal() {
-        // TODO: Você precisa implementar este método. A linha abaixo deve ser substituída pelo seu código
+        /* TODO: Você precisa implementar este método. 
+        A linha abaixo deve ser substituída pelo seu código */
         return 0.0d;
     }
 
