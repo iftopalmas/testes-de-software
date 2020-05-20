@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * (fiz apenas algumas melhorias de boas práticas 
  * como tirar visibilidade public e definir variáveis como final).
  * 
- * Assim, nenhum deles funciona e o código precisa ser alterado
+ * Assim, NENHUM DELES FUNCIONA E O CÓDIGO PRECISA SER ALTERADO
  * de acordo com as regras de negócio dos métodos da classe {@link Movimentacao}.
  * Ao iniciar a alteração de um teste aqui,
  * a primeira coisa a fazer é remover a chamada de fail(),

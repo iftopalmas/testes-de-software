@@ -32,8 +32,3 @@ na pasta src], contendo a mesma documentação disponível no projeto UML.
 A documentação JavaDoc incluída no código fonte das classes informa como os métodos devem funcionar,
 quais as regras de validação de atributos e outros detalhes.
 A partir destas definições apresentadas, pode-se então escrever os testes e o código dos métodos gerais, getters e setters das classes. Observe que estes dois últimos tipos de métodos não são mostrados no diagrama por simplificação.
-
-O projeto Java possui os seguintes pacotes:
-
-- link:src/main/java/com/sistemabancario/dao[dao]: ver definição no arquivo link:src/main/java/com/sistemabancario/dao/package-info.java[package-info.java].
-- link:src/main/java/com/sistemabancario/model[model]: ver definição no arquivo link:src/main/java/com/sistemabancario/model/package-info.java[package-info.java].
