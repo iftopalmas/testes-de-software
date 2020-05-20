@@ -10,6 +10,8 @@ import java.util.List;
  * <ul>
  *  <li>Uma conta não pode ser excluída se existirem movimentações.</li>
  * </ul>
+ * 
+ * @author Manoel Campos da Silva Filho
  */
 public class Conta implements Cadastro {
     private long id;

@@ -5,6 +5,8 @@ package com.sistemabancario.model;
  * 
  * - Ao cadastrar um cliente, deve ser criada ao menos uma conta.
  * - Não deve-se excluir um cliente se este tiver contas cadastradas.
+ * 
+ * @author Manoel Campos da Silva Filho
  */
 public class Cliente implements Cadastro {
 

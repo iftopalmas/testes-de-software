@@ -10,6 +10,8 @@ package com.sistemabancario.model;
  * Isto normalmente ocorrer quando o histórico de movimentações se torna longo
  * (principalmente depois de alguns anos).
  * </p>
+ * 
+ * @author Manoel Campos da Silva Filho
  */
 public class Movimentacao implements Cadastro {
     private long id;

@@ -5,6 +5,8 @@ package com.sistemabancario.model;
  * 
  * - Ao cadastrar um banco, deve ser criada ao menos uma agência.
  * - Não deve-se excluir um banco se este tiver agências cadastradas.
+ * 
+ * @author Manoel Campos da Silva Filho
  */
 public class Banco implements Cadastro {
     private long id;

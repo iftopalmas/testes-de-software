@@ -8,7 +8,7 @@ target/
 .idea
 *.iml
 ~$*
-/nbproject/
+**/nbproject/
 aulas/
 provas
 seu-nome-aqui.zip
