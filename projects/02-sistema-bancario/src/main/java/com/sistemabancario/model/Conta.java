@@ -16,17 +16,23 @@ import java.util.List;
 public class Conta implements Cadastro {
     private long id;
 
+    /**
+     * Número que identifica unicamente uma conta em uma determinada agência,
+     * devendo estar no formato 99999-9.  
+     * Se o número não estiver no formato indicado,
+     * o valor não pode ser armazenado e uma exceção deve ser lançada (R01).
+     * O número da agência tem um dígito verificador como no CPF,
+     * mas isto é outro requisito não definido aqui.
+     */
     private String numero;
 
     /**
-     * Contas devem ser instanciadas como "Conta Corrente" e não como "Poupança". (R01)
-     *
-     * Mesmo que o valor padrão para o atributo "poupanca" seja false,
-     * o código pode ser alterado e tal requisito pode deixar de  ser atendido futuramente.
-     * Isto quer dizer que não precisa escrever código adicional para definir "poupanca" como false,
-     * mas é preciso escrever o teste para verificar tal situação. 
-     * Com isto, buscamos detectar se uma
-     * alteração no código fez com que este requisito deixasse de ser atendido.
+     * Contas devem ser instanciadas como "Conta Corrente" e não como "Poupança". (R02)
+     * O valor padrão para atributos boolean é false, assim não precisamos escrever 
+     * código adicional para definir "poupanca" como false.
+     * Mas é preciso escrever o teste para verificar tal situação.  
+     * Com isto, buscamos detectar se uma alteração no código fizer com que 
+     * este requisito deixe de ser atendido.
      */
     private boolean poupanca;
 
@@ -43,7 +49,7 @@ public class Conta implements Cadastro {
     /**
      * Limite da conta: valor que o cliente pode utilizar além do {@link #saldo} disponível.
      * Somente contas especiais podem ter limite, ou seja,
-     * o limite de contas "não especiais" não pode ser maior que zero (R02).
+     * o limite de contas "não especiais" não pode ser maior que zero (R03).
      */
     private double limite;
 
@@ -53,7 +59,7 @@ public class Conta implements Cadastro {
      * Sem isto, ao tentar utilizar a lista, dará o erro NullPointerException.
      * Um teste deve verificar se, após instanciar uma conta 
      * usando qualquer um dos construtores, a lista de movimentações não é nula, 
-     * chamando o método {@link #getMovimentacoes()}. (R03)
+     * chamando o método {@link #getMovimentacoes()}. (R04)
      */
     private List<Movimentacao> movimentacoes;
 
@@ -66,33 +72,15 @@ public class Conta implements Cadastro {
     }
 
     /**
-     * Retorna uma lista não modificáveis (unmodifiable) das movimentações,
-     * para evitar que a lista seja alterada diretamente
-     * com inclusão e remoção de elementos
-     * (isto poderia tornar o saldo da conta inconsistente).
-     *
-     * <p>Isto de fato não impede que os elementos na lista sejam alterados.
-     * Uma solução seria retornar uma cópia da lista. Assim, se qualquer
-     * elemento for alterado, apenas uma cópia dela seria, não
-     * a lista original. Alterações na cópia não causam efeito colateral algum.
-     * No entanto, se o histórico de movimentações for longo,
-     * fazer uma cópia de tal lista pode impactar no consumo de memória e desempenho
-     * do sistema.</p>
-     *
-     * <p>Uma solução ideal é retornar listas imutáveis (immutable) no lugar
-     * de apenas não modificáveis (unmodifiable). A diferença é sutil,
-     * mas o primeiro tipo de lista não permite adições ou remoções, mas permite
-     * alteração dos elementos existentes. A segunda não permite qualquer alteração.
-     * No entanto, objetos imutáveis não são nativamente suportados em Java.
-     * É normalmente preciso um esforço de programação e o uso de bibliotecas externas.</p>
+     * Retorna a lista de movimentações.
      * @return
      */
     public List<Movimentacao> getMovimentacoes(){
-        return Collections.unmodifiableList(movimentacoes);
+        return movimentacoes;
     }
 
     /**
-     * Adiciona uma nova movimentação à lista de {@link #movimentacoes}. (R04)
+     * Adiciona uma nova movimentação à lista de {@link #movimentacoes}. (R05)
      * Se a movimentação estiver confirmada, seu valor deve ser:
      * <ul>
      *     <li>somado ao saldo da conta caso o tipo da movimentação seja 'C';</li>
@@ -107,7 +95,7 @@ public class Conta implements Cadastro {
 
     /**
      * Valor total disponível na conta, representando o {@link #saldo} 
-     * mais o {@link #limite}. (R05)
+     * mais o {@link #limite}. (R06)
      * @return
      */
     public double getSaldoTotal() {
