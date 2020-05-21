@@ -1,6 +1,5 @@
 package com.sistemabancario.model;
 
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -120,10 +119,6 @@ public class Conta implements Cadastro {
      * @param valor valor a ser sacado (deve ser um valor positivo)
      */
     public void saque(final double valor) {
-        if(valor < 0){
-            throw new IllegalArgumentException("Valor deve ser positivo");
-        }
-
         saldo -= valor;
     }
 
@@ -187,7 +182,7 @@ public class Conta implements Cadastro {
         return limite;
     }
 
-    public void setLimite(double limite) {
+    public void setLimite(double limite) {        
         this.limite = limite;
     }
 }
