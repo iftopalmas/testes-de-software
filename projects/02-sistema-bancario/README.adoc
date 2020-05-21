@@ -14,11 +14,7 @@ endif::[]
 = Sistema Bancário para Testes com JUnit 5 (link:https://kinolien.github.io/gitzip/?download=/ifto-palmas/testes-de-software/tree/master/projects/02-sistema-bancario[zip])
 
 Este projeto fornece um conjunto de classes base para que sejam implementados testes unitários.
-
-As classes do sistema são apresentadas no diagrama UML abaixo.
-O diagrama pode ser editado no arquivo link:sistema-bancario.staruml.mdj[sistema-bancario.staruml.mdj],
-que é um projeto do http://staruml.io[StarUML].
-No projeto podem ser observados diversos detalhes e documentação das classes apresentadas abaixo.
+O diagrama abaixo apresenta as classes existentes. O projeto fornece documentação dos requisitos a serem implementados
 
 .Diagrama das Classes de Negócio do Sistema Bancário (pacote link:src/main/java/com/sistemabancario/model[model]).
 image::diagrama-classes-model.png[]
