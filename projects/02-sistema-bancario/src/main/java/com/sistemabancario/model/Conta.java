@@ -119,15 +119,18 @@ public class Conta implements Cadastro {
      * @param valor valor a ser sacado (deve ser um valor positivo)
      */
     public void saque(final double valor) {
-        saldo -= valor;
+        // TODO: Você precisa implementar este método
     }
 
     /**
-     * Adiciona uma nova movimentação de depósito em envelope
-     * (que deve ser confirmada posteriormente por um funcionário do banco).
+     * Adiciona uma nova movimentação de depósito em dinheiro
+     * tanto realizada por um funcionário quanto em um caixa eletrônico,
+     * que deve ser confirmada automaticamente.
+     * Considera-se que todos os caixas eletrônicos do banco têm 
+     * capacidade de contar cédulas.
      * @param valor valor a ser depositado (deve ser um valor positivo)
      */
-    public void depositoEnvelope(final double valor) {
+    public void depositoDinheiro(final double valor) {
         // TODO: Você precisa implementar este método
     }
 
