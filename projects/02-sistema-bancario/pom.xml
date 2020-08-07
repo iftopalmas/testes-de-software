@@ -14,28 +14,17 @@
     </properties>
     
     <build>
-        <plugins>      
+        <plugins>
             <!-- Necessário para executar o JUnit em projetos Maven -->
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
-                <configuration>
-                    <!-- 
-                    Workaround para
-                    "Corrupted STDOUT by directly writing to native stream in forked JVM 1" 
-                    em versãos mais recentes do JDK,
-                    antes de corrigigem na versão 3 do plugin.
-                    O problema só ocorreu com a inclusão do plugin
-                    JaCoCo.
-                    -->
-                    <forkCount>0</forkCount>
-                </configuration>                
+                <version>3.0.0-M5</version>
             </plugin>            
                         
             <!-- Necessário para executar o JUnit em projetos Maven -->
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.0.0-M5</version>
             </plugin>             
             
             <!--
@@ -47,22 +36,22 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.0</version>
+                <version>0.8.5</version>
                 <executions>
                     <execution>
-                        <id>prepare-agent</id>
+                        <id>jacoco-initialize</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
                     <execution>
-                        <id>report</id>
-                        <phase>prepare-package</phase>
+                        <id>jacoco-site</id>
+                        <phase>package</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
                     </execution>
-                </executions>
+                </executions>       
             </plugin>
         </plugins>
     </build>    
