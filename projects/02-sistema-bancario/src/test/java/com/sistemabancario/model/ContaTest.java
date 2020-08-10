@@ -7,6 +7,6 @@ public class ContaTest {
     
     @Test
     public void testAddMovimentacao() {
-        //TODO: Você precisa apagar estas duas linhas e implementar o teste
+        //TODO: Você precisa implementar este teste
     }
 }
