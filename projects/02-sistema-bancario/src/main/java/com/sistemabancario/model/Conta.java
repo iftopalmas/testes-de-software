@@ -99,7 +99,7 @@ public class Conta implements Cadastro {
     public double getSaldoTotal() {
         /* TODO: Você precisa implementar este método. 
         A linha abaixo deve ser substituída pelo seu código */
-        return 0.0d;
+        return 0.0;
     }
 
     /**
