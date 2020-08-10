@@ -25,11 +25,11 @@
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>3.0.0-M5</version>
-            </plugin>             
-            
+            </plugin>      
+                        
             <!--
-             Plugin para computar cobertura de código,
-             ou seja: computar o percentual do código que está sendo coberto pelos 
+             Plugin para computar cobertura de código: 
+             computar o percentual do código que está sendo coberto pelos 
              testes unitários.
              https://www.jacoco.org/jacoco/trunk/doc/examples/build/pom.xml
             -->
