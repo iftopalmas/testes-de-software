@@ -31,7 +31,7 @@
              Plugin para computar cobertura de código,
              ou seja: computar o percentual do código que está sendo coberto pelos 
              testes unitários.
-             https://www.eclemma.org/jacoco/trunk/doc/maven.html
+             https://www.jacoco.org/jacoco/trunk/doc/examples/build/pom.xml
             -->
             <plugin>
                 <groupId>org.jacoco</groupId>
