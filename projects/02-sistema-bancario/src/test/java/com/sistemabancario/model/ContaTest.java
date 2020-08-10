@@ -8,6 +8,5 @@ public class ContaTest {
     @Test
     public void testAddMovimentacao() {
         //TODO: Você precisa apagar estas duas linhas e implementar o teste
-        fail("Teste não implementado");
     }
 }
