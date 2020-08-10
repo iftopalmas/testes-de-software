@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4a6aea60-9913-4a93-8ea4-50a51ecd1ca5" name="Default Changelist" comment="" />
+    <list default="true" id="4a6aea60-9913-4a93-8ea4-50a51ecd1ca5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sistema-bancario.iws" beforeDir="false" afterPath="$PROJECT_DIR$/sistema-bancario.iws" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,6 +154,7 @@
       <workItem from="1590001038821" duration="201000" />
       <workItem from="1590087008173" duration="167000" />
       <workItem from="1590753011417" duration="108000" />
+      <workItem from="1592395961607" duration="499000" />
     </task>
     <servers />
   </component>
@@ -182,22 +186,26 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="128" y="23" key="#Project_Structure/0.23.1280.777@0.23.1280.777" timestamp="1590000971128" />
-    <state width="1238" height="192" key="GridCell.Tab.0.bottom" timestamp="1590087174535">
+    <state x="213" y="93" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1592396242853">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1590087174535" />
-    <state width="1238" height="192" key="GridCell.Tab.0.center" timestamp="1590087174534">
+    <state x="213" y="93" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1280.777@0.23.1280.777" timestamp="1592396242853" />
+    <state width="1238" height="198" key="GridCell.Tab.0.bottom" timestamp="1592396484338">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1590087174534" />
-    <state width="1238" height="192" key="GridCell.Tab.0.left" timestamp="1590087174534">
+    <state width="1238" height="198" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1592396484338" />
+    <state width="1238" height="198" key="GridCell.Tab.0.center" timestamp="1592396484336">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1590087174534" />
-    <state width="1238" height="192" key="GridCell.Tab.0.right" timestamp="1590087174534">
+    <state width="1238" height="198" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1592396484336" />
+    <state width="1238" height="198" key="GridCell.Tab.0.left" timestamp="1592396484336">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1590087174534" />
+    <state width="1238" height="198" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1592396484336" />
+    <state width="1238" height="198" key="GridCell.Tab.0.right" timestamp="1592396484337">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="198" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1592396484337" />
     <state x="141" y="50" key="SettingsEditor" timestamp="1590000881109">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -210,9 +218,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="426" y="328" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.777@0.23.1280.777" timestamp="1590001161725" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1590087056673">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1592396327861">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1590087056673" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1592396327861" />
   </component>
 </project>
