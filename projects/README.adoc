@@ -16,4 +16,4 @@ endif::[]
 Disponibiliza projetos Java para prática do Test-Driven Development (TDD):
 
 - link:01-introducao-tdd[Introdução ao TDD]: projeto inicial com problemas simples para entender o funcionamento do TDD e JUnit 5
-- link:02-sistema-bancario[Sistema Bancário]: projeto mais realista com regras de negócio a serem implementadas por meio do TDD com JUnit 5
+- https://github.com/manoelcampos/sistema-bancario[Sistema Bancário]: projeto mais realista com regras de negócio a serem implementadas por meio do TDD com JUnit 5
