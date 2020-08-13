@@ -1,0 +1,3 @@
+[submodule "projects/02-sistema-bancario"]
+	path = projects/02-sistema-bancario
+	url = https://github.com/manoelcampos/sistema-bancario.git
