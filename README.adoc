@@ -9,7 +9,7 @@ endif::[]
 
 = Sumário
 
-ifdef::env-github[image:https://github.com/ifto-palmas/testes-de-software/workflows/asciidoctor-ghpages/badge.svg[GitHub Pages]]
+ifdef::env-github[image:https://github.com/ifto-palmas/testes-de-software/workflows/asciidoctor-ghpages/badge.svg[GitHub Pages,link=https://ifto-palmas.github.io/testes-de-software/]]
 
 . link:ebook/README.adoc[Prefácio]
 . link:ebook/cap1-processos_de_software.adoc[Capítulo 1 - Breve Revisão sobre Processos de Software]
