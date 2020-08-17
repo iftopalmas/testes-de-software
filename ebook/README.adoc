@@ -8,6 +8,8 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
+IMPORTANT: Você pode baixar uma versão sempre atualizada em PDF deste material https://github.com/ifto-palmas/testes-de-software/blob/gh-pages/ebook.pdf[aqui].
+
 [preface]
 == Antes de começar é importante ler essa parte...
 
