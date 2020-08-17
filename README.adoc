@@ -19,3 +19,6 @@ ifdef::env-github[image:https://github.com/ifto-palmas/testes-de-software/workfl
 . link:ebook/cap5-tipos_de_teste.adoc[Capítulo 5 - Tipos de Teste]
 . link:ebook/cap6-plano_de_teste.adoc[Capítulo 6 - Plano de Teste]
 . link:ebook/bibliografia.adoc[Bibliografia]
+
+IMPORTANT: Você pode baixar uma versão sempre atualizada em PDF deste material https://github.com/ifto-palmas/testes-de-software/blob/gh-pages/ebook.pdf[aqui].
+
