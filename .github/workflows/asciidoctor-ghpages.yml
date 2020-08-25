@@ -21,7 +21,7 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: asciidoctor-ghpages
-      uses: manoelcampos/asciidoctor-ghpages-action@v2.0.0
+      uses: manoelcampos/asciidoctor-ghpages-action@v2
       with:
         pdf_build: true
         # Vai usar o arquivo ebook/ebook.adoc para compilar o ebook.pdf automaticamente a cada push
