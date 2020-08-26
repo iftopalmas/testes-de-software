@@ -21,3 +21,6 @@ seu-nome-aqui.zip
 .project
 .settings/
 .vscode/
+
+#Backup Moodle
+*.mbz
