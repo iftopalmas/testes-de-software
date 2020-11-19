@@ -16,7 +16,7 @@ endif::[]
 
 IMPORTANT: https://www.youtube.com/watch?v=_BP3SLcB0QE&list=PLyo0RUAM69UufupuvTfSM0XffFTvZReet&index=2[Vídeo aula de introdução ao JUnit 5 no NetBeans 11]
 
-Esta pasta fornece, além de uma apresentação sobre link:tdd.pptx[TDD], um projeto de exemplo da aplicação de TDD como processo
+Esta pasta fornece, além de slides sobre TDD, um projeto de exemplo da aplicação de TDD como processo
 de desenvolvimento de software, utilizando neste caso o paradigma de 
 Programação Orientada a Objetos (POO).
 
@@ -49,3 +49,8 @@ Para a classe principal como link:src/main/java/com/manoelcampos/tdd/MathUtil.ja
 poderíamos ter a classe de teste `MathUtilTest.java`.
 No entanto, como só os testes do método `mdc` já são muitos, foi criada uma classe de teste link:src/test/java/com/manoelcampos/tdd/MathUtilMdcTest.java[MathUtilMdcTest.java] apenas com os testes deste método.
 Esta classe utiliza o JUnit 5 para a construção e automatização da execução dos testes.
+
+== Slides
+
+- https://docs.google.com/presentation/d/e/2PACX-1vQzuaBeq1DegSgfUoe1SsFYiPnBaaXNcpm8xr7VuFhP-BtjHwuoE6CZ0mzV1dX0D0k4Y2ekyC2Ya8Gm/pub?start=true&loop=false&delayms=60000[TDD: Como e porque aplicar]
+- https://docs.google.com/presentation/d/e/2PACX-1vQWtD6XRRVBhlc6AhQGsMnjpBv7-0In58UEMGlZkxI5PJ0tK1wtUqTt86gVrjg-sT60uGlSl-DrSF-v/pub?start=true&loop=false&delayms=60000[Boas práticas do TDD]
