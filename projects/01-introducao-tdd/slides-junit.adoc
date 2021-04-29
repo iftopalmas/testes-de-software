@@ -72,7 +72,7 @@ Prof. Mauro Henrique
 [%step]
 - Testes Parametrizados
 - Permite utilizar Expressões Lambda (http://github.com/manoelcampos/programacao-funcional-java[Programação Funcional no Java])
-- Principais recursos nos seguintes links: https://developer.ibm.com/dwblog/2017/best-new-features-junit-5/[<1>] https://stackify.com/junit-5/[<2>]
+- Principais recursos nos seguintes links: https://developer.ibm.com/tutorials/j-introducing-junit5-part1-jupiter-api/[<1>] https://stackify.com/junit-5/[<2>]
 
 [transition=fade]
 == JUnit 5 :: Módulos

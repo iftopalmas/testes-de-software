@@ -10,7 +10,8 @@ target/
 ~$*
 **/nbproject/
 aulas/
-provas
+provas/
+provas-tdd/
 seu-nome-aqui.zip
 
 #MacOS Files
@@ -24,3 +25,6 @@ seu-nome-aqui.zip
 
 #Backup Moodle
 *.mbz
+
+*.xlsx
+*telegram*.adoc
