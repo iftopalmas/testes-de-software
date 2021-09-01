@@ -10,6 +10,7 @@ endif::[]
 :icons: font
 
 = Sumário
+Prof Manoel Campos da Silva Filho; Prof Mauro Henrique Lima de Boni
 
 ifdef::env-github[]
 image:https://github.com/ifto-palmas/testes-de-software/workflows/asciidoctor-ghpages/badge.svg[GitHub Pages,link=https://ifto-palmas.github.io/testes-de-software/]
