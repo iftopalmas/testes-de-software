@@ -47,6 +47,7 @@ ifdef::env-github[]
 - <<cap5-tipos_de_teste#,Tipos de Teste>>
 - <<cap6-plano_de_teste#,Planos de Teste>>
 - <<bibliografia#,Bibliografia>>
+
 else::[]
 include::cap0-prefacio.adoc[]
 include::cap1-processos_de_software.adoc[]
