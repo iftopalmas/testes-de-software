@@ -19,7 +19,13 @@ image:https://github.com/ifto-palmas/testes-de-software/workflows/asciidoctor-gh
 ====
 - Se você não pretende fazer alterações neste repositório, não faça fork. Se fizer, sempre que o projeto for atualizado, sua cópia vai ficar absoleta. Se você quer apenas baixar para navegar localmente, faça um clone no botão `Code` acima.
 - Se você quer apenas salvar o projeto para consulta posterior, use o botão `Star` ⭐️ acima. Isto ainda ajuda a divulgar o material.
-- Você pode baixar uma versão sempre atualizada em PDF deste material https://github.com/ifto-palmas/testes-de-software/blob/gh-pages/ebook.pdf[aqui].
+====
+endif::[]
+
+ifndef::backend-pdf[]
+[INFORMATION]
+====
+Você pode baixar uma versão sempre atualizada em PDF deste material https://github.com/ifto-palmas/testes-de-software/blob/gh-pages/ebook.pdf[aqui].
 ====
 endif::[]
 
