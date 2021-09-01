@@ -10,7 +10,7 @@ endif::[]
 :icons: font
 
 = Sumário
-Prof Manoel Campos da Silva Filho; Prof Mauro Henrique Lima de Boni
+Mauro Henrique Lima de Boni - mauro@ifto.edu.br; Manoel Campos da Silva Filho - mcampos@ifto.edu.br
 
 ifdef::env-github[]
 image:https://github.com/ifto-palmas/testes-de-software/workflows/asciidoctor-ghpages/badge.svg[GitHub Pages,link=https://ifto-palmas.github.io/testes-de-software/]
@@ -23,6 +23,18 @@ image:https://github.com/ifto-palmas/testes-de-software/workflows/asciidoctor-gh
 ====
 endif::[]
 
+ifdef::backend-pdf[]
+include::ebook/README.adoc[]
+include::ebook/cap1-processos_de_software.adoc[]
+include::ebook/cap2-o_que_e_teste_de_software.adoc[]
+include::ebook/cap3-niveis_de_teste.adoc[]
+include::ebook/cap4-tecnicas_de_teste.adoc[]
+include::ebook/cap5-tipos_de_teste.adoc[]
+include::ebook/cap6-plano_de_teste.adoc[]
+include::ebook/bibliografia.adoc[]
+endif::[]
+
+ifndef::backend-pdf[]
 . link:ebook/README.adoc[Prefácio]
 . link:ebook/cap1-processos_de_software.adoc[Capítulo 1 - Breve Revisão sobre Processos de Software]
 . link:ebook/cap2-o_que_e_teste_de_software.adoc[Capítulo 2 - O que é Teste de Software?]
@@ -31,3 +43,4 @@ endif::[]
 . link:ebook/cap5-tipos_de_teste.adoc[Capítulo 5 - Tipos de Teste]
 . link:ebook/cap6-plano_de_teste.adoc[Capítulo 6 - Plano de Teste]
 . link:ebook/bibliografia.adoc[Bibliografia]
+endif::[]

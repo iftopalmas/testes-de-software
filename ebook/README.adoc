@@ -1,63 +1,76 @@
-= Testes de _software_
-Mauro Henrique Lima de Boni - mauro@ifto.edu.br; Manoel Campos da Silva Filho - mcampos@ifto.edu.br
-:toc:
-:toc-title: Sumário
-:toclevels: 5
-:appversion: 1.0.0
-:doctype: book
-:lang: pt-BR
-:chapter-label:
-:keywords: Testes de Software
-:description: Material de apoio da disciplina Testes de Software
-:ascii-ids:
-:sectnums:
-//%:sectnums!:
-:source-highlighter: highlightjs
-:allow-uri-read:
-:safe: unsafe
-:icons: font
-:numbered:
-:listing-caption: Listagem
-:experimental:
-:figure-caption: Figura
-:data-uri:
-
-// é possível usar um simblo obtido por um codigo unicode!
-:tip-caption: 💡
-:figure-caption: Figura
-:data-uri:
-//:preface-title: Leia antes de começar a ler o material
-
-//:tip-caption: pass:[&#128161;]
-//🔍
-//lupa inclinada para a esquerda
-//Unicode: U+1F50D, UTF-8: F0 9F 94 8D
-
-//Instrução para exibição dos ícones
-++++
-<link rel="stylesheet"  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.1.0/css/font-awesome.min.css">
-++++
 
 ifdef::env-github[]
-- <<cap0-prefacio#,Prefácio>>
-- <<cap1-processos_de_software#,Processos de Software>>
-- <<cap2-o_que_e_teste_de_software#,O que é Teste de Software>>
-- <<cap3-niveis_de_teste#,Níveis de Teste>>
-- <<cap4-tecnicas_de_teste#,Técnicas de Teste>>
-- <<cap5-tipos_de_teste#,Tipos de Teste>>
-- <<cap6-plano_de_teste#,Planos de Teste>>
-- <<bibliografia#,Bibliografia>>
+:outfilesuffix: .adoc
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
 endif::[]
 
-ifndef::env-github[]
-include::cap0-prefacio.adoc[]
-include::cap1-processos_de_software.adoc[]
-include::cap2-o_que_e_teste_de_software.adoc[]
-include::cap3-niveis_de_teste.adoc[]
-include::cap4-tecnicas_de_teste.adoc[]
-include::cap5-tipos_de_teste.adoc[]
-include::cap6-plano_de_teste.adoc[]
-include::bibliografia.adoc[]
-endif::[]
+IMPORTANT: Você pode baixar uma versão sempre atualizada em PDF deste material https://github.com/ifto-palmas/testes-de-software/blob/gh-pages/ebook.pdf[aqui].
+
+[preface]
+== Antes de começar é importante ler essa parte...
+
+//[NOTE]
+//Esse material é usado como apoio às aulas da disciplina de Testes de _software_
+//do Curso Superior de Tecnologia em Sistemas para WEB do Instituto Federal de Educação,
+//Ciência e Tecnologia do Tocantins - IFTO. Ele não substitui livros técnicos ou
+//outras fontes. Ele é apenas um resumo para auxiliar o estudante.
+
+=== Qual o propósito deste material
+Este material de apoio é destinado inicialmente aos estudantes do curso Superior de Tecnologia em Sistemas para Internet (CSTSI) do Instituto Federal de Educação, Ciência e Tecnologia do Tocantins, mas também pode ser usado por discentes de outros cursos tais como Ciência da Computação, Sistemas de Informação, Engenharia da Computação e Engenharia de Software. Ele tem o objetivo de apresentar os principais conceitos relacionados a testes de _sofware_, seus níveis, seus objetivos, como os testes são projetados e executados. De nenhuma forma esse material tem pretensão de cobrir todos os assuntos relacionados à área de testes, que é muito extensa. Ele também não substitui livros de Engenharia de Software ou outros livros técnicos relacionados. A proposta é que ele sirva como um guia inicial para aqueles que estão dando os primeiros passos nessa área tão importante para o desenvolvimento de _software_.
 
 
+[TIP]
+Procure por outras fontes para complementar esse material. Um bom lugar para começar
+é o site link:https://www.infoq.com/br/[INFOQ] que traz palestras e artigos atualizados, relacionados a
+diversos aspectos da engenharia de _software_.
+
+
+=== Como o material está organizado
+É importante lembrar que o presente material foi construído com o intuito prioritário
+de atender ao CSTSI. Assim, as buscas por conteúdo foram feitas para atender à link:http://www.ifto.edu.br/palmas/campus-palmas/cursos/graduacao/tecnologico/sistemas-para-internet/copy_of_grade-curricular/grade-curricular-bacharelado-em-engenharia-civil.pdf/view/[ementa da disciplina que está em vigor], como mostrada a seguir:
+
+- Conceitos básicos relacionados a testes de _software_;
+- Processos de testes;
+- Ferramentas para planejamento, elaboração e automatização de testes de _software_;
+- Manipular ferramentas para execução de planos de testes de _software_;
+- Classes de automação: QAI x ISTQB;
+- Gerenciamento do planejamento de testes;
+- Projeto de Casos de Teste;
+- Tipos de Testes;
+- Ferramentas;
+- Gerenciamento dos defeitos;
+- Elaboração de laudo e parecer técnico.
+
+Com base nisso, o conteúdo disponível nesse material está assim dividido:
+
+- O link:cap1-processos_de_software.adoc[Capítulo 1] tem o objetivo de posicionar as atividades de teste de _sofware_ dentre as demais atividades básicas do ciclo de desenvolvimento de _sofware_.
+As interações entre o teste e análise, projeto e implementação são apresentadas com o objetivo de auxiliar o estudante em um primeiro contato e entender em que momento elas ocorrem. Trata-se de capitulo informativo que não está relacionado diretamente com a ementa do curso.
+
+- O link:cap2-o_que_e_teste_de_software.adoc[Capítulo 2] apresenta o conceito sobre teste e reforça sua importância na obtenção de um _sofware_ que atenda melhor aos requisitos do cliente e que seja construído da melhor forma possível. Aqui é onde o estudo relativo aos testes começa de fato.
+
+//A disciplina de testes de _sofware_ tem o objetivo de
+
+//É recomendado que o estudante, que não se limite à leitura e ao conteúdo deste material. Pesquise na internet outros materiais e leia outros livros e faça todos os exercícios propostos. Programação, assim como matemática, requer muito exercício, muita prática. Como mencionado anteriormente, a programação de computadores é uma das subáreas mais importantes da carreira que você escolheu seguir. Boa parte das disciplinas do seu curso depende do conhecimento adquirido em Introdução à Programação. Portanto, dedique o máximo que puder ao aprendizado de uma área que vai permiti-lo transformar sonhos em realidade.
+
+=== Público alvo
+
+O público alvo desse livro, conforme mencionado anteriormente, são os estudantes do Curso Superior de Técnologia em Sistemas para Internet do Instituto Federal de Eucação, Ciência e Tecnologia do Tocantins, na modalidade presencial. Ele pode ser usado por outros cursos em que os estudantes tenham tido contato com disciplinas de Análise e Projeto de Sistemas, Introdução a Programação ou Programação para Web.
+
+[[como_estudar]]
+=== Como você deve estudar cada capítulo
+
+* Leia a visão geral do capítulo
+* Estude os conteúdos das seções
+* Realize as atividades no final do capítulo
+* Verifique se você atingiu os objetivos do capítulo
+
+.Na sala de aula do curso
+* Tire dúvidas e discuta sobre as atividades do livro com outros integrantes do curso
+* Leia materiais complementares eventualmente disponibilizados
+* Realize as atividades propostas pelo professor da disciplina
+
+// Sempre manter uma linha em branco no final

@@ -24,4 +24,4 @@ jobs:
       uses: manoelcampos/asciidoctor-ghpages-action@v2
       with:
         pdf_build: true
-        main_adoc_ebook_file: 'ebook/README'
+        main_adoc_ebook_file: 'README'
