@@ -39,16 +39,14 @@ Mauro Henrique Lima de Boni - mauro@ifto.edu.br; Manoel Campos da Silva Filho - 
 ++++
 
 ifdef::env-github[]
-<<cap0-prefacio#,Prefácio>>
-<<cap0-prefacio#,Prefácio>>
-
-<<cap1-processos_de_software#,Processos de Software>>
-<<cap2-o_que_e_teste_de_software#,O que é Teste de Software>>
-<<cap3-niveis_de_teste#,Níveis de Teste>>
-<<cap4-tecnicas_de_teste#,Técnicas de Teste>>
-<<cap5-tipos_de_teste#,Tipos de Teste>>
-<<cap6-plano_de_teste#,Planos de Teste>>
-bibliografia
+- <<cap0-prefacio#,Prefácio>>
+- <<cap1-processos_de_software#,Processos de Software>>
+- <<cap2-o_que_e_teste_de_software#,O que é Teste de Software>>
+- <<cap3-niveis_de_teste#,Níveis de Teste>>
+- <<cap4-tecnicas_de_teste#,Técnicas de Teste>>
+- <<cap5-tipos_de_teste#,Tipos de Teste>>
+- <<cap6-plano_de_teste#,Planos de Teste>>
+- <<bibliografia#,Bibliografia>>
 else::[]
 include::cap0-prefacio.adoc[]
 include::cap1-processos_de_software.adoc[]
