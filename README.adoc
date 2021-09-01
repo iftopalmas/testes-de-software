@@ -23,7 +23,7 @@ image:https://github.com/ifto-palmas/testes-de-software/workflows/asciidoctor-gh
 endif::[]
 
 ifndef::backend-pdf[]
-[INFORMATION]
+[TIP]
 ====
 Você pode baixar uma versão sempre atualizada em PDF deste material https://github.com/ifto-palmas/testes-de-software/blob/gh-pages/ebook.pdf[aqui].
 ====
