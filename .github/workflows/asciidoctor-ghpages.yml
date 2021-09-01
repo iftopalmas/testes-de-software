@@ -24,5 +24,4 @@ jobs:
       uses: manoelcampos/asciidoctor-ghpages-action@v2
       with:
         pdf_build: true
-        # Vai usar o arquivo ebook/ebook.adoc para compilar o ebook.pdf automaticamente a cada push
-        main_adoc_ebook_file: 'ebook/ebook'
+        main_adoc_ebook_file: 'ebook/README'
