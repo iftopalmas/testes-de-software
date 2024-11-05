@@ -3,6 +3,7 @@
 ## Ementa
 
 Conceitos básicos relacionados a teste de software; Processos de testes; Ferramentas para planejamento, elaboração e automatização testes de software; Manipular ferramentas para execução de planos de testes de software; Classes de automação: QAI x ISTQB; Gerenciamento do planejamento de testes; Projeto de Casos de Teste; Classificação de testes: testes caixa branca/caixa preta; Tipos de Testes: testes unitários, testes funcionais, testes de integração; testes de aceitação; testes de mutação. Cobertura de Testes; Ferramentas; Gerenciamento dos defeitos; Elaboração de laudo e parecer técnico.
+
 ## Justificativa
 
 ### Competências:
@@ -36,8 +37,8 @@ Conhecer os princípios de testes de software, benefícios e os diferentes tipos
 - Planejamento e aplicação de testes
 - Técnicas de teste
 - Testes Automatizados
-- Usando o Katalon Studio
-- O que é o TDD?
+- Test-Driven Development com JUnit
+- Testes de controllers, services e repositórios com Spring
 
 ## Metodologia
 
@@ -45,16 +46,16 @@ Aulas expositivas e práticas em laboratório, com desenvolvimento de projetos e
 
 ## Bibliografia Básica
 
-1. PEZZÈ, Mauro; Young, Michael; Teste e análise de software; Porto Alegre: Bookman, 2008.
-2. SCHACH, Stephen R.; Engenharia de software: os paradigmas clássicos & orientado a objetos; São Paulo: McGraw-Hill, 2009.
-3. SOMMERVILLE, Ian; Engenharia de Software; São Paulo: Pearson Prentice Hall, 2011.
-4. Guia de Referência da Engenharia de Software (SWEBOK);
+1. PEZZÈ, Mauro; Young, Michael; Teste e análise de software; Porto Alegre: Bookman, 2008. ✅
+2. SCHACH, Stephen R.; Engenharia de software: os paradigmas clássicos & orientado a objetos; São Paulo: McGraw-Hill, 2009. ✅
+3. SOMMERVILLE, Ian; Engenharia de Software; São Paulo: Pearson Prentice Hall, 2011. ✅
+4. Guia de Referência da Engenharia de Software (SWEBOK). https://www.computer.org/education/bodies-of-knowledge/software-engineering
 
 ## Bibliografia Complementar
 
-1. AMBLER, Scott W. ; Modelagem Ágil: Práticas Eficazes para a Programação eXtrema e o Processo Unificado; Porto Alegre: Bookman, 2004.
-2. OLIVEIRA, Jayr Figueiredo de; Metodologia para Desenvolvimento de Projetos de Sistemas; São Paulo: Érica, 1999.
-3. PRESSMAN, Roger S. ; Engenharia de Software; São Paulo: Pearson Prentice Hall, 1995;
-4. REZENDE, Denis Alcides; Engenharia de software e sistemas de informação; Rio de Janeiro: Brasport, 2005.
-5. SILVA, Nelson Peres da; Projeto e Desenvolvimento de Sistemas; São Paulo: Érica, 1998.
-6. WAZLAWICK, Raul Sidnei; Análise e projeto de sistemas de informação orientados a objetos; Rio de Janeiro: Elsevier, 2004.
+1. AMBLER, Scott W. ; Modelagem Ágil: Práticas Eficazes para a Programação eXtrema e o Processo Unificado; Porto Alegre: Bookman, 2004. ✅
+2. OLIVEIRA, Jayr Figueiredo de; Metodologia para Desenvolvimento de Projetos de Sistemas; São Paulo: Érica, 1999. ✅
+3. PRESSMAN, Roger S.; Engenharia de Software; São Paulo: Pearson Prentice Hall, 1995 ✅
+4. REZENDE, Denis Alcides; Engenharia de software e sistemas de informação; Rio de Janeiro: Brasport, 2005. ✅
+5. SILVA, Nelson Peres da; Projeto e Desenvolvimento de Sistemas; São Paulo: Érica, 1998. ✅
+6. WAZLAWICK, Raul Sidnei; Análise e projeto de sistemas de informação orientados a objetos; Rio de Janeiro: Elsevier, 2004. ✅
