@@ -31,3 +31,7 @@ seu-nome-aqui.zip
 
 *.xlsx
 *telegram*.adoc
+
+01-introducao-tdd/
+02-sistema-bancario/
+03-vendas-api-spring-test/
